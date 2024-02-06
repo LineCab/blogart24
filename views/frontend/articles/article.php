@@ -6,6 +6,7 @@
     <title>Article</title>
     <link rel="stylesheet" href="src/css/style.css" />
     <link rel="stylesheet" href="views/backend/articles/create.php">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header> 
@@ -16,6 +17,15 @@
         <div class="container">
             <div class="titre">
                 <h1> BORDEAUX BLIB : Bières Locales, <br> Sourires Mondiaux ! </h1>
+            </div>
+
+            <div class="article-info">
+                    <div class="like" id="like-section">
+                        <button onclick="likeArticle()"> <p id="like-count"> 0 <i class='bx bx-heart'></i></p></button>
+                    </div>
+                    <div class="comment-count" id="comment-section">
+                        <p id="comment-count">0 <i class='bx bx-message-rounded-dots'></i></p>
+                    </div>
             </div>
 
             
@@ -76,39 +86,48 @@
             <div class="like">
                 <p>Vous avez aimé cet article ? N’hésitez pas à liker !</p>
             </div>
-        </div>
-    </section>
 
-    <section class="commentaires">
-        <div class="container">
-            <div class="titre">
-                <h2>COMMENTAIRES</h2>
+          
+
+            <!-- div qui permet de voir le nombre de like et de commentaires de l'article -->
+            <div class="container">
+
+            <i class='bx bx-heart'></i>
+            <h2> <i class='bx bx-message-rounded-dots'></i> COMMENTAIRES</h2>
+
+                <form id="comment-form" class="comment-form" onsubmit="return validateComment()">
+                    <label for="fname">Prénom:</label>
+                    <input type="text" id="fname" name="fname" required>
+
+                    <label for="lname">Nom:</label>
+                    <input type="text" id="lname" name="lname" required>
+
+                    <label for="comment">Commentaire :</label>
+                    <textarea id="comment" name="comment" rows="4" cols="50" required></textarea>
+
+                    <button type="submit" class="comment-btn">Publier</button>
+                </form>
+
+                <!-- Liste des comm -->
+                <ul id="comment-list" class="comment-list">
+                    <!-- commentaires  ajoutés ici -->
+                </ul>
             </div>
 
-
-            <form id="comment-form" class="comment-form" onsubmit="return validateComment()">
-                <label for="fname">Prénom:</label>
-                <input type="text" id="fname" name="fname" required>
-
-                <label for="lname">Nom:</label>
-                <input type="text" id="lname" name="lname" required>
-
-                <label for="comment">Commentaire :</label>
-                <textarea id="comment" name="comment" rows="4" cols="50" required></textarea>
-
-                <button type="submit">Envoyer</button>
-            </form>
-
-            <!-- Liste des Commentaires -->
-            <ul id="comment-list" class="comment-list">
-                <!-- commentaires seront ajoutés ici -->
-            </ul>
         </div>
     </section>
 
     <script>
+
+        let likeCount = 0;
+        let commentCount = 0;
+
+        function likeArticle() {
+            likeCount++;
+            updateLikeCount();
+        }
+
         function validateComment() {
-// verif du champs remplis
             var fname = document.getElementById("fname").value;
             var lname = document.getElementById("lname").value;
             var comment = document.getElementById("comment").value;
@@ -118,90 +137,102 @@
                 return false; 
             }
 
-            // ajouter ici le code pour enregistrer le commentaire côté serveur (PHP ou autre)
+            // Ajouter le code pour enregistrer le com côté serveur
 
-            // Ajouter le commentaire à la liste visible
-
+            // Ajout du comm à la liste visible
             var commentList = document.getElementById("comment-list");
             var li = document.createElement("li");
             li.textContent = fname + " " + lname + ": " + comment;
             commentList.appendChild(li);
 
+            commentCount++;
+            updateCommentCount();
+
             // Effacer les champs du formulaire après l'envoi
-        
             document.getElementById("fname").value = "";
             document.getElementById("lname").value = "";
             document.getElementById("comment").value = "";
 
             return false; 
         }
+
+        function updateLikeCount() {
+            document.getElementById("like-count").textContent = likeCount + " Likes";
+        }
+
+        function updateCommentCount() {
+            document.getElementById("comment-count").textContent = commentCount + " Commentaires";
+        }
+
     </script>
 
     <style>
 
-                    body {
-                        font-family: Arial, sans-serif;
-                        line-height: 1.6;
-                        background-color: #f5f5f5;
-                        margin: 0;
-                        padding: 0;
-                    }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
 
-                    .container {
-                        max-width: 800px;
-                        margin: 0 auto;
-                        padding: 20px;
-                    }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-                    .article1 {
-                        background-color: #fff;
-                        font-family: Montserrat;
-                        font-size: 15px;
-                        font-weight: 400;
-                        line-height: 23px;
-                        letter-spacing: 0em;
-                        text-align: justified;
-                        display: flex; 
-                        flex-direction: column; 
-                    }
+        .article1 {
+            background-color: #fff;
+            font-family: Montserrat;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 23px;
+            letter-spacing: 0em;
+            text-align: justified;
+            display: flex; 
+            flex-direction: column; 
+        }
 
-                    .titre {
-                        text-align: left;
-                        margin-bottom: 20px;
-                    }
 
-                    .titre h1 {
-                        font-family: Montserrat;
-                        font-size: 40px;
-                        font-weight: 400;
-                        line-height: 49px;
-                        letter-spacing: 0em;
-                        text-align: left;
-                    }
 
-                    .para1, .para2, .para3, .para_img {
-                        margin-bottom: 20px;
-                    }
+        .titre {
+            text-align: left;
+            margin-bottom: 20px;
+        }
 
-                    .para_img img {
-                        max-width: 100%;
-                        height: auto;
-                        margin: 20px;
-                    }
+        .titre h1 {
+            font-family: Montserrat;
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 49px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
 
-                    .para1, .para2, .para3, .para_img {
-                        width: 100%; 
-                    }
+        .para1, .para2, .para3, .para_img {
+            margin-bottom: 20px;
+        }
 
-                    .para_img {
-                        display: flex;
-                        justify-content: space-between; 
-                        align-items: center; 
-                    }
+        .para_img img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px;
+        }
 
-                    .para_img img {
-                        max-width: 48%; 
-                    }
+        .para1, .para2, .para3, .para_img {
+            width: 100%; 
+        }
+
+        .para_img {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+        }
+
+        .para_img img {
+            max-width: 48%; 
+        }
 
         .commentaires {
             margin-top: 40px;
@@ -216,7 +247,9 @@
         .comment-form textarea,
         .comment-form button {
             display: block;
-            margin-bottom: 10px;
+            margin-bottom: 7px;
+
+
         }
 
         .comment-list {
@@ -225,9 +258,23 @@
         }
 
         .comment-list li {
-            border-bottom: 1px solid #ccc;
+            border-bottom: 5px solid #5A3A31;
             margin-bottom: 10px;
             padding-bottom: 10px;
+        }
+
+        .comment-btn {
+            background-color: #5A3A31;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .comment-btn:hover {
+            background-color: #000;
         }
     </style>
 </body>
