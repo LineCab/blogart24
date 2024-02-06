@@ -1,6 +1,14 @@
 <?php
 include '../../../header.php';
 ?>
+<?php
+session_start();
+
+if(!isset($_SESSION['USER'])){
+    header('Location: login.php');
+    exit();
+}
+?>
 
 <div class="commentaire">
     <div class="row">
@@ -22,3 +30,6 @@ include '../../../header.php';
         </div>
     </div>
 </div>
+<?php
+    echo date('d/m/Y'). '<br>';
+    ?>
