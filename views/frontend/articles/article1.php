@@ -280,12 +280,15 @@
 
         .article-info {
             display: flex;
-            justify-content: space-between; 
-            padding-right: 88%;
+            
+            justify-content: space-arrond; 
             align-items: center;
             margin-bottom: 10px;
         }
 
+       .article-info .like {
+            padding-right: 1rem;
+        }
 
         .titre {
             text-align: left;
