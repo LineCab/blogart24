@@ -18,7 +18,8 @@
     <section class="article1">
         <div class="container">
             <div class="titre">
-                <h1> BORDEAUX BLIB : Bières Locales, <br> Sourires Mondiaux ! </h1>
+                <h1> Bordeaux bascule : <br>la bière éclipse le vin !
+ </h1>
             </div>
 
             <div class="article-info">
@@ -30,49 +31,62 @@
                 </div>
             </div>
 
-
-            
             <div class="para1">
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Etiam eu turpis molestie, dictum est a, mattis tellus. 
-            Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. 
-            Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
-            Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. 
-            Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.
-          
+                Aujourd’hui on vous a brassé un article pour vous préparer au BLIB le festival des Bières Libres et Indépendantes à Bordeaux qui aura lieu en avril. 
+                De l’histoire ancestrale de la bière, en passant par les dernières tendances mousseuses, on vous dévoile même notre recette secrète qui vous garantira la victoire au concours BRASSAM. 
                 </p>
+
+                <p>Après ça, vous serez un as de la bulle !</p>
+
              </div>
 
             <div class="para2">
+
+                <h2>Alors ça mousse ?</h2>
+                <h4>Un accident, une potion magique, une déesse, la bière a su prendre différentes identités pour trouver sa place au sein de toutes les époques.</h4>
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Etiam eu turpis molestie, dictum est a, mattis tellus. 
-                Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. 
-                Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
-                Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. 
-                Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.
-            
+                Et oui ! La bière (ou devrions nous dire la “Sikaru”) a été créée par accident, il y a 4000 ans en Mésopotamie, par un sumérien qui aurait un peu trop laissé fermenter sa soupe. 
+
+                C’est au 18e siècle que la bière prend une dimension divine avec l'apparition de Ninkasi, déesse associée à son brassage. Deux hymnes lui sont dédiés, le premier retrace les étapes ancestrales de la fermentation et le second décrit les récipients de brassage utilisés. 
+                On vous met les paroles ici  (c'est cadeau, ne nous remerciez pas). 
+
+                Chez les Celtes, la bière se transforme en potion magique (oui, oui, potion magique !) au XIIe siècle avec l'ajout du houblon, offrant une délicieuse amertume maîtrisée par les moines au Moyen  ge.
+                Une étude d'Harvard récente a même démontré les effets positifs de la bière sur le cœur et la circulation sanguine. Alors, si c'est Harvard qui le dit… Nous on trinque à la santé de la bière ! 
+
                 </p>  
+
             </div>
 
-            <div class="para_img">
-            <img src="https://imgs.search.brave.com/WjbyNLY9GrZYP4Gc-1pCRucmGIM-yu6uXSj-7KEyLmI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/Y29tcHRvaXJkdXBv/aXRvdS5mci93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMi8xMi9i/aWVyZXMtY29tcHRv/aXJkdXBvaXRvdS0x/MDAweDY2NS5qcGc" alt="bieres">
+            <h2>Un culte ramené au goût du jour </h2>
 
+            <div class="para3">
+
+                   
+               
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Etiam eu turpis molestie, dictum est a, mattis tellus. 
-                Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. 
-                Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
-                Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. 
-                Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.
-            
+                    Si autrefois, la bière était synonyme d'authenticité, les artisans brasseurs d'aujourd'hui se lancent dans l'innovation, explorant de nouveaux goûts et techniques pour se distinguer.
+                <br> À Bordeaux, nos artisans, à travers des bières au design soigné ou aux saveurs inédites, ne vous laissent pas le temps de vous ennuyer !
+
+                <br><br>
+                Des étiquettes stylisées sur vos bières ? Pas de soucis, l’équipe d'”Effet Papillon” s'en occupe.
+                <br>
+                Antoine, César et Cyprien, allient graphisme et brasserie en proposant des illustrations personnalisées avec des graphismes aux traits colorés. 
+                <br>
+                Nous, on les imaginerait bien alignées sur la commode tel des objets de collection. 
+
+                <br><br>
+                Et si brasser sur la lune c’était écologique ? 
+                <br>Non, ce n’est pas la nouvelle marque de bière lancée par Thomas Pesquet (même si on aurait aimé), mais ce sont les bières biologiques brassées à Bordeaux, sur les rives du port de la lune. 
+                <br>On y retrouve un concept de brassage écologique : une installation géothermique et d'autres technologies mises en place qu’ils vous expliqueront sûrement mieux que nous sur leur site web.
+                <br>Pour nous ce qui compte c’est son goût unique et son engagement écologique ! 
                 </p>
 
             </div>
            
-            <div class="para3">
-
+            <div class="para_img">
+             <img src="https://imgs.search.brave.com/WjbyNLY9GrZYP4Gc-1pCRucmGIM-yu6uXSj-7KEyLmI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/Y29tcHRvaXJkdXBv/aXRvdS5mci93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMi8xMi9i/aWVyZXMtY29tcHRv/aXJkdXBvaXRvdS0x/MDAweDY2NS5qcGc" alt="bieres">
+        
                 <p>
 
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -179,9 +193,9 @@
             return false;
         }
 
-        // Ajouter le code pour enregistrer le commentaire côté serveur
+        // Ajouter le code pour enregistrer le com côté serveur
 
-        // Ajout du commentaire à la liste visible
+        // Ajout du comment à la liste visible
         var commentList = document.getElementById("comment-list");
         var li = document.createElement("li");
 
@@ -189,12 +203,12 @@
         var currentDate = new Date();
         var dateString = currentDate.toLocaleDateString(); // juste la date pas l'heure
 
-        // Ajouter la date au commentaire
+        // Ajouter la date au comm
         var comment = { fname, lname, date: dateString };
         li.innerHTML = `${fname} ${lname} (${dateString}): <br> <br> ${commentText}`;
         commentList.appendChild(li);
 
-        // Sauvegarder le commentaire dans le localStorage
+        // Sauvegarder le comm dans le localStorage
         storedComments.push(comment);
         localStorage.setItem("comments", JSON.stringify(storedComments));
 
@@ -227,8 +241,11 @@
             commentList.appendChild(li);
         });
 
-           // Réinitialiser les commentaires sauvegardés (décommentez cette ligne si vous voulez supprimer les commentaires à chaque chargement)
-            clearStoredComments();
+
+
+        // Réinitialiser les commentaires sauvegardés (décommentez cette ligne si vous voulez supprimer les commentaires à chaque chargement)
+        
+        clearStoredComments();
 
         storedComments.forEach(function (comment) {
             var commentList = document.getElementById("comment-list");
@@ -236,6 +253,9 @@
             li.innerHTML = `<strong>${comment.fname} ${comment.lname}</strong> (${comment.date}): ${comment.commentText}`;
             commentList.appendChild(li);
         });
+
+
+        // 
 
 
         commentCount = storedComments.length;
