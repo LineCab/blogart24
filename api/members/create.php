@@ -39,7 +39,7 @@ if ($resultPseudoExist->num_rows > 0) {
     die("Le pseudo existe déjà.");
 }
 
-// Insertion du nouveau membre dans la base de données
+// Insertion du nouveau membre
 $sqlInsert = "INSERT INTO membres (pseudo, nom, prenom, date_creation) VALUES ('$pseudo', '$nom', '$prenom', '$dateCreation')";
 if ($conn->query($sqlInsert) === TRUE) {
     echo "Membre créé avec succès.";
