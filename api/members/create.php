@@ -47,6 +47,10 @@ if ($conn->query($sqlInsert) === TRUE) {
     echo "Erreur : " . $sqlInsert . "<br>" . $conn->error;
 }
 
+// 4. date de modification du membre : 
+
+    
+
 // Fermeture de la connexion à la base de données
 $conn->close();
 
