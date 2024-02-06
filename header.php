@@ -22,9 +22,9 @@ require_once 'config.php';
     </button>
     <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-            <a class="nav-link" aria-current="page" href="../../../index.php">Accueil</a>
-            <a class="nav-link" href="/views/frontend/articles/acteurs.php">Acteurs</a>
-            <a class="nav-link" href="/views/frontend/articles/events.php">Evènements</a>
+            <a class="nav-link" aria-current="page" href="index.php">Accueil</a>
+            <a class="nav-link" href="acteurs.php">Acteurs</a>
+            <a class="nav-link" href="events.php">Evènements</a>
             <a class="nav-link" href="#">Où les trouver ?</a>
         </div>
     </div>
