@@ -36,7 +36,7 @@ require_once 'config.php';
                 <img src="/src/images/bieres.png" height="400" class="card-img-top object-fit-cover" alt="Photo bière">
                 <div class="card-body">
                     <p class="card-text card-date">10/05/2024</p>
-                    <h3 class="card-title">Card title</h3>
+                    <h3 class="card-title">Bordeaux BLIB : Bières Locales, Sourires Mondiaux !</h3>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
                 </div>
@@ -54,7 +54,7 @@ require_once 'config.php';
             </div>
         </div>
     </div>
-    <hr class="my-3">
+    <hr class="my-3 margin-top-100">
     <h2 class="uppercase"> Le top 10 </h2>
     <hr class="my-3">
     <div class="custom-column row row-cols-1 row-cols-md-2 g-4">
@@ -83,7 +83,7 @@ require_once 'config.php';
     <div class="custom-column row row-cols-1 row-cols-md-4 g-4">
         <div class="col">
             <div class="card">
-                <img src="/src/images/bieres.png" height="400" class="card-img-top object-fit-cover" alt="Photo bière">
+                <img src="/src/images/bieres.png" height="250" class="card-img-top object-fit-cover" alt="Photo bière">
                 <div class="card-body">
                     <h3 class="card-title">Card title</h3>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -93,7 +93,7 @@ require_once 'config.php';
         </div>
         <div class="col">
             <div class="card">
-                <img src="/src/images/bieres.png" height="400" class="card-img-top object-fit-cover" alt="Photo bière">
+                <img src="/src/images/bieres.png" height="250" class="card-img-top object-fit-cover" alt="Photo bière">
                 <div class="card-body">
                     <h3 class="card-title">Card title</h3>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -103,7 +103,7 @@ require_once 'config.php';
         </div>
         <div class="col">
             <div class="card">
-                <img src="/src/images/bieres.png" height="400" class="card-img-top object-fit-cover" alt="Photo bière">
+                <img src="/src/images/bieres.png" height="250" class="card-img-top object-fit-cover" alt="Photo bière">
                 <div class="card-body">
                     <h3 class="card-title">Card title</h3>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -113,7 +113,7 @@ require_once 'config.php';
         </div>
         <div class="col">
             <div class="card">
-                <img src="/src/images/bieres.png" height="400" class="card-img-top object-fit-cover" alt="Photo bière">
+                <img src="/src/images/bieres.png" height="250" class="card-img-top object-fit-cover" alt="Photo bière">
                 <div class="card-body">
                     <h3 class="card-title">Card title</h3>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -123,7 +123,7 @@ require_once 'config.php';
         </div>
         <div class="col">
             <div class="card">
-                <img src="/src/images/bieres.png" height="400" class="card-img-top object-fit-cover" alt="Photo bière">
+                <img src="/src/images/bieres.png" height="250" class="card-img-top object-fit-cover" alt="Photo bière">
                 <div class="card-body">
                     <h3 class="card-title">Card title</h3>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -133,7 +133,7 @@ require_once 'config.php';
         </div>
         <div class="col">
             <div class="card">
-                <img src="/src/images/bieres.png" height="400" class="card-img-top object-fit-cover" alt="Photo bière">
+                <img src="/src/images/bieres.png" height="250" class="card-img-top object-fit-cover" alt="Photo bière">
                 <div class="card-body">
                     <h3 class="card-title">Card title</h3>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -143,7 +143,7 @@ require_once 'config.php';
         </div>
         <div class="col">
             <div class="card">
-                <img src="/src/images/bieres.png" height="400" class="card-img-top object-fit-cover" alt="Photo bière">
+                <img src="/src/images/bieres.png" height="250" class="card-img-top object-fit-cover" alt="Photo bière">
                 <div class="card-body">
                     <h3 class="card-title">Card title</h3>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -153,7 +153,7 @@ require_once 'config.php';
         </div>
         <div class="col">
             <div class="card">
-                <img src="/src/images/bieres.png" height="400" class="card-img-top object-fit-cover" alt="Photo bière">
+                <img src="/src/images/bieres.png" height="250" class="card-img-top object-fit-cover" alt="Photo bière">
                 <div class="card-body">
                     <h3 class="card-title">Card title</h3>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the

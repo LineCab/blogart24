@@ -1,0 +1,80 @@
+body{
+    margin: 0 60px;
+    font-family: Inter;
+}
+
+.img-connection{
+    margin-left: 95px;
+    margin-right: 30px;
+}
+
+.uppercase{
+    font-family: Montserrat;
+    font-size: 90px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.margin-top-100{
+    margin-top: 100px !important;
+}
+
+.card{
+    border: none;
+}
+
+.card:hover {
+    transform: scale(1.02) !important;
+    transition: transform 0.3s ease-in-out !important;
+}
+
+.card:hover img {
+    transform: scale(1) !important;
+}
+
+.custom-column{
+    padding: 0 10px;
+}
+
+.card-date{
+    width: 200px;
+    padding: 5px 10px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: #5A3A31;
+}
+
+.card-title{
+    font-size: 32px;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.card-text{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.custom-row-66{
+    margin: 66px 0;
+}
+
+.footer-custom {
+    margin: 80px -60px 0 -60px;
+    padding: 0 70px;
+    background-color: #5A3A31;
+    color: #FAFAFA;
+}
+
+.footer-custom ul li a{
+    color: #FAFAFA;
+}
+
+.footer-custom ul li a:hover{
+    color: #7F7F7F;
+}
+
+.img-footer{
+    margin-bottom: 36px;
+}
