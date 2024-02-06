@@ -9,7 +9,7 @@ if(!isset($_SESSION['USER'])){
     exit();
 }
 ?>
-
+<html>
 <div class="commentaire">
     <div class="row">
         <div class="col-md-12">
@@ -30,6 +30,7 @@ if(!isset($_SESSION['USER'])){
         </div>
     </div>
 </div>
+</html>
 <?php
     echo date('d/m/Y'). '<br>';
     ?>
