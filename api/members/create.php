@@ -13,27 +13,34 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Vérification de la connexion à la base de données
 if ($conn->connect_error) {
-    die("Erreur de connexion à la base de données : " . $conn->connect_error);
+    die("Erreur de connexion : " . $conn->connect_error);
 }
 
-// Récupération du pseudo depuis la requête POST
-$pseudo = isset($_POST['pseudo']) ? $_POST['pseudo'] : '';
+// Récupération des données depuis la requête POST
+$pseudo = isset($_POST['pseudo']) ? ctrlSaisies($_POST['pseudo']) : '';
+$nom = isset($_POST['nom']) ? ctrlSaisies($_POST['nom']) : '';
+$prenom = isset($_POST['prenom']) ? ctrlSaisies($_POST['prenom']) : '';
+$dateCreation = date("Y-m-d H:i:s"); // Date du jour et heure actuelle
 
-// Validation du pseudo
+// Validation des champs
 if (strlen($pseudo) < 6 || strlen($pseudo) > 70) {
-    die("Erreur : Le pseudo doit avoir entre 6 et 70 caractères.");
+    die("Le pseudo doit avoir entre 6 et 70 caractères.");
+}
+
+if (empty($nom) || empty($prenom)) {
+    die("Les champs nom et prénom sont obligatoires.");
 }
 
 // Vérification de l'existence du pseudo dans la base de données
-$sql = "SELECT id FROM membres WHERE pseudo = '$pseudo'";
-$result = $conn->query($sql);
+$sqlPseudoExist = "SELECT id FROM membres WHERE pseudo = '$pseudo'";
+$resultPseudoExist = $conn->query($sqlPseudoExist);
 
-if ($result->num_rows > 0) {
-    die("Erreur : Le pseudo existe déjà.");
+if ($resultPseudoExist->num_rows > 0) {
+    die("Le pseudo existe déjà.");
 }
 
 // Insertion du nouveau membre dans la base de données
-$sqlInsert = "INSERT INTO membres (pseudo) VALUES ('$pseudo')";
+$sqlInsert = "INSERT INTO membres (pseudo, nom, prenom, date_creation) VALUES ('$pseudo', '$nom', '$prenom', '$dateCreation')";
 if ($conn->query($sqlInsert) === TRUE) {
     echo "Membre créé avec succès.";
 } else {
@@ -43,6 +50,6 @@ if ($conn->query($sqlInsert) === TRUE) {
 // Fermeture de la connexion à la base de données
 $conn->close();
 
-
+// Redirection vers la liste des statuts
 header('Location: ../../views/backend/statuts/list.php');
 ?>
