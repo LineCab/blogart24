@@ -1,3 +1,24 @@
 <?php
 include '../../../header.php';
+?>
 
+<div class="commentaire">
+    <div class="row">
+        <div class="col-md-12">
+            <h3>poster un commentaire</h3>
+        </div>
+        <div class="col-md-12">
+            <!-- Form to create a new statut -->
+            <form action="?php echo ROOT_URL . '/api/comments/create.php' ?>" method="post">
+                <div class="form-comm">
+                    <label for="commentaire">Votre commentaire : </label>
+                    <input type="text" name="commentaire" id="commentaire"/><br/><br/>
+                </div>
+                <br />
+                <div class="form-comm mt-2">
+                    <button type="submit" class="btn btn-primary">Envoyer le commentaire</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
