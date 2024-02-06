@@ -1,5 +1,5 @@
 <?php 
-    require_once '../../../header.php';
+    require_once 'header.php';
     sql_connect();
 ?>
 
@@ -12,7 +12,7 @@
     <title>Blog'Art Accueil</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../../src/css/style.css" />
+    <link rel="stylesheet" href="/src/css/style.css" />
     <link rel="shortcut icon" type="image/x-icon" href="src/images/article.png" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
@@ -23,7 +23,7 @@
 
 <?php
 //load config
-require_once '../../../config.php';
+require_once 'config.php';
 ?>
 
 <body>
@@ -35,9 +35,9 @@ require_once '../../../config.php';
                     <div class="d-flex justify-content-between">
                         <p class="card-text card-date">10/05/2024</p>
                         <div class="d-flex align-items-center like-com-articles">
-                            <img src="/src/images/coeur.png" height="18" class="card-img-top object-fit-cover mx-2" alt="Photo bière">
+                            <img src="/src/images/coeur.png" height="15" class="card-img-top object-fit-cover mx-2" alt="Photo bière">
                             113
-                            <img src="/src/images/comment.png" height="18" class="card-img-top object-fit-cover mx-2" alt="Photo bière">
+                            <img src="/src/images/comment.png" height="15" class="card-img-top object-fit-cover mx-2" alt="Photo bière">
                             78
                         </div>
                     </div>
@@ -54,9 +54,9 @@ require_once '../../../config.php';
                     <div class="d-flex justify-content-between">
                         <p class="card-text card-date">10/05/2024</p>
                         <div class="d-flex align-items-center like-com-articles">
-                            <img src="/src/images/coeur.png" height="18" class="card-img-top object-fit-cover mx-2" alt="Photo bière">
+                            <img src="/src/images/coeur.png" height="15" class="card-img-top object-fit-cover mx-2" alt="Photo bière">
                             113
-                            <img src="/src/images/comment.png" height="18" class="card-img-top object-fit-cover mx-2" alt="Photo bière">
+                            <img src="/src/images/comment.png" height="15" class="card-img-top object-fit-cover mx-2" alt="Photo bière">
                             78
                         </div>
                     </div>
@@ -73,9 +73,9 @@ require_once '../../../config.php';
                     <div class="d-flex justify-content-between">
                         <p class="card-text card-date">10/05/2024</p>
                         <div class="d-flex align-items-center like-com-articles">
-                            <img src="/src/images/coeur.png" height="20" class="card-img-top object-fit-cover mx-2" alt="Photo bière">
+                            <img src="/src/images/coeur.png" height="15" class="card-img-top object-fit-cover mx-2" alt="Photo bière">
                             113
-                            <img src="/src/images/comment.png" height="18" class="card-img-top object-fit-cover mx-2" alt="Photo bière">
+                            <img src="/src/images/comment.png" height="15" class="card-img-top object-fit-cover mx-2" alt="Photo bière">
                             78
                         </div>
                     </div>
@@ -92,9 +92,9 @@ require_once '../../../config.php';
                     <div class="d-flex justify-content-between">
                         <p class="card-text card-date">10/05/2024</p>
                         <div class="d-flex align-items-center like-com-articles">
-                            <img src="/src/images/coeur.png" height="18" class="card-img-top object-fit-cover mx-2" alt="Photo bière">
+                            <img src="/src/images/coeur.png" height="15" class="card-img-top object-fit-cover mx-2" alt="Photo bière">
                             113
-                            <img src="/src/images/comment.png" height="18" class="card-img-top object-fit-cover mx-2" alt="Photo bière">
+                            <img src="/src/images/comment.png" height="15" class="card-img-top object-fit-cover mx-2" alt="Photo bière">
                             78
                         </div>
                     </div>
@@ -111,9 +111,9 @@ require_once '../../../config.php';
                     <div class="d-flex justify-content-between">
                         <p class="card-text card-date">10/05/2024</p>
                         <div class="d-flex align-items-center like-com-articles">
-                            <img src="/src/images/coeur.png" height="18" class="card-img-top object-fit-cover mx-2" alt="Photo bière">
+                            <img src="/src/images/coeur.png" height="15" class="card-img-top object-fit-cover mx-2" alt="Photo bière">
                             113
-                            <img src="/src/images/comment.png" height="18" class="card-img-top object-fit-cover mx-2" alt="Photo bière">
+                            <img src="/src/images/comment.png" height="15" class="card-img-top object-fit-cover mx-2" alt="Photo bière">
                             78
                         </div>
                     </div>
@@ -130,9 +130,9 @@ require_once '../../../config.php';
                     <div class="d-flex justify-content-between">
                         <p class="card-text card-date">10/05/2024</p>
                         <div class="d-flex align-items-center like-com-articles">
-                            <img src="/src/images/coeur.png" height="18" class="card-img-top object-fit-cover ml-2" alt="Photo bière">
+                            <img src="/src/images/coeur.png" height="15" class="card-img-top object-fit-cover mx-2" alt="Photo bière">
                             113
-                            <img src="/src/images/comment.png" height="18" class="card-img-top object-fit-cover mx-2" alt="Photo bière">
+                            <img src="/src/images/comment.png" height="15" class="card-img-top object-fit-cover mx-2" alt="Photo bière">
                             78
                         </div>
                     </div>
@@ -146,5 +146,5 @@ require_once '../../../config.php';
 </body>
 
 <?php
-    require_once '../../../footer.php';
+    require_once 'footer.php';
 ?>
