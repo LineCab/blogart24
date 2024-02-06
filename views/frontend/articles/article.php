@@ -8,22 +8,17 @@
     <link rel="stylesheet" href="views/backend/articles/create.php">
 </head>
 <body>
-    <!-- para texte sur les  10 premiere collone titre para colone de droite reste -->
-    
     <header> 
         <!-- rajouter le header -->
     </header>
 
     <section class="article1">
-
         <div class="container">
             <div class="titre">
-                 <h1> BORDEAUX BLIB : Bières Locales, 
-                 <br>
-                 Sourires Mondiaux ! </h1>
-            <!-- rajouter like & comment dans le dossier j'ai oublié -->
+                <h1> BORDEAUX BLIB : Bières Locales, <br> Sourires Mondiaux ! </h1>
             </div>
 
+            
             <div class="para1">
                 <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -78,7 +73,72 @@
 
             </div>
 
-            <style>
+            <div class="like">
+                <p>Vous avez aimé cet article ? N’hésitez pas à liker !</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="commentaires">
+        <div class="container">
+            <div class="titre">
+                <h2>COMMENTAIRES</h2>
+            </div>
+
+
+            <form id="comment-form" class="comment-form" onsubmit="return validateComment()">
+                <label for="fname">Prénom:</label>
+                <input type="text" id="fname" name="fname" required>
+
+                <label for="lname">Nom:</label>
+                <input type="text" id="lname" name="lname" required>
+
+                <label for="comment">Commentaire :</label>
+                <textarea id="comment" name="comment" rows="4" cols="50" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+
+            <!-- Liste des Commentaires -->
+            <ul id="comment-list" class="comment-list">
+                <!-- commentaires seront ajoutés ici -->
+            </ul>
+        </div>
+    </section>
+
+    <script>
+        function validateComment() {
+// verif du champs remplis
+            var fname = document.getElementById("fname").value;
+            var lname = document.getElementById("lname").value;
+            var comment = document.getElementById("comment").value;
+
+            if (fname === "" || lname === "" || comment === "") {
+                alert("Veuillez remplir tous les champs du commentaire.");
+                return false; 
+            }
+
+            // ajouter ici le code pour enregistrer le commentaire côté serveur (PHP ou autre)
+
+            // Ajouter le commentaire à la liste visible
+
+            var commentList = document.getElementById("comment-list");
+            var li = document.createElement("li");
+            li.textContent = fname + " " + lname + ": " + comment;
+            commentList.appendChild(li);
+
+            // Effacer les champs du formulaire après l'envoi
+        
+            document.getElementById("fname").value = "";
+            document.getElementById("lname").value = "";
+            document.getElementById("comment").value = "";
+
+            return false; 
+        }
+    </script>
+
+    <style>
+
                     body {
                         font-family: Arial, sans-serif;
                         line-height: 1.6;
@@ -143,11 +203,32 @@
                         max-width: 48%; 
                     }
 
-            </style>
+        .commentaires {
+            margin-top: 40px;
+        }
 
-        </div>
+        .comment-form {
+            margin-bottom: 20px;
+        }
 
-    </section>
+        .comment-form label,
+        .comment-form input,
+        .comment-form textarea,
+        .comment-form button {
+            display: block;
+            margin-bottom: 10px;
+        }
 
+        .comment-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .comment-list li {
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+        }
+    </style>
 </body>
 </html>
