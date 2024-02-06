@@ -20,13 +20,14 @@
             </div>
 
             <div class="article-info">
-                    <div class="like" id="like-section">
-                        <button onclick="likeArticle()"> <p id="like-count"> 0 <i class='bx bx-heart'></i></p></button>
-                    </div>
-                    <div class="comment-count" id="comment-section">
-                        <p id="comment-count">0 <i class='bx bx-message-rounded-dots'></i></p>
-                    </div>
+                <div class="like" id="like-section">
+                    <button onclick="likeArticle()"> <p id="like-count"> 0 <i class='bx bx-heart'></i></p></button>
+                </div>
+                <div class="comment-count" id="comment-section">
+                    <p id="comment-count">0 <i class='bx bx-message-rounded-dots'></i></p>
+                </div>
             </div>
+
 
             
             <div class="para1">
@@ -91,22 +92,32 @@
 
             <!-- div qui permet de voir le nombre de like et de commentaires de l'article -->
             <div class="container">
-
-            <i class='bx bx-heart'></i>
+            <div class="hearth">
+                    <i class='bx bx-heart'></i>
+            </div>
             <h2> <i class='bx bx-message-rounded-dots'></i> COMMENTAIRES</h2>
 
-                <form id="comment-form" class="comment-form" onsubmit="return validateComment()">
-                    <label for="fname">Prénom:</label>
-                    <input type="text" id="fname" name="fname" required>
+            <form id="comment-form" class="comment-form" onsubmit="return validateComment()">
+                <div class="name-fields">
+                    <div class="name-field">
+                        <label for="fname">Prénom:</label>
+                        <input type="text" id="fname" name="fname" required>
+                    </div>
+                    <div class="name-field">
+                        <label for="lname">Nom:</label>
+                        <input type="text" id="lname" name="lname" required>
+                    </div>
+                </div>
 
-                    <label for="lname">Nom:</label>
-                    <input type="text" id="lname" name="lname" required>
-
+                <div class="comment-field">
                     <label for="comment">Commentaire :</label>
-                    <textarea id="comment" name="comment" rows="4" cols="50" required></textarea>
+                    <textarea id="comment" name="comment" rows="4" cols="50" required placeholder="Ecrivez votre commentaire ici ..."></textarea>
+                </div>
 
-                    <button type="submit" class="comment-btn">Publier</button>
-                </form>
+                <!-- Ajouter le bouton Envoyer ici -->
+                <button type="submit" class="comment-btn">Envoyer</button>
+
+            </form>
 
                 <!-- Liste des comm -->
                 <ul id="comment-list" class="comment-list">
@@ -117,10 +128,13 @@
         </div>
     </section>
 
-    <script>
-
+            <script>
         let likeCount = 0;
         let commentCount = 0;
+
+        // pour recupérer les commentaires stockés dans le localStorage il suffit d'enlever le commentaire de la ligne de dessous 
+
+        let storedComments = JSON.parse(localStorage.getItem("comments")) || [];
 
         function likeArticle() {
             likeCount++;
@@ -128,33 +142,45 @@
         }
 
         function validateComment() {
-            var fname = document.getElementById("fname").value;
-            var lname = document.getElementById("lname").value;
-            var comment = document.getElementById("comment").value;
+        var fname = document.getElementById("fname").value;
+        var lname = document.getElementById("lname").value;
+        var commentText = document.getElementById("comment").value;
 
-            if (fname === "" || lname === "" || comment === "") {
-                alert("Veuillez remplir tous les champs du commentaire.");
-                return false; 
-            }
-
-            // Ajouter le code pour enregistrer le com côté serveur
-
-            // Ajout du comm à la liste visible
-            var commentList = document.getElementById("comment-list");
-            var li = document.createElement("li");
-            li.textContent = fname + " " + lname + ": " + comment;
-            commentList.appendChild(li);
-
-            commentCount++;
-            updateCommentCount();
-
-            // Effacer les champs du formulaire après l'envoi
-            document.getElementById("fname").value = "";
-            document.getElementById("lname").value = "";
-            document.getElementById("comment").value = "";
-
-            return false; 
+        if (fname === "" || lname === "" || commentText === "") {
+            alert("Veuillez remplir tous les champs du commentaire.");
+            return false;
         }
+
+        // Ajouter le code pour enregistrer le commentaire côté serveur
+
+        // Ajout du commentaire à la liste visible
+        var commentList = document.getElementById("comment-list");
+        var li = document.createElement("li");
+
+        // Ajouter la date de publication
+        var currentDate = new Date();
+        var dateString = currentDate.toLocaleDateString(); // juste la date pas l'heure
+
+        // Ajouter la date au commentaire
+        var comment = { fname, lname, date: dateString };
+        li.innerHTML = `${fname} ${lname} (${dateString}): <br> <br> ${commentText}`;
+        commentList.appendChild(li);
+
+        // Sauvegarder le commentaire dans le localStorage
+        storedComments.push(comment);
+        localStorage.setItem("comments", JSON.stringify(storedComments));
+
+        commentCount++;
+        updateCommentCount();
+
+        // Effacer les champs du formulaire après l'envoi
+        document.getElementById("fname").value = "";
+        document.getElementById("lname").value = "";
+        document.getElementById("comment").value = "";
+
+        return false;
+    }
+
 
         function updateLikeCount() {
             document.getElementById("like-count").textContent = likeCount + " Likes";
@@ -163,6 +189,21 @@
         function updateCommentCount() {
             document.getElementById("comment-count").textContent = commentCount + " Commentaires";
         }
+
+        // Charger les commentaires stockés lors du chargement de la page
+        window.onload = function () {
+        storedComments.forEach(function (comment) {
+            var commentList = document.getElementById("comment-list");
+            var li = document.createElement("li");
+            li.innerHTML = `<strong>${comment.fname} ${comment.lname}</strong> (${comment.date}): ${comment.commentText}`;
+            commentList.appendChild(li);
+        });
+
+        commentCount = storedComments.length;
+        updateCommentCount();
+    };
+
+
 
     </script>
 
@@ -174,6 +215,10 @@
             background-color: #f5f5f5;
             margin: 0;
             padding: 0;
+        }
+
+        .hearth  {
+            font-size: 1.5rem;
         }
 
         .container {
@@ -194,6 +239,13 @@
             flex-direction: column; 
         }
 
+        .article-info {
+            display: flex;
+            justify-content: space-between; 
+            padding-right: 88%;
+            align-items: center;
+            margin-bottom: 10px;
+        }
 
 
         .titre {
@@ -249,7 +301,10 @@
             display: block;
             margin-bottom: 7px;
 
+        }
 
+        .textarea{
+            color: grey;
         }
 
         .comment-list {
@@ -258,9 +313,17 @@
         }
 
         .comment-list li {
-            border-bottom: 5px solid #5A3A31;
+            border: 10px solid #CEC4C2;
+            background-color: #CEC4C2;
             margin-bottom: 10px;
             padding-bottom: 10px;
+            margin-right: 48%;
+        }
+
+        .comment-list li strong {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
         }
 
         .comment-btn {
@@ -268,14 +331,26 @@
             color: white;
             padding: 10px 15px;
             border: none;
-            border-radius: 5px;
+            border-radius: 4px;
             cursor: pointer;
             font-size: 16px;
         }
 
+        /* hover */
+
         .comment-btn:hover {
             background-color: #000;
         }
+
+        .name-fields {
+            display: flex;
+        }
+
+        .name-field {
+           padding-right: 3rem;
+        }
+
+
     </style>
 </body>
 </html>
