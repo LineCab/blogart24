@@ -1,6 +1,4 @@
 <?php
-
-<<<<<<< HEAD
 // prenomMemb - nomMemb - pseudoMemb - passMemb - eMailMemb - dtCreaMemb
 // numMemb - dtMajMemb - accordMemb - numStat
 
@@ -20,7 +18,7 @@ $numStat = ctrlSaisies($_POST['numStat']);
 sql_insert('ARTICLE', '`prenomMemb`, `nomMemb`, `pseudoMemb`, `passMemb`, `eMailMemb`, `dtCreaMemb`, `accordMemb`, `numStat`', "'$prenomMemb', '$nomMemb', '$pseudoMemb', '$passMemb', '$eMailMemb', '$dtCreaMemb', '$accordMemb', '$numStat'");
 
 header('Location: ../../views/backend/articles/list.php');
-=======
+
 require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 require_once '../../functions/ctrlSaisies.php';
 
@@ -78,4 +76,3 @@ $conn->close();
 // Redirection vers la liste des statuts
 header('Location: ../../views/backend/statuts/list.php');
 ?>
->>>>>>> bad7c6ebd62e3eb89dd1f4bca4fadc12091a836f
