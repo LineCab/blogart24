@@ -15,29 +15,19 @@
 require_once 'config.php';
 ?>
 <body>
-<nav class="navbar navbar-expand-lg bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Blog'Art 24</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary justify-content-between">
+    <img src="/src/images/Logo.png" alt="Logo" width="158.465px" height="128.826px">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/views/backend/dashboard.php">Admin</a>
-        </li>
-      </ul>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="../../../index.php">Accueil</a>
+            <a class="nav-link" href="/views/frontend/articles/acteurs.php">Acteurs</a>
+            <a class="nav-link" href="/views/frontend/articles/events.php">Evènements</a>
+            <a class="nav-link" href="#">Où les trouver ?</a>
+        </div>
     </div>
-    <!--right align-->
-    <div class="d-flex">
-      <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Rechercher sur le site…" aria-label="Search" >
-      </form>
-      <a class="btn btn-primary m-1" href="/views/backend/security/login.php" role="button">Login</a>
-      <a class="btn btn-dark m-1" href="/views/backend/security/signup.php" role="button">Sign up</a>
-    </div>
-  </div>
-</nav>
+    <a href="login.php"><img src="/src/images/Connection.png" alt="Logo" width="40" height="40" class="img-connection"></a>
+  </nav>
+</body>

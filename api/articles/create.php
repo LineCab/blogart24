@@ -14,7 +14,6 @@ $libSsTitr2Art = ctrlSaisies($_POST['libSsTitr2Art']);
 $parag3Art = bbCodeToHtml(ctrlSaisies($_POST['parag3Art']));
 $libConclArt = bbCodeToHtml(ctrlSaisies($_POST['libConclArt']));
 
-
 if (isset($_FILES['urlPhotArt'])) {
     $uploadDir = $_SERVER['DOCUMENT_ROOT'] . '/src/uploads/';
     $urlPhotArt = $_FILES['urlPhotArt']['name'];
