@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Article</title>
-    <link rel="stylesheet" href="src/css/style.css" />
+    <title>Article 1</title>
+
+<!-- rajouter le link css -->
+
     <link rel="stylesheet" href="views/backend/articles/create.php">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header> 
-        <!-- rajouter le header -->
+       <!-- rajouter le header -->
     </header>
 
     <section class="article1">
@@ -136,6 +138,32 @@
 
         let storedComments = JSON.parse(localStorage.getItem("comments")) || [];
 
+        // suppression des comm a la refresh de la page
+        // Fonction pour supprimer les commentaires sauvegardés
+        function clearStoredComments() {
+            localStorage.removeItem("comments");
+        }
+
+        // Charger les commentaires stockés lors du chargement de la page
+        window.onload = function () {
+            // Réinitialiser les commentaires sauvegardés (décommentez cette ligne si vous voulez supprimer les commentaires à chaque chargement)
+            // clearStoredComments();
+
+            storedComments.forEach(function (comment) {
+                var commentList = document.getElementById("comment-list");
+                var li = document.createElement("li");
+                li.innerHTML = `<strong>${comment.fname} ${comment.lname}</strong> (${comment.date}): ${comment.commentText}`;
+                commentList.appendChild(li);
+            });
+
+            commentCount = storedComments.length;
+            updateCommentCount();
+        };
+
+
+
+        // 
+
         function likeArticle() {
             likeCount++;
             updateLikeCount();
@@ -198,6 +226,17 @@
             li.innerHTML = `<strong>${comment.fname} ${comment.lname}</strong> (${comment.date}): ${comment.commentText}`;
             commentList.appendChild(li);
         });
+
+           // Réinitialiser les commentaires sauvegardés (décommentez cette ligne si vous voulez supprimer les commentaires à chaque chargement)
+            clearStoredComments();
+
+        storedComments.forEach(function (comment) {
+            var commentList = document.getElementById("comment-list");
+            var li = document.createElement("li");
+            li.innerHTML = `<strong>${comment.fname} ${comment.lname}</strong> (${comment.date}): ${comment.commentText}`;
+            commentList.appendChild(li);
+        });
+
 
         commentCount = storedComments.length;
         updateCommentCount();
@@ -349,8 +388,30 @@
         .name-field {
            padding-right: 3rem;
         }
+  @media only screen and (max-width: 600px) {
+        .para_img {
+            flex-direction: column-reverse; 
+        }
+
+        .para_img img {
+            max-width: 100%; 
+            margin: 0; 
+        }
+
+        .para_img p {
+            margin-top: 20px; 
+        }
+    }
+
+    /* Vos styles existants */
+
+</style>
 
 
-    </style>
+
+<footer>
+<!-- rajouter le footer -->
+</footer>
+
 </body>
 </html>
