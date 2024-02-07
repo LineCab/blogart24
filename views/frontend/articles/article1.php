@@ -1,3 +1,6 @@
+<?php
+require_once 'header.php';
+?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -465,6 +468,9 @@
 
 </style>
 
+<footer>
+<?php require_once 'footer.php'; ?>
+</footer>
 
 </body>
 </html>
