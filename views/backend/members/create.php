@@ -4,16 +4,13 @@ $membres = sql_select('MEMBRE', '*');
 $statuts = sql_select('STATUT', '*');
 ?>
 
-<!-- prenomMemb - nomMemb - pseudoMemb - passMemb - eMailMemb - dtCreaMemb 
-    numMemb - dtMajMemb - accordMemb - numStat -->
-
 <div class="container">
     <div class="row">
         <div class="col-md-12">
             <h1>Création d'un membre</h1>
         </div>
         <div class="col-md-12">
-            <form action="<?php echo ROOT_URL . '/api/members/create.php' ?>" method="post" enctype="multipart/form-data">
+            <form action="<?php echo ROOT_URL . '/api/members/create.php' ?>" id="form-recaptcha" method="post" enctype="multipart/form-data">
                 <div class="form-group">
                     <label for="pseudoMemb">Pseudo (non modifiable)</label>
                     <input id="pseudoMemb" name="pseudoMemb" class="form-control" type="text" autofocus="autofocus" />
@@ -79,6 +76,11 @@ $statuts = sql_select('STATUT', '*');
                         <?php endforeach; ?>
                     </select>
                 </div>
+                <!-- <div class="form-group">
+                    <div class="form-group mt-2">
+                        <button class="g-recaptcha btn btn-primary" data-sitekey="6LdQWmopAAAAAE0tYo7g6WU0cr5IGUXoke253uka" data-callback='onSubmit' data-action='submit'>Submit</button>
+                    </div>
+                </div> -->
                 <br>
                 <div class="form-group mt-2">
                     <button type="submit" class="btn btn-primary">Confirmer la création</button>
@@ -89,6 +91,11 @@ $statuts = sql_select('STATUT', '*');
 </div>
 
 <script>
+    function onSubmit(token) {
+    document.getElementById("form-recaptcha").submit();
+}
+</script>
+<script>
 function togglePasswordVisibility(passId, visuId) {
     var passInput = document.getElementById(passId);
     var visuCheckbox = document.getElementById(visuId);
@@ -98,5 +105,4 @@ function togglePasswordVisibility(passId, visuId) {
         passInput.type = 'password';
     }
 }
-
 </script>
