@@ -19,7 +19,7 @@ if(isset($_GET['numMemb'])){
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Création d'un membre</h1>
+            <h1>Modification d'un membre</h1>
         </div>
         <div class="col-md-12">
             <form action="<?php echo ROOT_URL . '/api/members/update.php?numMemb='.$numMemb ?>" method="post" enctype="multipart/form-data">

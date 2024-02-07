@@ -109,7 +109,7 @@
            
              <div class="article-info">
                 <div class="like" id="like-section">
-                    <button onclick="likeArticle()"> <p id="like-count">0 <i class='bx bx-heart'></i></p></button>
+                    <button onclick="likeArticle()"> <p id="like-count2"> 0 <i class='bx bx-heart'></i></p></button>
                 </div>
             </div>               
                 
@@ -138,7 +138,9 @@
 
 <script>
         let likeCount = 0;
+        let likeCount2 = 0;
         let commentCount = 0;
+        
 
         // Pour récupérer les commentaires stockés dans le localStorage
         let storedComments = JSON.parse(localStorage.getItem("comments")) || [];
@@ -155,6 +157,7 @@
             commentCount = storedComments.length;
             updateCommentCount();
         };
+
 
         function likeArticle() {
             likeCount++;
@@ -193,13 +196,16 @@
 
         function updateLikeCount() {
             document.getElementById("like-count").textContent = likeCount + " Likes";
+            document.getElementById("like-count2").textContent = likeCount + " Likes";
         }
 
         function updateCommentCount() {
-            document.getElementById("comment-count").textContent = commentCount + " Commentaires";
+            document.getElementById("comment-count").textContent = commentCount + " Commentaires";// en haut
         }
     </script>
-    <style>
+
+<style>
+
 
         body {
             font-family: Arial, sans-serif;
@@ -347,28 +353,62 @@
             padding-right: 3rem;
         }
 
-
-    @media only screen and (max-width: 600px) {
-        .para_img {
-            flex-direction: column-reverse; 
+        button {
+        background: #fff;
+        border: unset;
+        outline: 0;
+        font-size: 18px;
+        cursor: pointer;
+        color: #65676b;
+        padding: 5px 10px;
         }
 
-        .para_img img {
-            max-width: 100%; 
-            margin: 0; 
+        button.liked {
+        color: #0571ed;
+        }
+        
+        button.liked i{
+        animation: anim 0.5s ease-in-out;
+        -webkit-animation: anim 0.5s ease-in-out;
+        }
+        
+        @keyframes anim {
+        100% {
+            transform: rotate(-15deg) scale(1.3);
+            -webkit-transform: rotate(-15deg) scale(1.3);
+            -moz-transform: rotate(-15deg) scale(1.3);
+            -ms-transform: rotate(-15deg) scale(1.3);
+            -o-transform: rotate(-15deg) scale(1.3);
+            filter: blur(0.5px);
+            -webkit-filter: blur(0.5px);
+            }
         }
 
-        .para_img p {
-            margin-top: 20px; 
+        @media only screen and (max-width: 600px) {
+            .para_img {
+                flex-direction: column-reverse; 
+            }
+
+            .para_img img {
+                max-width: 100%; 
+                margin: 0; 
+            }
+
+            .para_img p {
+                margin-top: 20px; 
+            }
         }
-    }
+
+
+
+
 
 </style>
 
 
 
 <footer>
-<!-- rajouter le footer -->
+
 </footer>
 
 </body>
