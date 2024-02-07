@@ -1,3 +1,7 @@
+<?php
+require_once '../../header.php';
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -162,7 +166,7 @@
         
             <div class="article-info">
                 <div class="like" id="like-section">
-                    <button onclick="likeArticle()"> <p id="like-count">0 <i class='bx bx-heart'></i></p></button>
+                    <button onclick="likeArticle()"> <p id="like-count2">0 <i class='bx bx-heart'></i></p></button>
                 </div>
             </div>               
                 
@@ -246,6 +250,7 @@
 
         function updateLikeCount() {
             document.getElementById("like-count").textContent = likeCount + " Likes";
+            document.getElementById("like-count2").textContent = likeCount + " Likes";
         }
 
         function updateCommentCount() {
@@ -422,6 +427,7 @@
 
 <footer>
 <!-- rajouter le footer -->
+<?php require_once '../../footer.php'; ?>
 </footer>
 
 </body>
