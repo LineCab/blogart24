@@ -32,13 +32,15 @@
 
             <div class="para1">
                 <p>
-                Aujourd’hui on vous a brassé un article pour vous préparer au BLIB le festival des Bières Libres et Indépendantes à Bordeaux qui aura lieu en avril. 
-                De l’histoire ancestrale de la bière, en passant par les dernières tendances mousseuses, on vous dévoile même notre recette secrète qui vous garantira la victoire au concours BRASSAM. 
+                Aujourd’hui on vous a <strong>brassé un article</strong> pour vous préparer au <b>BLIB le festival des Bières Libres et Indépendantes à Bordeaux</b> qui aura lieu en avril. 
+                De l’histoire ancestrale de la bière, en passant par les dernières tendances mousseuses, on vous dévoile même notre recette secrète qui vous garantira la victoire au <b>concours BRASSAM</b>. 
                 </p>
 
-                <p>Après ça, vous serez un as de la bulle !</p>
+                <h4>Après ça, vous serez un as de la bulle !</h4>
 
             </div>
+
+            <br>
 
             <div class="para2">
 
@@ -57,6 +59,8 @@
 
             </div>
 
+            <br>
+
             <h2>Un culte ramené au goût du jour </h2>
 
             <div class="para3">
@@ -74,29 +78,70 @@
                 <br>
                 Nous, on les imaginerait bien alignées sur la commode tel des objets de collection. 
 
-                <br><br>
-                Et si brasser sur la lune c’était écologique ? 
-                <br>Non, ce n’est pas la nouvelle marque de bière lancée par Thomas Pesquet (même si on aurait aimé), mais ce sont les bières biologiques brassées à Bordeaux, sur les rives du port de la lune. 
+                <br>
+               <h4> Et si brasser sur la lune c’était écologique ? </h4>
+                 Non, ce n’est pas la nouvelle marque de bière lancée par Thomas Pesquet (même si on aurait aimé), mais ce sont les bières biologiques brassées à Bordeaux, sur les rives du port de la lune. 
                 <br>On y retrouve un concept de brassage écologique : une installation géothermique et d'autres technologies mises en place qu’ils vous expliqueront sûrement mieux que nous sur leur site web.
                 <br>Pour nous ce qui compte c’est son goût unique et son engagement écologique ! 
                 </p>
 
             </div>
-        
-            <div class="para_img">
+
+            <h4>Pour nos amateurs de bières sans alcool, pas d'inquiétude ! </h4>    
+            <div class="para_img">   
+            
             <img src="https://imgs.search.brave.com/WjbyNLY9GrZYP4Gc-1pCRucmGIM-yu6uXSj-7KEyLmI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/Y29tcHRvaXJkdXBv/aXRvdS5mci93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMi8xMi9i/aWVyZXMtY29tcHRv/aXJkdXBvaXRvdS0x/MDAweDY2NS5qcGc" alt="bieres">
         
                 <p>
-
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Etiam eu turpis molestie, dictum est a, mattis tellus. 
-                Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. 
-                Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
-                Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. 
-                Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.
             
+                “La Brasserie Parallèle a aussi pensé à vous en confectionnant une large gamme de bières au… kéfir de fruits. 
+                <br>Sur la même base de fermentation, ici, c’est le kéfir l’élément clé.
+                <br>Sucrées et rafraîchissantes, les bières parallèles sont le parfait mélange entre une limonade et une bière blanche ! 
+                <br>On se passera donc de citer des mentions légales pour vous souhaiter une bonne dégustation sans modération.
+
                 </p>
 
+            </div>
+
+            <br>
+            <div class="para4">
+                <h2>Trouver bière à son goût</h2>
+                <h4>
+                On continue dans notre lancée d’innovations en vous proposant nos 3 goûts de bières insolites préférés : 
+                </h4>
+                Et en première position, si vous êtes plutôt sucré et ambré, c’est chez AZIMUT que l’on vous redirige. 
+                <br>Grâce à leur collaboration avec un artisan chocolatier nommé Hasnâa, AZIMUT permet la création d’une bière au cacao : gourmande, aux notes réconfortantes et chaleureuses. 
+                <br>Nous, on recommande plutôt cette bière pour les temps frais, mais si en plein été une envie cacaoté vous viendrait, vous pourrez maintenant la consommer ! 
+
+                </p>
+
+                <p>
+                Saviez vous que la verveine permet de faciliter la digestion et soulage l’estomac ? 
+                <br>Eh bien, si vous étiez au courant de cette information, je parie que vous ne savez pas que la Bordeaux Beer Factory propose une bière à la Verveine ! (Haha, on vous a eu là !). 
+                <br>En plus de ses bonnes vertues, elle remporte la médaille en 2022 de la bière blanche. (Oui, on vous recommande toujours de la qualité). 
+                <br>Alors, si en 2024, la tisane commence à être démodée, pourquoi ne pas consommer la verveine sous forme fermentée ? 
+
+                </p>
+
+                <p>
+                Et notre préférée c’est …
+                <br>Bon, d’accord, on vous dit la vérité, celle-là, elle a pas été encore créée. 
+                <br>MAIS, on aimerait vraiment la goûter. Alors, brasseurs amateurs, laissez nous vous la présenter, la fameuse bière au cannelé ! 
+                <br>En vue de l’arrivée du concours BRASSAM bordelais, on s’est creusé la tête pour imaginer une bière au goût inédit, qui à coup sûr vous ferait gagner. 
+                <br>Et pourquoi pas représenter LA pâtisserie bordelaise sous une autre forme. Une bière gourmande, qui étonnerait les jurys a coup sûr ! 
+                <br>Pour cela, pas d’inquiétude, on vous a mijoté une recette originale imaginée par nos talents à GARDENA. 
+                <br>On ne vous garantit rien, on vous propose juste l’idée du siècle..  
+                <br>(D’ailleurs, faudrait songer à déposer un brevet, non?) 
+
+                </p>
+
+                <p>
+                Maintenant, on espère vous voir débarquer au BLIB avec pleins de connaissances à partager à vos proches pour être le roi de la bulle ! 
+                <br>Et nous, on se retrouve dans 2 semaines pour un nouvel article. 
+                <br>Cheers, 
+                <br><br>Gardena. 
+
+                </p>
             </div>
 
             <div class="like">
@@ -109,7 +154,7 @@
            
              <div class="article-info">
                 <div class="like" id="like-section">
-                    <button onclick="likeArticle()"> <p id="like-count">0 <i class='bx bx-heart'></i></p></button>
+                    <button onclick="likeArticle()"> <p id="like-count2"> 0 <i class='bx bx-heart'></i></p></button>
                 </div>
             </div>               
                 
@@ -138,7 +183,9 @@
 
 <script>
         let likeCount = 0;
+        let likeCount2 = 0;
         let commentCount = 0;
+        
 
         // Pour récupérer les commentaires stockés dans le localStorage
         let storedComments = JSON.parse(localStorage.getItem("comments")) || [];
@@ -155,6 +202,7 @@
             commentCount = storedComments.length;
             updateCommentCount();
         };
+
 
         function likeArticle() {
             likeCount++;
@@ -193,13 +241,16 @@
 
         function updateLikeCount() {
             document.getElementById("like-count").textContent = likeCount + " Likes";
+            document.getElementById("like-count2").textContent = likeCount + " Likes";
         }
 
         function updateCommentCount() {
-            document.getElementById("comment-count").textContent = commentCount + " Commentaires";
+            document.getElementById("comment-count").textContent = commentCount + " Commentaires";// en haut
         }
     </script>
-    <style>
+
+<style>
+
 
         body {
             font-family: Arial, sans-serif;
@@ -347,28 +398,62 @@
             padding-right: 3rem;
         }
 
-
-    @media only screen and (max-width: 600px) {
-        .para_img {
-            flex-direction: column-reverse; 
+        button {
+        background: #fff;
+        border: unset;
+        outline: 0;
+        font-size: 18px;
+        cursor: pointer;
+        color: #65676b;
+        padding: 5px 10px;
         }
 
-        .para_img img {
-            max-width: 100%; 
-            margin: 0; 
+        button.liked {
+        color: #0571ed;
+        }
+        
+        button.liked i{
+        animation: anim 0.5s ease-in-out;
+        -webkit-animation: anim 0.5s ease-in-out;
+        }
+        
+        @keyframes anim {
+        100% {
+            transform: rotate(-15deg) scale(1.3);
+            -webkit-transform: rotate(-15deg) scale(1.3);
+            -moz-transform: rotate(-15deg) scale(1.3);
+            -ms-transform: rotate(-15deg) scale(1.3);
+            -o-transform: rotate(-15deg) scale(1.3);
+            filter: blur(0.5px);
+            -webkit-filter: blur(0.5px);
+            }
         }
 
-        .para_img p {
-            margin-top: 20px; 
+        @media only screen and (max-width: 600px) {
+            .para_img {
+                flex-direction: column-reverse; 
+            }
+
+            .para_img img {
+                max-width: 100%; 
+                margin: 0; 
+            }
+
+            .para_img p {
+                margin-top: 20px; 
+            }
         }
-    }
+
+
+
+
 
 </style>
 
 
 
 <footer>
-<!-- rajouter le footer -->
+
 </footer>
 
 </body>
