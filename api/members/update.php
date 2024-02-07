@@ -37,8 +37,7 @@ if (isset($_POST['email1']) && isset($_POST['email2'])) {
     $error = true;
 }
 
-$mdp1 = $_POST['passMemb1'];
-$mdp2 = $_POST['passMemb2'];
+
 if (!empty($_POST['passMemb1']) && !empty($_POST['passMemb2'])) {
 
     $mdp1 = $_POST['passMemb1'];
@@ -55,10 +54,11 @@ if (!empty($_POST['passMemb1']) && !empty($_POST['passMemb2'])) {
         die("Les mots de passe ne correspondent pas.");
         $error = true;
     }
+
+    $mdpHash = password_hash($mdp1, PASSWORD_DEFAULT);
     
-}else{
-    die("Veuillez saisir un mot de passe");
-    $error = true;
+    sql_update('Membre', "`passMemb`='$mdpHash'", "numMemb = $numMemb");
+    
 }
 
 $numStat = $_POST['numStat'];
@@ -69,7 +69,7 @@ if (!$error){
 
     $mdpHash = password_hash($mdp1, PASSWORD_DEFAULT);
     
-    sql_update('Membre', "`dtMajMemb`='$dtMajMemb', `nomMemb`='$nom', `prenomMemb`='$prenom', `passMemb`='$mdpHash', `eMailMemb`='$email1', `numStat`='$numStat'", "numMemb = $numMemb");
+    sql_update('Membre', "`dtMajMemb`='$dtMajMemb', `nomMemb`='$nom', `prenomMemb`='$prenom', `eMailMemb`='$email1', `numStat`='$numStat'", "numMemb = $numMemb");
 
 }else{
     die("erreur");
