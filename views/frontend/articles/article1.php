@@ -167,8 +167,6 @@ require_once '../../../header.php';
             </div>
         </form>
 
-        
-
             <!-- Liste des comm -->
             <ul id="comment-list" class="comment-list">
                 <!-- commentaires sauvegarder ici -->

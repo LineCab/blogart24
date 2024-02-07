@@ -18,6 +18,7 @@ $comments = sql_select("COMMENT", "*", "numArt = $numArt");
                     <tr>
                         <th>Pseudo</th>
                         <th>Date</th>
+                        <th>Date dernière modif</th>
                         <th>Contenu</th>
                     </tr>
                 </thead>
@@ -30,10 +31,11 @@ $comments = sql_select("COMMENT", "*", "numArt = $numArt");
                         <tr>
                             <td><?php echo($pseudos['pseudoMemb']); }?></td>
                             <td><?php echo($comment['dtCreaCom']); ?></td>
+                            <td><?php echo($comment['dtModCom']); ?></td>
                             <td><?php echo($comment['libCom']); ?></td>
                             <td>
-                                <a href="edit.php?numMemb=<?php echo($comment['numCom']); ?>" class="btn btn-primary">Edit</a>
-                                <a href="delete.php?numMemb=<?php echo($comment['numCom']); ?>" class="btn btn-danger">Delete</a>
+                                <a href="edit.php?numCom=<?php echo $comment['numCom']; ?>" class="btn btn-primary">Edit</a>
+                                <a href="delete.php?numCom=<?php echo $comment['numCom']; ?>" class="btn btn-danger">Delete</a>
                             </td>
                         </tr>
                     <?php }?>
