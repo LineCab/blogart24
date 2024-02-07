@@ -6,7 +6,7 @@ require_once '../../functions/getExistPseudo.php';
 
 //Fonctionne
 $error = false;
-if (!empty($_POST['nomMemb']) && !empty($_POST['prenomMemb'])) {
+if (!empty($_POST['nomMemb']) || !empty($_POST['prenomMemb'])) {
     $nom = ctrlSaisies($_POST['nomMemb']);
     $prenom = ctrlSaisies($_POST['prenomMemb']);
 }else{
