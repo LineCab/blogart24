@@ -5,7 +5,7 @@ include '../../../header.php';
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Création d'un membre</h1>
+            <h1>Se connecter</h1>
         </div>
         <div class="col-md-12">
             <form action="<?php echo ROOT_URL . '/api/security/login.php' ?>" id="form-recaptcha" method="post" enctype="multipart/form-data">
