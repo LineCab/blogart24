@@ -38,11 +38,17 @@
       color: #0d0d0d;
     }
 
-    p {
+    p{
       text-align: left;
       font-size: 14px;
       color: #0d0d0d;
       margin-bottom: 10px;
+    }
+
+    img{
+        align-items: center;
+        padding-left: 5rem;
+
     }
 
     /* STRUCTURE */
@@ -120,10 +126,21 @@
         
     }
 
-    .envoie{
-        align-items: center;
-        text-align: center;
+    .envoie {
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
     }
+
+    .centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }
+
+
+
 
     </style>
   </head>
@@ -133,38 +150,38 @@
     <section class="connexion">
 
       <div class="login">
-      <a href="http://blogart24/views/frontend/articles/article1.php"><i class='bx bx-chevron-left'></i> Retour </a>
-        <br>
-        <br>
-        <img src="/src/images/Logo.png" alt="Logo" width="158.465px" height="128.826px">
-        <br>
+        <a href="http://blogart24/views/frontend/articles/article1.php"><i class='bx bx-chevron-left'></i> Retour </a>
+            <br>
+            <br>
+            <img src="/src/images/Logo.png" alt="Logo" width="158.465px" height="128.826px">
+            <br>
 
-        <h1>Se connecter</h1>
-        <p>Petite phrase de début pour donner envie</p>
-    <form method="post" action="login.php">
-          <p><input type="text" name="PseudoMemb" value="" placeholder="nom.prenom@mail.com"></p>
-          <p><input type="password" name="passMemb"id="mdp" value="" placeholder="* * * * *"></p>
-        
-          <!-- afficher mdp -->
-          <div class="form-group">
-                    <input type="checkbox" id="visuMdp2" name="visuMdp" onchange="togglePasswordVisibility('mdp', 'visuMdp2')">
-                    <label for="visuMdp2">Afficher le mot de passe</label>
-          </div>
+            <h1>Se connecter</h1>
+            <p>Petite phrase de début pour donner envie</p>
+        <form method="post" action="login.php">
+               
+                <p><input type="text" name="PseudoMemb" value="" placeholder="nom.prenom@mail.com"></p>
+                <p><input type="password" name="passMemb"id="mdp" value="" placeholder="* * * * *"></p>
+                
+                <!-- afficher mdp -->
+                <div class="form-group">
+                        <input type="checkbox" id="visuMdp2" name="visuMdp" onchange="togglePasswordVisibility('mdp', 'visuMdp2')">
+                        <label for="visuMdp2">Afficher le mot de passe</label>
+                </div>
 
-          <div class="envoie">
-              <p class="submit"><input type="submit" name="commit" value="Se connecter"></p>
+                <div class="envoie centered">
+                    <p><input type="submit" name="commit" value="Se connecter"></p>
+                </div>
+                                    
+                <div class="signup">
+                        <br>
+                        
+                        <p>Pas encore de compte ?</p> 
+                        <a class="singup" href="signup">Inscrivez-vous</a>
+                    
+                </div>
 
-          </div>
-             
-          <div class="signup">
-                <br>
-
-                <p>Pas encore de compte ?</p> 
-                <a class="singup" href="signup">Inscrivez-vous</a>
-            
-            </div>
-
-    </form>
+        </form>
 
         
     
