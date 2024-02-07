@@ -14,6 +14,7 @@
 <?php
 //load config
 require_once 'config.php';
+session_start();
 ?>
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary justify-content-between">
@@ -29,6 +30,14 @@ require_once 'config.php';
             <a class="nav-link" href="#">Où les trouver ?</a>
         </div>
     </div>
-    <a href="/views/backend/security/login.php"><img src="/src/images/Connection.png" alt="Logo" width="40" height="40" class="img-connection"></a>
+    <?php
+
+      if(isset($_SESSION['logged']) && $_SESSION['logged'] === true){ 
+        echo '<a class="btn btn-danger m-1" href="/api/security/deco.php" role="button">Déconnexion</a>';
+      } else {
+        echo'<a class="btn btn-primary m-1" href="/views/backend/security/login.php" role="button">Login</a>';
+      }
+      ?>
+      <!-- <a href="/views/backend/security/login.php"><img src="/src/images/Connection.png" alt="Logo" width="40" height="40" class="img-connection"></a> -->
   </nav>
 </body>

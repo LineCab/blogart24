@@ -13,21 +13,14 @@ if (get_ExistPseudo($pseudo)){
     if (password_verify($pass, $passMembHash)) {
 
         session_start();
-        $_SESSION['logged_in'] = true;
+        $_SESSION['logged'] = true;
         $_SESSION['username'] = $pseudo;
-        ?>
-
-        <script>
-            window.history.go(-2);
-        </script>
-
-        <?php
+        
+        header('Location: ../../index.php');
 
     } else {
         die("Compte inexistant");
-        //Afficher erreur
     }
 }else {
     die("Compte inexistant");
-    //Afficher erreur
 }

@@ -1,5 +1,5 @@
 <?php
-require_once '../../header.php';
+require_once '../../../header.php';
 ?>
 
 <!DOCTYPE html>
@@ -28,11 +28,8 @@ require_once '../../header.php';
     <link rel="stylesheet" href="views/backend/articles/create.php">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body>
-    <header> 
-    <!-- rajouter le header -->
-    </header>
 
+<body>
     <section class="article1">
         <div class="container">
             <div class="titre">
@@ -76,31 +73,24 @@ require_once '../../header.php';
                 </p>  
 
             </div>
-
             <br>
-
             <h2>Un culte ramené au goût du jour </h2>
-
             <div class="para3">
-
-            
-            
                 <p>
-                    Si autrefois, la bière était synonyme d'authenticité, les artisans brasseurs d'aujourd'hui se lancent dans l'innovation, explorant de nouveaux goûts et techniques pour se distinguer.
-                <br> À Bordeaux, nos artisans, à travers des bières au design soigné ou aux saveurs inédites, ne vous laissent pas le temps de vous ennuyer !
+                        Si autrefois, la bière était synonyme d'authenticité, les artisans brasseurs d'aujourd'hui se lancent dans l'innovation, explorant de nouveaux goûts et techniques pour se distinguer.
+                    <br> À Bordeaux, nos artisans, à travers des bières au design soigné ou aux saveurs inédites, ne vous laissent pas le temps de vous ennuyer !
+                    <br><br>
+                    Des étiquettes stylisées sur vos bières ? Pas de soucis, l’équipe d'”Effet Papillon” s'en occupe.
+                    <br>
+                    Antoine, César et Cyprien, allient graphisme et brasserie en proposant des illustrations personnalisées avec des graphismes aux traits colorés. 
+                    <br>
+                    Nous, on les imaginerait bien alignées sur la commode tel des objets de collection. 
 
-                <br><br>
-                Des étiquettes stylisées sur vos bières ? Pas de soucis, l’équipe d'”Effet Papillon” s'en occupe.
-                <br>
-                Antoine, César et Cyprien, allient graphisme et brasserie en proposant des illustrations personnalisées avec des graphismes aux traits colorés. 
-                <br>
-                Nous, on les imaginerait bien alignées sur la commode tel des objets de collection. 
-
-                <br>
-               <h4> Et si brasser sur la lune c’était écologique ? </h4>
-                 Non, ce n’est pas la nouvelle marque de bière lancée par Thomas Pesquet (même si on aurait aimé), mais ce sont les bières biologiques brassées à Bordeaux, sur les rives du port de la lune. 
-                <br>On y retrouve un concept de brassage écologique : une installation géothermique et d'autres technologies mises en place qu’ils vous expliqueront sûrement mieux que nous sur leur site web.
-                <br>Pour nous ce qui compte c’est son goût unique et son engagement écologique ! 
+                    <br>
+                    <h4> Et si brasser sur la lune c’était écologique ? </h4>
+                    Non, ce n’est pas la nouvelle marque de bière lancée par Thomas Pesquet (même si on aurait aimé), mais ce sont les bières biologiques brassées à Bordeaux, sur les rives du port de la lune. 
+                    <br>On y retrouve un concept de brassage écologique : une installation géothermique et d'autres technologies mises en place qu’ils vous expliqueront sûrement mieux que nous sur leur site web.
+                    <br>Pour nous ce qui compte c’est son goût unique et son engagement écologique ! 
                 </p>
 
             </div>
@@ -108,7 +98,7 @@ require_once '../../header.php';
             <h4>Pour nos amateurs de bières sans alcool, pas d'inquiétude ! </h4>    
             <div class="para_img">   
             
-            <img src="https://imgs.search.brave.com/WjbyNLY9GrZYP4Gc-1pCRucmGIM-yu6uXSj-7KEyLmI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/Y29tcHRvaXJkdXBv/aXRvdS5mci93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMi8xMi9i/aWVyZXMtY29tcHRv/aXJkdXBvaXRvdS0x/MDAweDY2NS5qcGc" alt="bieres">
+                <img src="https://imgs.search.brave.com/WjbyNLY9GrZYP4Gc-1pCRucmGIM-yu6uXSj-7KEyLmI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/Y29tcHRvaXJkdXBv/aXRvdS5mci93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMi8xMi9i/aWVyZXMtY29tcHRv/aXJkdXBvaXRvdS0x/MDAweDY2NS5qcGc" alt="bieres">
         
                 <p>
             
@@ -130,142 +120,129 @@ require_once '../../header.php';
                 Et en première position, si vous êtes plutôt sucré et ambré, c’est chez AZIMUT que l’on vous redirige. 
                 <br>Grâce à leur collaboration avec un artisan chocolatier nommé Hasnâa, AZIMUT permet la création d’une bière au cacao : gourmande, aux notes réconfortantes et chaleureuses. 
                 <br>Nous, on recommande plutôt cette bière pour les temps frais, mais si en plein été une envie cacaoté vous viendrait, vous pourrez maintenant la consommer ! 
-
                 </p>
 
                 <p>
-                Saviez vous que la verveine permet de faciliter la digestion et soulage l’estomac ? 
-                <br>Eh bien, si vous étiez au courant de cette information, je parie que vous ne savez pas que la Bordeaux Beer Factory propose une bière à la Verveine ! (Haha, on vous a eu là !). 
-                <br>En plus de ses bonnes vertues, elle remporte la médaille en 2022 de la bière blanche. (Oui, on vous recommande toujours de la qualité). 
-                <br>Alors, si en 2024, la tisane commence à être démodée, pourquoi ne pas consommer la verveine sous forme fermentée ? 
-
+                    Saviez vous que la verveine permet de faciliter la digestion et soulage l’estomac ? 
+                    <br>Eh bien, si vous étiez au courant de cette information, je parie que vous ne savez pas que la Bordeaux Beer Factory propose une bière à la Verveine ! (Haha, on vous a eu là !). 
+                    <br>En plus de ses bonnes vertues, elle remporte la médaille en 2022 de la bière blanche. (Oui, on vous recommande toujours de la qualité). 
+                    <br>Alors, si en 2024, la tisane commence à être démodée, pourquoi ne pas consommer la verveine sous forme fermentée ? 
                 </p>
 
                 <p>
-                Et notre préférée c’est …
-                <br>Bon, d’accord, on vous dit la vérité, celle-là, elle a pas été encore créée. 
-                <br>MAIS, on aimerait vraiment la goûter. Alors, brasseurs amateurs, laissez nous vous la présenter, la fameuse bière au cannelé ! 
-                <br>En vue de l’arrivée du concours BRASSAM bordelais, on s’est creusé la tête pour imaginer une bière au goût inédit, qui à coup sûr vous ferait gagner. 
-                <br>Et pourquoi pas représenter LA pâtisserie bordelaise sous une autre forme. Une bière gourmande, qui étonnerait les jurys a coup sûr ! 
-                <br>Pour cela, pas d’inquiétude, on vous a mijoté une recette originale imaginée par nos talents à GARDENA. 
-                <br>On ne vous garantit rien, on vous propose juste l’idée du siècle..  
-                <br>(D’ailleurs, faudrait songer à déposer un brevet, non?) 
-
+                    Et notre préférée c’est …
+                    <br>Bon, d’accord, on vous dit la vérité, celle-là, elle a pas été encore créée. 
+                    <br>MAIS, on aimerait vraiment la goûter. Alors, brasseurs amateurs, laissez nous vous la présenter, la fameuse bière au cannelé ! 
+                    <br>En vue de l’arrivée du concours BRASSAM bordelais, on s’est creusé la tête pour imaginer une bière au goût inédit, qui à coup sûr vous ferait gagner. 
+                    <br>Et pourquoi pas représenter LA pâtisserie bordelaise sous une autre forme. Une bière gourmande, qui étonnerait les jurys a coup sûr ! 
+                    <br>Pour cela, pas d’inquiétude, on vous a mijoté une recette originale imaginée par nos talents à GARDENA. 
+                    <br>On ne vous garantit rien, on vous propose juste l’idée du siècle..  
+                    <br>(D’ailleurs, faudrait songer à déposer un brevet, non?) 
                 </p>
 
                 <p>
-                Maintenant, on espère vous voir débarquer au BLIB avec pleins de connaissances à partager à vos proches pour être le roi de la bulle ! 
-                <br>Et nous, on se retrouve dans 2 semaines pour un nouvel article. 
-                <br>Cheers, 
-                <br><br>Gardena. 
-
+                    Maintenant, on espère vous voir débarquer au BLIB avec pleins de connaissances à partager à vos proches pour être le roi de la bulle ! 
+                    <br>Et nous, on se retrouve dans 2 semaines pour un nouvel article. 
+                    <br>Cheers, 
+                    <br><br>Gardena. 
                 </p>
             </div>
-
             <div class="like">
                 <p>Vous avez aimé cet article ? N’hésitez pas à liker !</p>
             </div>
-
-        
-
             <!-- div qui permet de voir le nombre de like et de commentaires de l'article -->
-           
              <div class="article-info">
                 <div class="like" id="like-section">
                     <button onclick="likeArticle()"> <p id="like-count2"> 0 <i class='bx bx-heart'></i></p></button>
                 </div>
-            </div>               
-                
+            </div>      
         <div class="container-comment">
 
         <h2><i class='bx bx-message-rounded-dots'></i> COMMENTAIRES</h2>
+        
         <form id="comment-form" class="comment-form" onsubmit="return validateComment()">
-
             <div class="comment-field">
-                
-        <!-- rajoute le code php pour le nom et prenom du commenditaire -->
-
                 <textarea id="comment" name="comment" rows="4" cols="50" required placeholder="Ecrivez votre commentaire ici ..."></textarea>
                 <button type="submit" class="comment-btn">Envoyer</button>
             </div>
         </form>
+
+        
 
             <!-- Liste des comm -->
             <ul id="comment-list" class="comment-list">
                 <!-- commentaires sauvegarder ici -->
             </ul>
         </div>
-    </div>
-
-</section>
+    </section>
 
 <script>
-        let likeCount = 0;
-        let likeCount2 = 0;
-        let commentCount = 0;
-        
+    let likeCount = 0;
+    let likeCount2 = 0;
+    let commentCount = 0;
+    
 
-        // Pour récupérer les commentaires stockés dans le localStorage
-        let storedComments = JSON.parse(localStorage.getItem("comments")) || [];
+    // Pour récupérer les commentaires stockés dans le localStorage
+    let storedComments = JSON.parse(localStorage.getItem("comments")) || [];
 
-        // Charger les commentaires stockés lors du chargement de la page
-        window.onload = function () {
-            storedComments.forEach(function (comment) {
-                var commentList = document.getElementById("comment-list");
-                var li = document.createElement("li");
-                li.innerHTML = `<strong>${comment.fname} ${comment.lname}</strong> (${comment.date}): <br> <br> ${comment.commentText}`;
-                commentList.appendChild(li);
-            });
-
-            commentCount = storedComments.length;
-            updateCommentCount();
-        };
-
-
-        function likeArticle() {
-            likeCount++;
-            updateLikeCount();
-        }
-
-        function validateComment() {
-            var commentText = document.getElementById("comment").value;
-
-            // Ajouter le code pour enregistrer le com côté serveur
-
-            // Ajout du comment à la liste visible
+    // Charger les commentaires stockés lors du chargement de la page
+    window.onload = function () {
+        storedComments.forEach(function (comment) {
             var commentList = document.getElementById("comment-list");
             var li = document.createElement("li");
-
-            // Ajouter la date de publication
-            var currentDate = new Date();
-            var dateString = currentDate.toLocaleDateString(); // juste la date pas l'heure
-
-            // Ajouter la date au comm
-            li.innerHTML = `(${dateString}): <br> <br> ${commentText}`;
+            li.innerHTML = `<strong>${comment.fname} ${comment.lname}</strong> (${comment.date}): <br> <br> ${comment.commentText}`;
             commentList.appendChild(li);
+        });
 
-            // Sauvegarder le comm dans le localStorage
-            storedComments.push({ date: dateString, commentText });
-            localStorage.setItem("comments", JSON.stringify(storedComments));
+        commentCount = storedComments.length;
+        updateCommentCount();
+    };
 
-            commentCount++;
-            updateCommentCount();
 
-            // Effacer le champ du formulaire après l'envoi
-            document.getElementById("comment").value = "";
+    function likeArticle() {
+        likeCount++;
+        updateLikeCount();
+    }
 
-            return false;
-        }
+    function validateComment() {
+        var commentText = document.getElementById("comment").value;
 
-        function updateLikeCount() {
-            document.getElementById("like-count").textContent = likeCount + " Likes";
-            document.getElementById("like-count2").textContent = likeCount + " Likes";
-        }
+        // Ajouter le code pour enregistrer le com côté serveur
 
-        function updateCommentCount() {
-            document.getElementById("comment-count").textContent = commentCount + " Commentaires";// en haut
-        }
-    </script>
+        // Ajout du comment à la liste visible
+        var commentList = document.getElementById("comment-list");
+        var li = document.createElement("li");
+
+        // Ajouter la date de publication
+        var currentDate = new Date();
+        var dateString = currentDate.toLocaleDateString(); // juste la date pas l'heure
+
+        // Ajouter la date au comm
+        li.innerHTML = `(${dateString}): <br> <br> ${commentText}`;
+        commentList.appendChild(li);
+
+        // Sauvegarder le comm dans le localStorage
+        storedComments.push({ date: dateString, commentText });
+        localStorage.setItem("comments", JSON.stringify(storedComments));
+
+        commentCount++;
+        updateCommentCount();
+
+        // Effacer le champ du formulaire après l'envoi
+        document.getElementById("comment").value = "";
+
+        return false;
+    }
+
+    function updateLikeCount() {
+        document.getElementById("like-count").textContent = likeCount + " Likes";
+        document.getElementById("like-count2").textContent = likeCount + " Likes";
+    }
+
+    function updateCommentCount() {
+        document.getElementById("comment-count").textContent = commentCount + " Commentaires";// en haut
+    }
+</script>
 
 <style>
 
@@ -459,11 +436,6 @@ require_once '../../header.php';
                 margin-top: 20px; 
             }
         }
-
-
-
-
-
 </style>
 </body>
 </html>
