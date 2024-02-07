@@ -39,9 +39,10 @@
     }
 
     p {
-      text-align: center;
+      text-align: left;
       font-size: 14px;
       color: #0d0d0d;
+      margin-bottom: 10px;
     }
 
     /* STRUCTURE */
@@ -54,7 +55,7 @@
       max-width: 450px;
       position: relative;
       box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
-      text-align: center;
+      text-align: left;
     }
 
     /* FORM TYPOGRAPHY*/
@@ -65,7 +66,6 @@
       border: none;
       color: #0d0d0d;
       padding: 15px;
-      text-align: center;
       text-decoration: none;
       display: inline-block;
       font-size: 16px;
@@ -112,6 +112,19 @@
         font-size: 1.5rem;
     }
 
+   .singup{
+        text-decoration: underline;
+        font-size: 14px;
+        text-align: center;
+        padding-bottom: 30px;
+        
+    }
+
+    .envoie{
+        align-items: center;
+        text-align: center;
+    }
+
     </style>
   </head>
 
@@ -128,15 +141,50 @@
 
         <h1>Se connecter</h1>
         <p>Petite phrase de début pour donner envie</p>
-        <form method="post" action="login.php">
+    <form method="post" action="login.php">
           <p><input type="text" name="PseudoMemb" value="" placeholder="nom.prenom@mail.com"></p>
-          <p><input type="password" name="passMemb" value="" placeholder="* * * * *"></p>
+          <p><input type="password" name="passMemb"id="mdp" value="" placeholder="* * * * *"></p>
+        
+          <!-- afficher mdp -->
+          <div class="form-group">
+                    <input type="checkbox" id="visuMdp2" name="visuMdp" onchange="togglePasswordVisibility('mdp', 'visuMdp2')">
+                    <label for="visuMdp2">Afficher le mot de passe</label>
+          </div>
 
-          <p class="submit"><input type="submit" name="commit" value="Se connecter"></p>
-        </form>
+          <div class="envoie">
+              <p class="submit"><input type="submit" name="commit" value="Se connecter"></p>
+
+          </div>
+             
+          <div class="signup">
+                <br>
+
+                <p>Pas encore de compte ?</p> 
+                <a class="singup" href="signup">Inscrivez-vous</a>
+            
+            </div>
+
+    </form>
+
+        
+    
       </div>
 
     </section>
+
+
+<!-- afficher mdp -->
+<script>
+        function togglePasswordVisibility(passId, visuId) {
+            var passInput = document.getElementById(passId);
+            var visuCheckbox = document.getElementById(visuId);
+            if (visuCheckbox.checked) {
+                passInput.type = 'text';
+            } else {
+                passInput.type = 'password';
+            }
+        }
+</script>
 
   </body>
 
