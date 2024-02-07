@@ -35,7 +35,7 @@
                 </p>
 
                 <p>
-                Et nous, on s’est posé la question : Pourquoi Burdigala c’est aussi bon ? 
+                Et nous, on s’est posé la question : Pourquoi <strong> Burdigala </strong> est aussi bon ? 
                 <br>
                 Alors, on a enfilé notre long manteau et on s’est muni d'un micro, afin d’aller interviewer Claire pour nous en dire plus sur la laiterie. 
                 </p>
