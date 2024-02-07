@@ -467,11 +467,7 @@ require_once '../../header.php';
 
 
 </style>
-
-<footer>
-<?php require_once '../../footer.php'; ?>
-</footer>
-
 </body>
 </html>
 
+<?php require_once '../../footer.php'; ?>
