@@ -177,7 +177,7 @@
                         <br>
                         
                         <p>Pas encore de compte ?</p> 
-                        <a class="singup" href="signup">Inscrivez-vous</a>
+                        <a class="singup" href="http://blogart24/views/frontend/signup.php">Inscrivez-vous</a>
                     
                 </div>
 
