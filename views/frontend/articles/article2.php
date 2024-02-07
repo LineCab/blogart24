@@ -6,7 +6,6 @@
     <title>Article 1</title>
 
 <!-- rajouter le link css -->
-
     <link rel="stylesheet" href="views/backend/articles/create.php">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -18,7 +17,7 @@
     <section class="article2  ">
         <div class="container">
             <div class="titre">
-                <h1> LES 3 SECRETS <br>DE LA LAITERIE BURDIGALA</h1>
+                <h1> Les 3 secrets <br>de la Laiterie Burdigala</h1>
             </div>
 
             <div class="article-info">
@@ -38,10 +37,12 @@
                 <p>
                 Et nous, on s’est posé la question : Pourquoi Burdigala c’est aussi bon ? 
                 <br>
-                Alors, on a enfilé notre long manteau et on s’est muni de notre micro, afin d’aller interviewer Claire pour nous en dire plus sur la laiterie. 
+                Alors, on a enfilé notre long manteau et on s’est muni d'un micro, afin d’aller interviewer Claire pour nous en dire plus sur la laiterie. 
                 </p>
 
             </div>
+<br>
+<br>
 
             <div class="para2">
 
@@ -70,8 +71,10 @@
                 </p>
 
             </div>
+<br>
+<br>
 
-            <h2>LA QUALITÉ DE LA MATIÈRE PREMIÈRE</h2>
+            <h2>La qualité de la matière première</h2>
 
             <div class="para3">
 
@@ -90,13 +93,47 @@
                 Promis, pas de compléments alimentaires bizarres cette fois ! 
                 Le lait est acheté 50% plus cher que le prix du marché, et pourtant, les burratas ne sont pas 50% plus cher chez Burdigala.
                 <br>
-                <p>Pour Claire, cela va de soi : <h4> “J’aimerais pouvoir proposer des produits à petit prix parce que tout le monde à le droit de bien manger”. 
-                </h4>
                 
-                <p>Franchement, nous on trouve que ça vaut le détour au quartier Saint Michel ! </p>
+                <p>Pour Claire, cela va de soi : <b> “J’aimerais pouvoir proposer des produits à petit prix parce que tout le monde à le droit de bien manger”.</b>
+                </p>
+                
+                <p>Franchement, nous on trouve que ça vaut le détour au quartier Saint Michel ! 
                 </p>
             </div>
+        <br>
+        <br>
+            <h2>Le partage</h2>
+
+            <div class="para4">
+
+                <p>Si vous êtes déjà passés devant la laiterie sans l’avoir remarquée, on ne vous excuse pas. 
+                Comment ne pas s’arrêter pendant 10 minutes à regarder les mouvements de la pâte à travers les parois en verre ? 
+                Nous, ça nous hypnotise de voir les burratas fabriquées sous nos yeux  ! 
+                </p>
         
+                <p>Mais connaissez-vous le meilleur ? Claire propose des ateliers pour fabriquer sa propre burrata. (Vous ne l’aviez pas vu venir hein?). 
+                Elle nous a expliqué que son but était d’apprendre le geste artisanal, mais aussi de sensibiliser son public afin qu’il comprenne l’importance du travail et des ressources. 
+                Saviez-vous qu’il fallait 2 litres de lait pour fabriquer seulement 1 burrata ? 
+                Et oui.. Tout le monde est étonné d’entendre cela (Claire nous avait prévenu). 
+                </p>
+        
+                <p>Alors, finalement, ce qui rend Burdigala aussi bon, c'est le partage. 
+                Claire le décrit comme <b>“Une aventure que l’on fait ensemble”</b>,  elle renouvelle ses inspirations chaque jour grâce à ceux qui l’entourent. 
+                </p>
+        
+                <p>Et justement, plus on partage, plus c’est bon. Alors nous, on ne se réserve pas l’adresse de la laiterie que pour les grandes occasions. Et on espère que la prochaine fois que vous passerez devant la laiterie, vous aussi, vous resterez collés à la vitre en train de regarder votre burrata être fraîchement préparée ! 
+                </p>
+        
+                <p>À présent que vous savez tout sur les secrets de la laiterie Burdigala, vous vous sentez obligés de tester pour approuver, non ? 
+                Nous, on a testé pour vous, et évidemment qu’on approuve (sinon on en parlerait pas ici). Mais si vous avez testé, n’hésitez pas à nous faire part de votre expérience dans notre espace commentaire ! Et si vous comptez le faire, on veut savoir aussi ! 
+                </p>
+        
+                <p>À bientôt pour un nouvel article ! </p>
+                <p>Gardena. 
+                </p>
+        </div>
+
+
             <div class="para_img">
             <img src="https://imgs.search.brave.com/WjbyNLY9GrZYP4Gc-1pCRucmGIM-yu6uXSj-7KEyLmI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/Y29tcHRvaXJkdXBv/aXRvdS5mci93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMi8xMi9i/aWVyZXMtY29tcHRv/aXJkdXBvaXRvdS0x/MDAweDY2NS5qcGc" alt="bieres">
         
@@ -122,8 +159,8 @@
         
 
             <!-- div qui permet de voir le nombre de like et de commentaires de l'article -->
-           
-             <div class="article-info">
+        
+            <div class="article-info">
                 <div class="like" id="like-section">
                     <button onclick="likeArticle()"> <p id="like-count">0 <i class='bx bx-heart'></i></p></button>
                 </div>
