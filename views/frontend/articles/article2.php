@@ -15,15 +15,15 @@
     <!-- rajouter le header -->
     </header>
 
-    <section class="article1">
+    <section class="article2  ">
         <div class="container">
             <div class="titre">
-                <h1> Bordeaux bascule : <br>la bière éclipse le vin !</h1>
+                <h1> LES 3 SECRETS <br>DE LA LAITERIE BURDIGALA</h1>
             </div>
 
             <div class="article-info">
                 <div class="like" id="like-section">
-                   <p id="like-count"> 0 <i class='bx bx-heart'></i></p>
+                    <p onclick="likeArticle()"> <p id="like-count"> 0 <i class='bx bx-heart'></i></p></p>
                 </div>
                 <div class="comment-count" id="comment-section">
                     <p id="comment-count">0 <i class='bx bx-message-rounded-dots'></i></p>
@@ -32,55 +32,69 @@
 
             <div class="para1">
                 <p>
-                Aujourd’hui on vous a brassé un article pour vous préparer au BLIB le festival des Bières Libres et Indépendantes à Bordeaux qui aura lieu en avril. 
-                De l’histoire ancestrale de la bière, en passant par les dernières tendances mousseuses, on vous dévoile même notre recette secrète qui vous garantira la victoire au concours BRASSAM. 
+                Située en plein centre de Bordeaux en face du marché des Capucins, et co fondée par Claire et Chloé, la laiterie Burdigala produit des produits laitiers bios et locaux ! 
                 </p>
 
-                <p>Après ça, vous serez un as de la bulle !</p>
+                <p>
+                Et nous, on s’est posé la question : Pourquoi Burdigala c’est aussi bon ? 
+                <br>
+                Alors, on a enfilé notre long manteau et on s’est muni de notre micro, afin d’aller interviewer Claire pour nous en dire plus sur la laiterie. 
+                </p>
 
             </div>
 
             <div class="para2">
 
-                <h2>Alors ça mousse ?</h2>
-                <h4>Un accident, une potion magique, une déesse, la bière a su prendre différentes identités pour trouver sa place au sein de toutes les époques.</h4>
-                <p>
-                Et oui ! La bière (ou devrions nous dire la “Sikaru”) a été créée par accident, il y a 4000 ans en Mésopotamie, par un sumérien qui aurait un peu trop laissé fermenter sa soupe. 
+                <h2>L'amour du geste</h2>
+                <p>Il y a 5 ans, après avoir arrêté ses études de commerce dans le vin et s’être reformée, Claire a eu une idée : pourquoi ne pas créer une laiterie locale et entièrement bio ? 
+                Et voilà qu'un an et demi plus tard, Burdigala est né.
+                </p>
+                <h4>
+                “Je n’ai pas fait ce métier pour gagner de l’argent j’ai fais cela pour avoir un travail qui soit en cohérence avec mes valeurs. Je voulais aussi pouvoir montrer à mes enfants qu’à ma manière je peux changer les choses et que c’est à la portée de tous”. 
+                </h4>
 
-                C’est au 18e siècle que la bière prend une dimension divine avec l'apparition de Ninkasi, déesse associée à son brassage. Deux hymnes lui sont dédiés, le premier retrace les étapes ancestrales de la fermentation et le second décrit les récipients de brassage utilisés. 
-                On vous met les paroles ici  (c'est cadeau, ne nous remerciez pas). 
+                <p> Claire explique que dans une journée type, elle et son équipe ne sont pas seulement vendeurs de produits laitiers, ils sont bien plus que ça.<br>
+                À la laiterie, tout le monde fait tout : production, transformation, vente et nettoyage. 
+                </p>
 
-                Chez les Celtes, la bière se transforme en potion magique (oui, oui, potion magique !) au XIIe siècle avec l'ajout du houblon, offrant une délicieuse amertume maîtrisée par les moines au Moyen  ge.
-                Une étude d'Harvard récente a même démontré les effets positifs de la bière sur le cœur et la circulation sanguine. Alors, si c'est Harvard qui le dit… Nous on trinque à la santé de la bière ! 
+                <p>Dès l'aube, c'est le moment où Claire part en quête du lait, pendant que le reste de l'équipe se lance dans une opération commando pour stériliser les bocaux et mettre les locaux en ordre. Puis, c'est le coup d'envoi des cuves ! 
+                Saviez-vous qu’il faut 2 à 3 heures pour obtenir le fameux caillé ?
+                </p>
 
-                </p>  
+                <p>"Mais est-ce un métier qui requiert de la patience ?" 
+                Eh bien, laissez-moi vous dire que c'est tout le contraire ! Claire vous dirait que c'est un métier plein de vie !
+                De plus, il est toujours passionnant de pouvoir voir son produit qui évolue. 
+                </p>
+
+                <p>Alors, le premier secret de Burdigala c’est cette capacité de prendre le temps pour mieux savourer le savoir-faire qui se cache derrière chaque produit.
+                </p>
 
             </div>
 
-            <h2>Un culte ramené au goût du jour </h2>
+            <h2>LA QUALITÉ DE LA MATIÈRE PREMIÈRE</h2>
 
             <div class="para3">
 
-            
-            
-                <p>
-                    Si autrefois, la bière était synonyme d'authenticité, les artisans brasseurs d'aujourd'hui se lancent dans l'innovation, explorant de nouveaux goûts et techniques pour se distinguer.
-                <br> À Bordeaux, nos artisans, à travers des bières au design soigné ou aux saveurs inédites, ne vous laissent pas le temps de vous ennuyer !
-
-                <br><br>
-                Des étiquettes stylisées sur vos bières ? Pas de soucis, l’équipe d'”Effet Papillon” s'en occupe.
-                <br>
-                Antoine, César et Cyprien, allient graphisme et brasserie en proposant des illustrations personnalisées avec des graphismes aux traits colorés. 
-                <br>
-                Nous, on les imaginerait bien alignées sur la commode tel des objets de collection. 
-
-                <br><br>
-                Et si brasser sur la lune c’était écologique ? 
-                <br>Non, ce n’est pas la nouvelle marque de bière lancée par Thomas Pesquet (même si on aurait aimé), mais ce sont les bières biologiques brassées à Bordeaux, sur les rives du port de la lune. 
-                <br>On y retrouve un concept de brassage écologique : une installation géothermique et d'autres technologies mises en place qu’ils vous expliqueront sûrement mieux que nous sur leur site web.
-                <br>Pour nous ce qui compte c’est son goût unique et son engagement écologique ! 
+                <p>Ce sont les valeurs de la laiterie qui rendent les produits si bons, et la plus importante c’est celle de la qualité de la matière première ! 
                 </p>
 
+                <p>Claire définit cette qualité comme un critère primordial, que les gens dénigrent malheureusement beaucoup aujourd’hui. 
+                Et en effet, si l’on se penche sur la nourriture donnée aux vaches aujourd’hui.. C’est pas joli, joli. Entre OGM et faux pâturages, bah (ben), nous aussi, on finit par manger aussi ce qu’on leur donne à ces pauvres vaches. 
+                </p>
+                
+                <p>“Mais, dis moi GARDENA, comment dans une laiterie en plein centre de Bordeaux, on peut avoir une matière première de bonne qualité ?”
+                </p>
+                
+                <p>Et bien, détrompez-vous, c’est possible ! 
+                Tous les début de semaine, la courageuse Claire fait 70 km afin de se rendre chez son fournisseur. Et après quelques heures de route, c’est à la ferme du GAEC Chardonnet que Claire récupère son lait. Là-bas, les vaches sont nourries comme elles se doivent. 
+                Promis, pas de compléments alimentaires bizarres cette fois ! 
+                Le lait est acheté 50% plus cher que le prix du marché, et pourtant, les burratas ne sont pas 50% plus cher chez Burdigala.
+                <br>
+                <p>Pour Claire, cela va de soi : <h4> “J’aimerais pouvoir proposer des produits à petit prix parce que tout le monde à le droit de bien manger”. 
+                </h4>
+                
+                <p>Franchement, nous on trouve que ça vaut le détour au quartier Saint Michel ! </p>
+                </p>
             </div>
         
             <div class="para_img">
@@ -102,6 +116,8 @@
             <div class="like">
                 <p>Vous avez aimé cet article ? N’hésitez pas à liker !</p>
             </div>
+
+
 
         
 
