@@ -12,14 +12,14 @@
 </head>
 <body>
     <header> 
-       <!-- rajouter le header -->
+    <!-- rajouter le header -->
     </header>
 
     <section class="article1">
         <div class="container">
             <div class="titre">
                 <h1> Bordeaux bascule : <br>la bière éclipse le vin !
- </h1>
+</h1>
             </div>
 
             <div class="article-info">
@@ -39,7 +39,7 @@
 
                 <p>Après ça, vous serez un as de la bulle !</p>
 
-             </div>
+            </div>
 
             <div class="para2">
 
@@ -62,8 +62,8 @@
 
             <div class="para3">
 
-                   
-               
+            
+            
                 <p>
                     Si autrefois, la bière était synonyme d'authenticité, les artisans brasseurs d'aujourd'hui se lancent dans l'innovation, explorant de nouveaux goûts et techniques pour se distinguer.
                 <br> À Bordeaux, nos artisans, à travers des bières au design soigné ou aux saveurs inédites, ne vous laissent pas le temps de vous ennuyer !
@@ -83,9 +83,9 @@
                 </p>
 
             </div>
-           
+        
             <div class="para_img">
-             <img src="https://imgs.search.brave.com/WjbyNLY9GrZYP4Gc-1pCRucmGIM-yu6uXSj-7KEyLmI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/Y29tcHRvaXJkdXBv/aXRvdS5mci93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMi8xMi9i/aWVyZXMtY29tcHRv/aXJkdXBvaXRvdS0x/MDAweDY2NS5qcGc" alt="bieres">
+            <img src="https://imgs.search.brave.com/WjbyNLY9GrZYP4Gc-1pCRucmGIM-yu6uXSj-7KEyLmI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/Y29tcHRvaXJkdXBv/aXRvdS5mci93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMi8xMi9i/aWVyZXMtY29tcHRv/aXJkdXBvaXRvdS0x/MDAweDY2NS5qcGc" alt="bieres">
         
                 <p>
 
@@ -104,7 +104,7 @@
                 <p>Vous avez aimé cet article ? N’hésitez pas à liker !</p>
             </div>
 
-          
+        
 
             <!-- div qui permet de voir le nombre de like et de commentaires de l'article -->
             <div class="container">
@@ -306,7 +306,7 @@
             margin-bottom: 10px;
         }
 
-       .article-info .like {
+        .article-info .like {
             padding-right: 1rem;
         }
 
@@ -409,9 +409,9 @@
         }
 
         .name-field {
-           padding-right: 3rem;
+            padding-right: 3rem;
         }
-  @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 600px) {
         .para_img {
             flex-direction: column-reverse; 
         }
