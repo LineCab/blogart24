@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -6,6 +7,22 @@
     <title>Article 1</title>
 
 <!-- rajouter le link css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+        
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="src/images/article.png" />
+  
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
 
     <link rel="stylesheet" href="views/backend/articles/create.php">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -252,13 +269,13 @@
 <style>
 
 
-        body {
+        /* body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             background-color: #f5f5f5;
             margin: 0;
             padding: 0;
-        }
+        } */
 
         .hearth  {
             font-size: 1.5rem;
@@ -270,9 +287,7 @@
             padding: 20px;
         }
 
-
-
-        .article1 {
+/*     .article1 {
             background-color: #fff;
             font-family: Montserrat;
             font-size: 15px;
@@ -282,7 +297,7 @@
             text-align: justified;
             display: flex; 
             flex-direction: column; 
-        }
+        } */
 
         .article-info {
             display: flex;
@@ -300,7 +315,7 @@
             text-align: left;
             margin-bottom: 20px;
         }
-
+/* 
         .titre h1 {
             font-family: Montserrat;
             font-size: 40px;
@@ -308,7 +323,7 @@
             line-height: 49px;
             letter-spacing: 0em;
             text-align: left;
-        }
+        } */
 
         .para1, .para2, .para3, .para_img {
             margin-bottom: 20px;
@@ -451,10 +466,6 @@
 </style>
 
 
-
-<footer>
-
-</footer>
-
 </body>
 </html>
+
