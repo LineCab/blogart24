@@ -94,8 +94,7 @@ $statuts = sql_select('STATUT', '*');
     function onSubmit(token) {
     document.getElementById("form-recaptcha").submit();
 }
-</script>
-<script>
+
 function togglePasswordVisibility(passId, visuId) {
     var passInput = document.getElementById(passId);
     var visuCheckbox = document.getElementById(visuId);
