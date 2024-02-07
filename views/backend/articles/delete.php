@@ -1,6 +1,14 @@
 <?php
 include '../../../header.php';
 
+session_start();
+
+if ($_SESSION['logged'] === false || $_SESSION['numStat'] != 1) {
+    var_dump($_SESSION['numStat']);
+    header('Location: ../security/login.php');
+    $_SESSION['admin'] = true;
+}
+
 if(isset($_GET['numArt'])){
     $numArt = $_GET['numArt'];
     $libTitrArt = sql_select("ARTICLE", "libTitrArt", "numArt = $numArt")[0]['libTitrArt'];

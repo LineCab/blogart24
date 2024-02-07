@@ -1,7 +1,14 @@
 <?php
-include '../../../header.php'; // contains the header and call to config.php
+include '../../../header.php'; 
 
-//Load all statuts
+session_start();
+
+if ($_SESSION['logged'] === false || $_SESSION['numStat'] != 1) {
+    var_dump($_SESSION['numStat']);
+    header('Location: ../security/login.php');
+    $_SESSION['admin'] = true;
+}
+
 $statuts = sql_select("STATUT", "*");
 ?>
 

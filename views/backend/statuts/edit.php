@@ -1,6 +1,15 @@
 <?php
 include '../../../header.php';
 
+session_start();
+
+if ($_SESSION['logged'] === false || $_SESSION['numStat'] != 1) {
+    var_dump($_SESSION['numStat']);
+    header('Location: ../security/login.php');
+    $_SESSION['admin'] = true;
+}
+
+
 if(isset($_GET['numStat'])){
     $numStat = $_GET['numStat'];
     $libStat = sql_select("STATUT", "libStat", "numStat = $numStat")[0]['libStat'];

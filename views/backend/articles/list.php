@@ -2,6 +2,14 @@
 <?php
 include '../../../header.php'; // contains the header and call to config.php
 
+session_start();
+
+if ($_SESSION['logged'] === false || $_SESSION['numStat'] != 1) {
+    var_dump($_SESSION['numStat']);
+    header('Location: ../security/login.php');
+    $_SESSION['admin'] = true;
+}
+
 //Load all statuts
 $articles = sql_select("ARTICLE", "*");
 

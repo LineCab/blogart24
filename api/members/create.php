@@ -136,5 +136,5 @@ if (!$error){
     die("erreur");
 }
 
-header('Location: ../../views/frontend/index.php');
+header('Location: ../..//index.php');
 ?>

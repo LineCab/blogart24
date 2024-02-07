@@ -1,5 +1,15 @@
 <?php
-include '../../../header.php';
+include '../../../header.php'
+
+session_start();
+
+if ($_SESSION['logged'] === false || $_SESSION['numStat'] != 1) {
+    var_dump($_SESSION['numStat']);
+    header('Location: ../security/login.php');
+    $_SESSION['admin'] = true;
+}
+
+
 if(isset($_GET['numThem'])){
     $numThem = $_GET['numThem'];
     $libThem = sql_select("THEMATIQUE", "libThem", "numThem = $numThem")[0]['libThem'];
