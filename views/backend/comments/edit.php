@@ -27,7 +27,7 @@ $pseudoMemb = $membre[0]["pseudoMemb"];
 <div class="commentaire">
     <div class="row">
         <div class="col-md-12">
-            <h3>poster un commentaire</h3>
+            <h3>Modifier un commentaire</h3>
         </div>
         <br>
         <div class="col-md-12">

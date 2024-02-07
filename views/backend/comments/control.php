@@ -31,7 +31,7 @@ $libTitrArt = $article[0]["libTitrArt"];
 <div class="commentaire">
     <div class="row">
         <div class="col-md-12">
-            <h3>Supprimer un commentaire</h3>
+            <h2>Valider un commentaire</h2>
         </div>
         <br>
         <div class="col-md-12">
@@ -41,7 +41,7 @@ $libTitrArt = $article[0]["libTitrArt"];
         <br>
         <h3>Informations commentaire</h3>
         <div class="col-md-12">
-            <form action="<?php echo ROOT_URL . '/api/comments/delete.php?numCom='.$numCom ?>" method="post">
+            <form action="<?php echo ROOT_URL . '/api/comments/control.php?numCom='.$numCom ?>" method="post">
                 <div class="form-group">
                     <label>Nom d'utilisateur :</label>
                     <br>
@@ -55,20 +55,26 @@ $libTitrArt = $article[0]["libTitrArt"];
                 <div class="form-group">
                     <h3>Contenu du commentaire</h3>
                     <br>
-                    <textarea class="form-control" name="commentaire" id="commentaire" cols="30" rows="5" disabled><?php echo $libCom ?></textarea>
+                    <textarea class="form-control" name="commentaire" id="commentaire" cols="30" rows="5"><?php echo $libCom ?></textarea>
                 </div>
                 <br/>
                 <div class="form-group">
-                    <h3>Choix de la suppression</h3>
-                    <input type="radio" id="supprDef" name="choixSuppr" value="1">
-                    <label for="oui">Suppression définitive</label><br>
-                    <input type="radio" id="supprLog" name="choixSuppr" value="0" checked>
-                    <label for="non">Suppression logique</label><br>
+                    <h3>Validation du commentaire</h3>
+                    <input type="radio" id="oui" name="validite" value="1">
+                    <label for="oui">Valider le commentaire</label><br>
+                    <input type="radio" id="non" name="validite" value="0" checked>
+                    <label for="non">Refuser le commentaire</label><br>
                     </input>
                 </div>
                 <br>
                 <div class="form-group">
-                    <button type="submit" class="btn btn-danger">Supprimer le commentaire</button>
+                    <h3>Raison du refus</h3>
+                    <small>A remplir seulement si le commentaire est refusé</small>
+                    <textarea class="form-control" name="raisonRefus" id="raisonRefus" cols="30" rows="5"></textarea>
+                </div>
+                <br>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Envoie du contrôle</button>
                 </div>
             </form>
         </div>
