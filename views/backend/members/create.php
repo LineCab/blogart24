@@ -32,7 +32,7 @@ $statuts = sql_select('STATUT', '*');
                 <br />
                 <div class="form-group">
                     <label for="passMemb1">Mot de passe</label>
-                    <input id="passMemb1" name="passMemb" class="form-control" type="password" autofocus="autofocus">
+                    <input id="passMemb1" name="passMemb1" class="form-control" type="password" autofocus="autofocus">
                     <small id="passHelp" class="form-text text-muted">(Entre 8 et 15 caractères, au moins une majuscule, une minuscule, un chiffre, caractères spéciaux acceptés)</small>
                 </div>
                 <div class="form-group">
@@ -42,7 +42,7 @@ $statuts = sql_select('STATUT', '*');
                 <br />
                 <div class="form-group">
                     <label for="passMemb2">Confirmer le mot de passe</label>
-                    <input id="passMemb2" name="passMemb" class="form-control" type="password" autofocus="autofocus">
+                    <input id="passMemb2" name="passMemb2" class="form-control" type="password" autofocus="autofocus">
                     <small id="passHelp" class="form-text text-muted">(Entre 8 et 15 caractères, au moins une majuscule, une minuscule, un chiffre, caractères spéciaux acceptés)</small>
                 </div>
                 <div class="form-group">
@@ -54,25 +54,26 @@ $statuts = sql_select('STATUT', '*');
                     <label for="email1">Email</label>
                     <input id="email1" name="email1" class="form-control" type="text" autofocus="autofocus" />
                 </div>
-                <br/>
+                <br>
                 <div class="form-group">
                     <label for="email2">Confimation de l'email</label>
                     <input id="email2" name="email2" class="form-control" type="text" autofocus="autofocus"></input>
                 </div>
-                <br />
+                <br>
                 <div class="form-group">
                     <label for="accord">J'accepte que mes données soient collectées et stockées.</label><br>
-                    <input type="radio" id="option1" name="options" value="option1">
-                    <label for="option1">Oui</label><br>
-                    <input type="radio" id="option2" name="options" value="option2">
-                    <label for="option2">Non</label><br>
+                    <input type="radio" id="oui" name="accordMemb" value="1">
+                    <label for="accordMemb">Oui</label><br>
+                    <input type="radio" id="non" name="accordMemb" value="0" checked >
+                    <label for="accordMemb">Non</label><br>
                 </div>
-                <br />
+                <br>
                 <div class="form-group">
                     <label for="numStat">Type de profil</label>    
                     <select class="form-select" name="numStat">
-                        <?php foreach ($statuts as $statut) : ?>
-                            <option value="<?php echo $statut['numStat']; ?>">
+                        <?php foreach ($statuts as $statut) : 
+                            $disabled = !($statut['numStat'] == '3') ? 'disabled' : 'selected';  ?>
+                            <option value="<?php echo $statut['numStat']; ?>" <?php echo $disabled?>>
                                 <?php echo $statut['libStat']; ?>
                             </option>
                         <?php endforeach; ?>

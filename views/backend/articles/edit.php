@@ -1,8 +1,9 @@
 <?php
 include '../../../header.php';
-if(isset($_GET['numMotCle'])){
+require_once '../../../functions/ctrlSaisies.php';
+if(isset($_GET['numArt'])){
     $numArt = $_GET['numArt'];
-
+    $thematiques = sql_select('THEMATIQUE', '*');
     $libTitrArt = sql_select("ARTICLE", "libTitrArt", "numArt = $numArt")[0]['libTitrArt'];
     $libChapoArt = sql_select("ARTICLE", "libChapoArt", "numArt = $numArt")[0]['libChapoArt'];
     $libAccrochArt = sql_select("ARTICLE", "libAccrochArt", "numArt = $numArt")[0]['libAccrochArt'];
@@ -12,6 +13,8 @@ if(isset($_GET['numMotCle'])){
     $libSsTitr2Art = sql_select("ARTICLE", "libSsTitr2Art", "numArt = $numArt")[0]['libSsTitr2Art'];
     $parag3Art = sql_select("ARTICLE", "parag3Art", "numArt = $numArt")[0]['parag3Art'];
     $libConclArt = sql_select("ARTICLE", "libConclArt", "numArt = $numArt")[0]['libConclArt'];
+    $urlPhotArt = sql_select("ARTICLE", "urlPhotArt", "numArt = $numArt")[0]['urlPhotArt'];
+    $numThem = sql_select("ARTICLE", "numThem", "numArt = $numArt")[0]['numThem'];
 }
 ?>
 
@@ -39,7 +42,7 @@ if(isset($_GET['numMotCle'])){
                 <br/>
                 <div class="form-group">
                     <label for="parag1Art">Premier paragraphe de l'article</label>
-                    <textarea id="parag1Art" name="parag1Art" class="form-control" type="text" value="<?php echo $parag1Art; ?>"></textarea>
+                    <textarea id="parag1Art" name="parag1Art" class="form-control" type="text"><?php echo HtmlToBBCode($parag1Art); ?></textarea>
                 </div>
                 <br />
                 <div class="form-group">
@@ -49,7 +52,7 @@ if(isset($_GET['numMotCle'])){
                 <br/>
                 <div class="form-group">
                     <label for="parag2Art">Second paragraphe de l'article</label>
-                    <textarea id="parag2Art" name="parag2Art" class="form-control" type="text" value="<?php echo $parag2Art; ?>"></textarea>
+                    <textarea id="parag2Art" name="parag2Art" class="form-control" type="text"><?php echo HtmlToBBCode($parag2Art); ?></textarea>
                 </div>
                 <br />
                 <div class="form-group">
@@ -59,24 +62,37 @@ if(isset($_GET['numMotCle'])){
                 <br/>
                 <div class="form-group">
                     <label for="parag3Art">Troisième paragraphe de l'article</label>
-                    <textarea id="parag3Art" name="parag3Art" class="form-control" type="text" value="<?php echo $parag3Art ?>"></textarea>
+                    <textarea id="parag3Art" name="parag3Art" class="form-control" type="text"><?php echo HtmlToBBCode($parag3Art); ?></textarea>
                 </div>
                 <div class="form-group">
                     <label for="libConclArt">Conclusion de l'article</label>
-                    <textarea id="libConclArt" name="libConclArt" class="form-control" type="text" value="<?php echo $libConclArt ?>"></textarea>
+                    <textarea id="libConclArt" name="libConclArt" class="form-control" type="text"><?php echo HtmlToBBCode($libConclArt); ?></textarea>
                 </div>
                 <div class="form-group">
-                    <label for="urlPhotArt">Ajouter une image</label>
-                    <input type="file" name="urlPhotArt"  class="form-control" id="urlPhotArt">
+                    <p>Image actuelle</p>
+                    <img width="500px" src="<?php echo ROOT_URL . '/src/uploads/' . $urlPhotArt  ?>">
+                    <label for="urlPhotArt">Modifier l'image</label>
+                    <input type="file" name="urlPhotArt" class="form-control" id="urlPhotArt" accept="image/*">
                 </div>
-                
+
+        
                 <div class="form-group">
                     <label for="numThem">Thématique de l'article</label>    
-                    
+                    <select class="form-select" name="numThem">
+                        <?php foreach ($thematiques as $thematique) : ?>
+                            <?php 
+                                $selectedThematique = $numThem;
+                                $selected = ($thematique['numThem'] == $selectedThematique) ? 'selected' : ''; 
+                            ?>
+                            <option value="<?php echo $thematique['numThem']; ?>" <?php echo $selected; ?>>
+                                <?php echo $thematique['libThem']; ?>
+                            </option>
+                        <?php endforeach; ?>
+                        </select>
                 </div>
-                <br />
+                <br/>
                 <div class="form-group mt-2">
-                    <button type="submit" class="btn btn-primary">Confirmer create ?</button>
+                    <button type="submit" class="btn btn-primary">Confirmer modification ?</button>
                 </div>
             </form>
         </div>
