@@ -1,5 +1,6 @@
 <?php
 include '../../../header.php';
+
 ?>
 
 <div class="container">
@@ -27,6 +28,7 @@ include '../../../header.php';
                     <button type="submit" class="btn btn-primary">Se connecter</button>
                 </div>
             </form>
+            <p>Pas encore de compte ? <a href="../members/create.php">Inscrivez vous</a></p>
         </div>
     </div>
 </div>

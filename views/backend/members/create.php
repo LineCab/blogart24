@@ -69,7 +69,7 @@ $statuts = sql_select('STATUT', '*');
                     <label for="numStat">Type de profil</label>    
                     <select class="form-select" name="numStat">
                         <?php foreach ($statuts as $statut) : 
-                            $disabled = !($statut['numStat'] == '3') ? 'disabled' : 'selected';  ?>
+                            $disabled = !($statut['numStat'] == '1') ? 'selected' : 'disabled';  ?>
                             <option value="<?php echo $statut['numStat']; ?>" <?php echo $disabled?>>
                                 <?php echo $statut['libStat']; ?>
                             </option>
@@ -83,7 +83,7 @@ $statuts = sql_select('STATUT', '*');
                 </div> -->
                 <br>
                 <div class="form-group mt-2">
-                    <button type="submit" class="btn btn-primary">Confirmer la création</button>
+                    <button type="submit" class="btn btn-primary">Créer un compte</button>
                 </div>
             </form>
         </div>

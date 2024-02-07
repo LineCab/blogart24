@@ -11,8 +11,18 @@ if (get_ExistPseudo($pseudo)){
 
     $passMembHash = $resultat[0]['passMemb'];
     if (password_verify($pass, $passMembHash)) {
-        die("Compte existant");
-        //Rediriger vers la bonne page
+
+        session_start();
+        $_SESSION['logged_in'] = true;
+        $_SESSION['username'] = $pseudo;
+        ?>
+
+        <script>
+            window.history.go(-2);
+        </script>
+
+        <?php
+
     } else {
         die("Compte inexistant");
         //Afficher erreur

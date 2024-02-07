@@ -29,6 +29,6 @@ require_once 'config.php';
             <a class="nav-link" href="#">Où les trouver ?</a>
         </div>
     </div>
-    <a href="login.php"><img src="/src/images/Connection.png" alt="Logo" width="40" height="40" class="img-connection"></a>
+    <a href="/views/backend/security/login.php"><img src="/src/images/Connection.png" alt="Logo" width="40" height="40" class="img-connection"></a>
   </nav>
 </body>
