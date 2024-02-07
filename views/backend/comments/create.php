@@ -2,12 +2,13 @@
 include '../../../header.php';
 ?>
 <?php
-session_start();
+// session_start();
 
-if(!isset($_SESSION['USER'])){
-    header('Location: login.php');
-    exit();
-}
+// if(!isset($_SESSION['USER'])){
+//     header('Location: login.php');
+//     exit();
+// }
+
 ?>
 <html>
 <div class="commentaire">
@@ -18,6 +19,11 @@ if(!isset($_SESSION['USER'])){
         <div class="col-md-12">
             <!-- Form to create a new statut -->
             <form action="?php echo ROOT_URL . '/api/comments/create.php' ?>" method="post">
+                <div class="form-comm">
+                    <label for="commentaire">Votre pseudo</label>
+                    <input type="text" name="commentaire" id="commentaire" value="<?php ?>" disable/><br/>
+                </div>
+                <br />
                 <div class="form-comm">
                     <label for="commentaire">Votre commentaire : </label>
                     <input type="text" name="commentaire" id="commentaire"/><br/><br/>
@@ -33,4 +39,4 @@ if(!isset($_SESSION['USER'])){
 </html>
 <?php
     echo date('d/m/Y'). '<br>';
-    ?>
+?>

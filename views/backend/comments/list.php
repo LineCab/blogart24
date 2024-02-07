@@ -4,7 +4,6 @@ include '../../../header.php';
 //libcom - dtModCom (sinon dtCreaCom) - numMmeb
 //prenomMemb - nomMemb
 $numArt = 1;
-//Load all statuts
 $comments = sql_select("COMMENT", "*", "numArt = $numArt");
 
 ?>
