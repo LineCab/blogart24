@@ -5,7 +5,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Se connecter</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <style>
+    
     @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 
@@ -37,7 +39,7 @@
     }
 
     p {
-      text-align: left;
+      text-align: center;
       font-size: 14px;
       color: #0d0d0d;
     }
@@ -62,7 +64,7 @@
       background-color: #f6f6f6;
       border: none;
       color: #0d0d0d;
-      padding: 15px 32px;
+      padding: 15px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
@@ -101,6 +103,15 @@
       border: 2px solid #5A3A31;
     }
 
+    a{
+      color: #000;
+      display: flex;
+    }
+
+    a .bx{
+        font-size: 1.5rem;
+    }
+
     </style>
   </head>
 
@@ -109,7 +120,11 @@
     <section class="connexion">
 
       <div class="login">
+      <a href="http://blogart24/views/frontend/articles/article1.php"><i class='bx bx-chevron-left'></i> Retour </a>
+        <br>
+        <br>
         <img src="/src/images/Logo.png" alt="Logo" width="158.465px" height="128.826px">
+        <br>
 
         <h1>Se connecter</h1>
         <p>Petite phrase de début pour donner envie</p>
