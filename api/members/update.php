@@ -11,7 +11,6 @@ if (!empty($_POST['nomMemb']) && !empty($_POST['prenomMemb'])) {
     $prenom = ctrlSaisies($_POST['prenomMemb']);
 }else{
     die("Les champs nom et prénom sont obligatoires.");
-    
 }
 
 
