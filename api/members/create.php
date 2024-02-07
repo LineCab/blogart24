@@ -3,16 +3,18 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 require_once '../../functions/ctrlSaisies.php';
 require_once '../../functions/getExistPseudo.php';
 
-$error = false;
 
-if (isset($_POST['nomMemb'], $_POST['prenomMemb'])) {
+//Fonctionne
+$error = false;
+if (!empty($_POST['nomMemb']) && !empty($_POST['prenomMemb'])) {
     $nom = ctrlSaisies($_POST['nomMemb']);
     $prenom = ctrlSaisies($_POST['prenomMemb']);
 }else{
     die("Les champs nom et prénom sont obligatoires.");
-    $error = true;
+    
 }
 
+//Fonctionne
 $pseudo = ctrlSaisies($_POST['pseudoMemb']);
 if (strlen($pseudo) < 6 || strlen($pseudo) > 70) {
     die("Le pseudo doivent être compris entre 6 et 70 caractères");
@@ -26,9 +28,9 @@ elseif (get_ExistPseudo($pseudo) > 0) {
 $dateCreation = date("Y-m-d H:i:s"); 
 $dtMajMemb = NULL; 
 
-//verif email
 
-if (isset($_POST['email1'], $_POST['email2'])) {
+//Fonctionne
+if (isset($_POST['email1']) && isset($_POST['email2'])) {
 
     $email1 = $_POST['email1'];
     $email2 = $_POST['email2'];
@@ -50,13 +52,15 @@ if (isset($_POST['email1'], $_POST['email2'])) {
     $error = true;
 }
 
-if (isset($_POST['passMemb1'], $_POST['passMemb2'])) {
+//Fonctionne
+$mdp1 = $_POST['passMemb1'];
+$mdp2 = $_POST['passMemb2'];
+if (!empty($_POST['passMemb1']) && !empty($_POST['passMemb2'])) {
 
     $mdp1 = $_POST['passMemb1'];
     $mdp2 = $_POST['passMemb2'];
 
     $patternMdp = '/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,15}$/';
-    preg_match($patternMdp, $motDePasse);
 
     if (!preg_match($patternMdp, $mdp1) || !preg_match($patternMdp, $mdp2)) {
         die("Les mots de passe doivent être compris entre 8 et 15 caractères, avec au moins une majuscule, une minuscule, un chiffre et un caractère spécial.");
@@ -64,18 +68,26 @@ if (isset($_POST['passMemb1'], $_POST['passMemb2'])) {
     }
     
     if ($mdp1 !== $mdp2) {
-        die("Les adresses email ne correspondent pas.");
+        die("Les mots de passe ne correspondent pas.");
         $error = true;
     }
     
 }else{
+    die("Veuillez saisir un mot de passe");
     $error = true;
+}
+
+$accordMemb = $_POST["accordMemb"];
+if ($accordMemb !== '1') {
+    die("Vous devez accepter que vos données soient conservées pour créer un compte.");
 }
 
 $numStat = $_POST['numStat'];
 
+
 if (!$error){
-    sql_insert('MEMBRE', 'nomMemb, prenomMemb, pseudoMemb, passMemb, eMailMemb, accordMemb, numStat', " '$nom', '$prenom', '$pseudo', '$mdp1', '$email1', 1, '$numStat'");
+    $mdpHash = password_hash($mdp1, PASSWORD_DEFAULT);
+    sql_insert('MEMBRE', 'nomMemb, prenomMemb, pseudoMemb, passMemb, eMailMemb, accordMemb, numStat', " '$nom', '$prenom', '$pseudo', '$mdpHash', '$email1', 1, '$numStat'");
 }else{
     die("erreur");
 }
