@@ -1,3 +1,5 @@
+
+
 body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
@@ -11,6 +13,7 @@ body {
 .titre h2, .titre hr {
     text-align: right;
     margin-right: 2rem;
+    margin-top: 4px;
 }
 
 .color {
