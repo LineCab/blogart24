@@ -13,6 +13,7 @@ if (get_ExistPseudo($pseudo)){
     $passMembHash = $resultat[0]['passMemb'];
 
     if (password_verify($pass, $passMembHash)) {
+        setcookie('pseudo', $pseudoMemb, time() + (86400 * 30), "/");
 
         session_start();
         $_SESSION['logged'] = true;

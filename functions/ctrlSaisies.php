@@ -3,8 +3,8 @@
 function ctrlSaisies($saisie){
 
     // Convertion caractères spéciaux en entités HTML => peu performant
-    // Compléter par htmlentities()
-    $saisie = htmlspecialchars($saisie);
+    // Préférer htmlentities()
+    $saisie = htmlspecialchars($saisie, ENT_QUOTES);
     // Suppression des espaces (ou d'autres caractères) en début et fin de chaîne
     $saisie = trim($saisie);
     // Suppression des antislashs d'une chaîne
