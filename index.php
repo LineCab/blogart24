@@ -26,11 +26,11 @@
 //load config
 require_once 'config.php';
 
-$articleAct = sql_select("ARTICLE", "*", "","dtCreaArt", 2);
-$titreAct = sql_select("ARTICLE", "*","" ,"libTitrArt", 2);
-$libChapoArt = sql_select("ARTICLE", "*", "","libChapoArt", 2);
+$articleAct = sql_select("ARTICLE", "*",null,"dtCreaArt DESC", 2);
+$titreAct = sql_select("ARTICLE", "*", null,"libTitrArt", 2);
+$libChapoArt = sql_select("ARTICLE", "*", null,"libChapoArt", 2);
 
-?>
+?> 
 
 
 <body>
@@ -67,6 +67,7 @@ $libChapoArt = sql_select("ARTICLE", "*", "","libChapoArt", 2);
     <hr class="my-3 margin-top-100">
     <h2 class="uppercase"> Le top 10 </h2>
     <hr class="my-3">
+    
     <div class="custom-column row row-cols-1 row-cols-md-2 g-4">
         <!-- <div class="row justify-content-center"> -->
         <div class="col-6 custom-column custom-row-66">
@@ -76,6 +77,7 @@ $libChapoArt = sql_select("ARTICLE", "*", "","libChapoArt", 2);
                     <h3 class="card-title">Card title</h3>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
+    
                 </div>
             </div>
         </div>
@@ -90,6 +92,7 @@ $libChapoArt = sql_select("ARTICLE", "*", "","libChapoArt", 2);
             </div>
         </div>
     </div>
+    
     <div class="custom-column row row-cols-1 row-cols-md-4 g-4">
         <div class="col">
             <div class="card">
