@@ -1,3 +1,5 @@
+
+
 body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
@@ -11,6 +13,7 @@ body {
 .titre h2, .titre hr {
     text-align: right;
     margin-right: 2rem;
+    margin-top: 4px;
 }
 
 .color {
@@ -106,3 +109,47 @@ body {
     width: 50%;
     padding: 0 10px;
 }
+
+hr {
+    margin-right: 2rem;
+    margin-bottom: 0rem;
+    color: inherit;
+    border: 4rem;
+    border-top: solid;
+    opacity: 80;
+}
+
+.titre hr {
+    float: right;
+    color: #333;
+    height: 3px;
+    width: 20rem;
+    margin-top: 0rem;
+}
+
+@media (max-width: 767px) {
+    .titre hr {
+        width: 100%; 
+    }
+    
+}
+
+.footer-custom {
+    margin: 80px -60px 0 -60px;
+    padding: 0 70px;
+    background-color: #5A3A31;
+    color: #FAFAFA;
+}
+
+.footer-custom ul li a{
+    color: #FAFAFA;
+}
+
+.footer-custom ul li a:hover{
+    color: #7F7F7F;
+}
+
+.img-footer{
+    margin-bottom: 36px;
+}
+

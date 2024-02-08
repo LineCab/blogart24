@@ -33,7 +33,7 @@ $topHuit = sql_select("LIKEART", "COUNT(numArt) as nbLike, numArt", null,"numArt
 ?> 
 
 <body>
-<!-- <div class="titre">
+<div class="titre">
         
         <h2>BORDEAUX’ <span class="color">COEUR</span></h2>
 
@@ -41,7 +41,7 @@ $topHuit = sql_select("LIKEART", "COUNT(numArt) as nbLike, numArt", null,"numArt
         
         <h2 class="titre">DE L’ARTISANAT</h2>
     
-</div> -->
+</div>
 
     <hr class="my-3">
     <div style="color: black; font-size: 110px; font-family: Montserrat; font-weight: 400; padding-left: 3rem ;word-wrap: break-word">L’ACTUALITÉ</div>    <hr class="my-3">
@@ -150,12 +150,9 @@ $topHuit = sql_select("LIKEART", "COUNT(numArt) as nbLike, numArt", null,"numArt
         }
         ?>
     </div>
-
-
     <head>
 
 </head>
-
 </body>
 
 <?php
