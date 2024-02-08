@@ -30,7 +30,7 @@ include '../../../config.php';
             </div>    
             <div class="signup">
                 <br>
-                <p>Pas encore de compte ?<a class="singup" href="../members/create.php">Inscrivez-vous</a></p>
+                <p>Pas encore de compte ?<a class="singup" href="signup.php">Inscrivez-vous</a></p>
             </div>
         </form>
     </div>

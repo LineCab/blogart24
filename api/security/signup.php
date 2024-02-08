@@ -82,7 +82,7 @@ if ($accordMemb !== '1') {
     die("Vous devez accepter que vos données soient conservées pour créer un compte.");
 }
 
-$numStat = $_POST['numStat'];
+$numStat = 3;
 
 if(isset($_POST['g-recaptcha-response'])){
     $token = $_POST['g-recaptcha-response'];

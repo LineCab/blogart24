@@ -18,7 +18,7 @@ session_start();
 ?>
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary justify-content-between">
-    <img src="/src/images/Logo.png" alt="Logo" width="158.465px" height="128.826px">
+    <img src="/src/images/logo-marron.svg" alt="Logo" width="158.465px" height="128.826px">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -36,7 +36,7 @@ session_start();
       if(isset($_SESSION['logged']) && $_SESSION['logged'] === true){ 
         echo '<a href="/api/security/deco.php" role="button"><img src="/src/images/déconnection.png" alt="Logo" width="40px" height="40px"></a>';
       } else {
-        echo '<a href="/views/backend/security/login.php" role="button"><img src="/src/images/Connection.png" alt="Logo" width="40px" height="40px"></a>';
+        echo '<a href="/views/backend/security/login.php" role="button"><img src="/src/images/Connection.svg" alt="Logo" width="40px" height="40px"></a>';
       }
       ?>
   </nav>
