@@ -14,7 +14,7 @@ include '../../../config.php';
     <div class="login">
         <button class="return" onclick="previousPage(1)"><img class="button-return" src="/src/images/Vector.png" alt="return"> Retour </button>
         <br><br>
-        <img src="/src/images/Logo.png" alt="Logo" width="158.465px" height="128.826px">
+        <img src="/src/images/logo-marron.svg" alt="Logo" width="158.465px" height="128.826px">
         <br>
         <h1>Se connecter</h1>
         <p>Petite phrase de début pour donner envie</p>

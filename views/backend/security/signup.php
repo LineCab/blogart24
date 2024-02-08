@@ -8,7 +8,7 @@ $statuts = sql_select('STATUT', '*');
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>S'inscrire</title>
-    <link rel="stylesheet" href="../../../src/css/signup.css">
+    <link rel="stylesheet" href="/src/css/signup.css">
 </head>
 
 <section class="inscription">
