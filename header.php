@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog'Art</title>
-    <link rel="stylesheet" href="src/css/reset.css" />
-    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="/src/css/reset.css" />
+    <link rel="stylesheet" href="/src/css/style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
     <link rel="shortcut icon" type="image/x-icon" href="src/images/article.png" />
     <!-- Captcha -->
@@ -31,9 +31,9 @@ if(isset($_COOKIE['pseudo'])) {
     </button>
     <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-            <a class="nav-link" aria-current="page" href="index.php">Accueil</a>
-            <a class="nav-link" href="acteurs.php">Acteurs</a>
-            <a class="nav-link" href="events.php">Evènements</a>
+            <a class="nav-link" aria-current="page" href="/index.php">Accueil</a>
+            <a class="nav-link" href="/acteurs.php">Acteurs</a>
+            <a class="nav-link" href="/events.php">Evènements</a>
             <a class="nav-link" href="#">Où les trouver ?</a>
             <?php
               if (!empty($_SESSION['numStat']) && $_SESSION['numStat'] == 1) {
