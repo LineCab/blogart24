@@ -84,86 +84,86 @@ require_once 'config.php';
     require_once 'footer.php';
 ?>
 
-
+<!-- 
 <style>
 
-body, h1, h2, h3, p {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Montserrat', sans-serif;
-}
-
-.custom-column {
-    margin: 2rem;
-}
-
-.card {
-    border: none;
-    transition: transform 0.2s;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-.card-img-top {
-    object-fit: cover;
-}
-
-.card-date {
-    font-size: 0.8rem;
-    color: #888;
-}
-
-.like-com-articles {
-    font-size: 0.9rem;
-    color: #555;
-}
-
-.titre h2{
-    text-align: right;
-    margin-right: 2rem;
-    margin-top: 4px;
-}
-
-.color{
-    color: #7F5226;
-}
-
-.titre {
-    text-align: right;
-    margin-right: 2rem;
-    margin-top: 2rem;
-}
-
-hr {
-    margin-right: 2rem;
-    margin-bottom: 0rem;
-    color: inherit;
-    border: 4rem;
-    border-top: solid;
-    opacity: 80;
-}
-
-.titre hr {
-    float: right;
-    color: #333;
-    height: 3px;
-    width: 20rem;
-    margin-top: 0rem;
-}
-
-@media (max-width: 767px) {
-    .titre hr {
-        width: 100%; 
+    body, h1, h2, h3, p {
+        margin: 0;
+        padding: 0;
     }
-    
-}
+
+    body {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .custom-column {
+        margin: 2rem;
+    }
+
+    .card {
+        border: none;
+        transition: transform 0.2s;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .card-img-top {
+        object-fit: cover;
+    }
+
+    .card-date {
+        font-size: 0.8rem;
+        color: #888;
+    }
+
+    .like-com-articles {
+        font-size: 0.9rem;
+        color: #555;
+    }
+
+    .titre h2{
+        text-align: right;
+        margin-right: 2rem;
+        margin-top: 4px;
+    }
+
+    .color{
+        color: #7F5226;
+    }
+
+    .titre {
+        text-align: right;
+        margin-right: 2rem;
+        margin-top: 2rem;
+    }
+
+    hr {
+        margin-right: 2rem;
+        margin-bottom: 0rem;
+        color: inherit;
+        border: 4rem;
+        border-top: solid;
+        opacity: 80;
+    }
+
+    .titre hr {
+        float: right;
+        color: #333;
+        height: 3px;
+        width: 20rem;
+        margin-top: 0rem;
+    }
+
+    @media (max-width: 767px) {
+        .titre hr {
+            width: 100%; 
+        }
+        
+    }
 
 
-</style>
+</style> -->
 
 </html>
