@@ -1,39 +1,45 @@
 <?php
-include '../../../header.php';
 
+include '../../../config.php';
 ?>
-
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <h1>Se connecter</h1>
-        </div>
-        <div class="col-md-12">
-            <form action="<?php echo ROOT_URL . '/api/security/login.php' ?>" id="form-recaptcha" method="post" enctype="multipart/form-data">
-                <div class="form-group">
-                    <label for="pseudoMemb">Pseudo</label>
-                    <input id="pseudoMemb" name="pseudoMemb" class="form-control" type="text" autofocus="autofocus" />
-                </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Se connecter</title>
+    <link rel="stylesheet" href="../../../src/css/login.css">
+</head>
+<body>
+    <div class="login">
+        <button onclick="previousPage(1)"> Retour </button>
+        <br><br>
+        <img src="/src/images/Logo.png" alt="Logo" width="158.465px" height="128.826px">
+        <br>
+        <h1>Se connecter</h1>
+        <p>Petite phrase de début pour donner envie</p>
+        <form action="<?php echo ROOT_URL . '/api/security/login.php' ?>" id="form-recaptcha" method="post">
+            <p><input type="text" name="pseudoMemb" value="" placeholder="nom.prenom@mail.com"></p>
+            <p><input type="password" name="passMemb"id="mdp" value="" placeholder="* * * * *"></p>
+            <div class="form-group">
+                <input type="checkbox" id="visuMdp2" name="visuMdp" onchange="togglePasswordVisibility('mdp', 'visuMdp2')">
+                <label for="visuMdp2">Afficher le mot de passe</label>
+            </div>
+            <div class="envoie centered">
+                <p><input type="submit" name="commit" value="Se connecter"></p>
+            </div>    
+            <div class="signup">
                 <br>
-                <div class="form-group">
-                    <label for="passMemb">Mot de passe</label>
-                    <input id="passMemb" name="passMemb" class="form-control" type="password" autofocus="autofocus" />
-                </div>
-                <div class="form-group">
-                    <input type="checkbox" id="visuMdp" name="visuMdp" onchange="togglePasswordVisibility('passMemb', 'visuMdp')">
-                    <label for="visuMdp">Afficher le mot de passe</label>
-                </div>
-                <br>
-                <div class="form-group mt-2">
-                    <button type="submit" class="btn btn-primary">Se connecter</button>
-                </div>
-            </form>
-            <p>Pas encore de compte ? <a href="../members/create.php">Inscrivez vous</a></p>
-        </div>
+                <p>Pas encore de compte ?<a class="singup" href="../members/create.php">Inscrivez-vous</a></p>
+            </div>
+        </form>
     </div>
-</div>
+</body>
 
 <script>
+function previousPage(nbPage){
+    window.history.go(-(nbPage));
+}
 function togglePasswordVisibility(passId, visuId) {
     var passInput = document.getElementById(passId);
     var visuCheckbox = document.getElementById(visuId);
@@ -44,3 +50,4 @@ function togglePasswordVisibility(passId, visuId) {
     }
 }
 </script>
+</html>

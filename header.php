@@ -34,11 +34,10 @@ session_start();
     <?php
 
       if(isset($_SESSION['logged']) && $_SESSION['logged'] === true){ 
-        echo '<a class="btn btn-danger m-1" href="/api/security/deco.php" role="button">Déconnexion</a>';
+        echo '<a href="/api/security/deco.php" role="button"><img src="/src/images/déconnection.png" alt="Logo" width="40px" height="40px"></a>';
       } else {
-        echo'<a class="btn btn-primary m-1" href="/views/backend/security/login.php" role="button">Login</a>';
+        echo '<a href="/views/backend/security/login.php" role="button"><img src="/src/images/Connection.png" alt="Logo" width="40px" height="40px"></a>';
       }
       ?>
-      <!-- <a href="/views/backend/security/login.php"><img src="/src/images/Connection.png" alt="Logo" width="40" height="40" class="img-connection"></a> -->
   </nav>
 </body>
