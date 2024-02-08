@@ -26,3 +26,14 @@ function bbCodeToHtml($text)
 
     return $text;
 }
+
+function HtmlToBBCode($text)
+{
+    $text = preg_replace('/<strong>(.*?)<\/strong>/is', '[b]$1[/b]', $text);
+    $text = preg_replace('/<em>(.*?)<\/em>/is', '[i]$1[/i]', $text);
+    $text = preg_replace('/<u>(.*?)<\/u>/is', '[u]$1[/u]', $text);
+    $text = preg_replace('/<a href="(.*?)">(.*?)<\/a>/is', '[url=$1]$2[/url]', $text);
+    $text = preg_replace('/<br>(.*?)/i', '[br]', $text);
+
+    return $text;
+}
