@@ -2,7 +2,7 @@
     require_once 'header.php';
     sql_connect();
 
-    $articles = sql_select("ARTICLE", "*", null, 3);
+    $articles = sql_select("ARTICLE", "*", "numThem = 3");
 
 ?>
 
