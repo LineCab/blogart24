@@ -33,9 +33,20 @@ $topHuit = sql_select("LIKEART", "COUNT(numArt) as nbLike, numArt", null,"numArt
 ?> 
 
 <body>
+<!-- <div class="titre">
+        
+        <h2>BORDEAUX’ <span class="color">COEUR</span></h2>
+
+        <hr></hr>
+        
+        <h2 class="titre">DE L’ARTISANAT</h2>
+    
+</div> -->
+
     <hr class="my-3">
-    <h2 class="uppercase"> L'actualité </h2>
-    <hr class="my-3">
+    <div style="color: black; font-size: 110px; font-family: Montserrat; font-weight: 400; padding-left: 3rem ;word-wrap: break-word">L’ACTUALITÉ</div>    <hr class="my-3">
+    
+    <!-- faire un margin-right et top de 3rem  et un space betwen de 1rem-->
     <div class="custom-column row row-cols-1 row-cols-md-2 g-4 margin-tb-80">
         <?php
         foreach($articleAct as $article){
@@ -73,8 +84,7 @@ $topHuit = sql_select("LIKEART", "COUNT(numArt) as nbLike, numArt", null,"numArt
         ?>
     </div>
     <hr class="my-3 margin-top-100">
-    <h2 class="uppercase"> Le top 10 </h2>
-    <hr class="my-3">
+    <div style="color: black; font-size: 110px; font-family: Montserrat; font-weight: 400; padding-left: 3rem ;word-wrap: break-word">LE TOP 10</div>    <hr class="my-3">
     <div class="custom-column row row-cols-1 row-cols-md-2 g-4 margin-tb-80">
         <?php
         foreach($topDeux as $articles){
@@ -140,6 +150,12 @@ $topHuit = sql_select("LIKEART", "COUNT(numArt) as nbLike, numArt", null,"numArt
         }
         ?>
     </div>
+
+
+    <head>
+
+</head>
+
 </body>
 
 <?php

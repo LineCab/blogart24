@@ -1,74 +1,110 @@
-body{
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
     margin: 0 60px;
-    font-family: Inter;
 }
 
-.img-connection{
-    margin-left: 95px;
-    margin-right: 30px;
+.titre h2, .titre hr {
+    text-align: right;
+    margin-right: 2rem;
 }
 
-.uppercase{
-    font-family: Montserrat;
-    font-size: 90px;
-    font-weight: 400;
-    text-transform: uppercase;
+.color {
+    color: #7F5226;
 }
 
-.margin-top-100{
-    margin-top: 100px !important;
+.titre {
+    text-align: right;
+    margin-right: 2rem;
+    margin-top: 2rem;
 }
 
-.card{
+.hr {
+    margin-right: 2rem;
+    margin-bottom: 0rem;
+    color: inherit;
+    border: 4rem;
+    border-top: solid;
+    opacity: 80;
+}
+
+.titre .hr {
+    float: right;
+    color: #333;
+    height: 3px;
+    width: 20rem;
+    margin-top: 0rem;
+}
+
+.custom-column {
+    margin: 2rem;
+}
+
+.card {
     border: none;
+    transition: transform 0.2s;
 }
 
 .card:hover {
-    transform: scale(1.02) !important;
-    transition: transform 0.3s ease-in-out !important;
+    transform: scale(1.05);
 }
 
-.card:hover img {
-    transform: scale(1) !important;
+.card-img-top {
+    object-fit: cover;
 }
 
-.custom-column{
+.card-date {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.like-com-articles {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+@media (max-width: 767px) {
+    .titre .hr {
+        width: 100%;
+    }
+}
+
+/* Additional styles for specific pages */
+
+/* Styles for the first page */
+.custom-column.row-cols-1.row-cols-md-2.g-4.margin-tb-80 {
     padding: 0 10px;
 }
 
-.card-date{
-    width: 200px;
-    padding: 5px 10px;
-    color: #FFF;
-    font-size: 20px;
-    font-weight: 400;
-    background-color: #5A3A31;
-}
-
-.card-title{
+.card-title {
     font-size: 32px;
     font-weight: 700;
     margin: 15px 0;
 }
 
-.card-text{
+.card-text2 {
     font-size: 20px;
     font-weight: 400;
+    text-decoration: none;
+    color: red;
 }
 
-.custom-row-66{
+.custom-row-66 {
     margin: 66px 0;
 }
 
-.footer-custom {
-    margin: 80px -60px 0 -60px;
-    padding: 0 70px;
-    background-color: #5A3A31;
-    color: #FAFAFA;
+.margin-top-100 {
+    margin-top: 100px;
 }
 
-.footer-custom ul li a{
-    color: #FAFAFA;
+/* Styles for the second and third pages */
+.col-6 {
+    width: 50%;
+    padding: 0 10px;
 }
 
 .footer-custom ul li a:hover{
