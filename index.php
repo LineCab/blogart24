@@ -26,10 +26,9 @@
 //load config
 require_once 'config.php';
 
-$articleAct = sql_select("ARTICLE", "*", "","dtCreaArt", 2);
+$articleAct = sql_select("ARTICLE", "*", "","dtCreaArt DESC", 2);
 $titreAct = sql_select("ARTICLE", "*","" ,"libTitrArt", 2);
 $libChapoArt = sql_select("ARTICLE", "*", "","libChapoArt", 2);
-
 ?>
 
 
