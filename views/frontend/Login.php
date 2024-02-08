@@ -10,6 +10,7 @@
 
     <div class="login">
       <button class="return" onclick="previousPage(1)"><img class="return" src="/src/images/Vector.png" alt="return"> Retour </button>
+      
       <br>
       <br>
       <img src="/src/images/Logo.png" alt="Logo" width="158.465px" height="128.826px">
