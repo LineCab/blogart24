@@ -15,12 +15,6 @@ $dtCreaCom = $comments[0]["dtCreaCom"];
 $membre = sql_select("MEMBRE", "*", "numMemb = $numMemb");
 $pseudoMemb = $membre[0]["pseudoMemb"];
 
-// session_start();
-
-// if(!isset($_SESSION['USER'])){
-//     header('Location: login.php');
-//     exit();
-// }
 
 ?>
 <html>

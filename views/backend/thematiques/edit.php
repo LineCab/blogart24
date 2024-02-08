@@ -1,7 +1,5 @@
 <?php
-include '../../../header.php'
-
-session_start();
+include '../../../header.php';
 
 if ($_SESSION['logged'] === false || $_SESSION['numStat'] != 1) {
     var_dump($_SESSION['numStat']);

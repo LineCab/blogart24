@@ -8,14 +8,6 @@ $comments = sql_select("COMMENT", "*", "numArt = $numArt");
 
 $pseudo = $_SESSION['username'];
 
-
-// session_start();
-
-// if(!isset($_SESSION['USER'])){
-//     header('Location: login.php');
-//     exit();
-// }
-
 ?>
 <html>
 <div class="commentaire">

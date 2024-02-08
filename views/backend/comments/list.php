@@ -1,8 +1,6 @@
 <?php
 include '../../../header.php'; 
 
-//libcom - dtModCom (sinon dtCreaCom) - numMmeb
-//prenomMemb - nomMemb
 $numArt = 1;
 $commentsAtt = sql_select("COMMENT", "*", "numArt = $numArt AND attModOK = 0 AND notifComKOAff IS NULL");
 $commentsVal = sql_select("COMMENT", "*", "numArt = $numArt AND (attModOK = 1 OR notifComKOAff IS NOT NULL) AND delLogiq = 0");

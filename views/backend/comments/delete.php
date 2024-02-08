@@ -19,12 +19,6 @@ $pseudoMemb = $membre[0]["pseudoMemb"];
 $article = sql_select("ARTICLE", "*", "numArt = $numArt");
 $libTitrArt = $article[0]["libTitrArt"];
 
-// session_start();
-
-// if(!isset($_SESSION['USER'])){
-//     header('Location: login.php');
-//     exit();
-// }
 
 ?>
 <html>
