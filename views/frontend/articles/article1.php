@@ -25,6 +25,8 @@ if ($_SESSION['logged']) {
     $numMemb = $_SESSION['numMemb'];
 }
 
+$comments = sql_select("COMMENT", "*", "numArt = $numArt");
+
 ?>
 
 <!DOCTYPE html>
@@ -39,6 +41,7 @@ if ($_SESSION['logged']) {
     <link rel="stylesheet" href="src/css/article.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
     <link rel="stylesheet" href="views/backend/articles/create.php">
 </head>
 
@@ -103,18 +106,46 @@ if ($_SESSION['logged']) {
                 </div>
             <?php
             }
+            
+            if ($_SESSION['logged']) {
             ?>
-                
-        <div class="container-comment">
-        <br>
-        <h2><i class='bx bx-message-rounded-dots'></i> COMMENTAIRES</h2>
-        <form id="comment-form" class="comment-form" onsubmit="return validateComment()">
-            <div class="comment-field">
-                <textarea id="comment" name="comment" rows="4" cols="50" required placeholder="Ecrivez votre commentaire ici ..."></textarea>
-                <button type="submit" class="comment-btn">Envoyer</button>
-            </div>
-        </form>
+                <div class="container-comment">
+                    <br>
+                    <h2><i class='bx bx-message-rounded-dots'></i> COMMENTAIRES</h2>
+                    <form id="comment-form" class="comment-form">
+                        <div class="comment-field">
+                            <textarea id="comment" name="comment" rows="4" cols="50" required placeholder="Ecrivez votre commentaire ici ..."></textarea>
+                            <button type="submit" class="comment-btn">Envoyer</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="container-comment">
+                    <?php
+                    foreach ($comments as $comment){
+                        $dtCreaCom = $comment["dtCreaCom"];
+                        $libCom = $comment["libCom"];
+                        $numMembCom = $comment["numMemb"];
 
+                        $membreCom = sql_select("MEMBRE", "*", "numMemb = $numMembCom");
+                        $pseudoMembCom = $membreCom[0]["pseudoMemb"];
+
+                    ?>
+                    <div class="card-custom" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title"><?php echo $pseudoMembCom ?></h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary"><?php echo $dtCreaCom ?></h6>
+                            <p class="card-text"><?php echo $libCom ?></p>
+                        </div>
+                    </div>
+
+                    <?php
+                    }
+                    ?>
+                </div>
+
+            <?php 
+            }
+            ?>
             <!-- Liste des comm -->
             <ul id="comment-list" class="comment-list">
                 <!-- commentaires sauvegarder ici -->
@@ -124,76 +155,34 @@ if ($_SESSION['logged']) {
 
 <script>
 
+    // const numMemb = <?php echo json_encode($numMemb); ?>;
+    // const numArt = <?php echo json_encode($numArt); ?>;
     
-
-    // let likeCount = 0;
-    // let likeCount2 = 0;
-    // let commentCount = 0;
-    
-
-    // // Pour récupérer les commentaires stockés dans le localStorage
-    // let storedComments = JSON.parse(localStorage.getItem("comments")) || [];
-
-    // // Charger les commentaires stockés lors du chargement de la page
-    // window.onload = function () {
-    //     storedComments.forEach(function (comment) {
-    //         var commentList = document.getElementById("comment-list");
-    //         var li = document.createElement("li");
-    //         li.innerHTML = `<strong>${comment.fname} ${comment.lname}</strong> (${comment.date}): <br> <br> ${comment.commentText}`;
-    //         commentList.appendChild(li);
+    // document.addEventListener('DOMContentLoaded', function() {
+    //     const likeCheckbox = document.getElementById('likeCom');
+        
+    //     likeCheckbox.addEventListener('change', function() {
+    //         if (this.checked) {
+    //             fetch('api/like/create.php', {
+    //                 method: 'POST',
+    //                 headers: {
+    //                     'Content-Type': 'application/json'
+    //                 },
+    //                 body: JSON.stringify({ numMemb: numMemb, numArt: numArt, likeA: 1 })
+    //             })
+    //             .then(response => {
+    //                 if (!response.ok) {
+    //                     throw new Error('Erreur lors de la requête.');
+    //                 }
+    //                 console.log('Like ajouté avec succès');
+    //             })
+    //             .catch(error => {
+    //                 console.error('Erreur lors de l\'ajout du like :', error.message);
+    //             });
+    //         }
     //     });
-
-    //     commentCount = storedComments.length;
-    //     updateCommentCount();
-    // };
-
-
-    // function likeArticle() {
-    //     likeCount++;
-    //     updateLikeCount();
-    // }
-
-    // function validateComment() {
-    //     var commentText = document.getElementById("comment").value;
-
-    //     // Ajouter le code pour enregistrer le com côté serveur
-
-    //     // Ajout du comment à la liste visible
-    //     var commentList = document.getElementById("comment-list");
-    //     var li = document.createElement("li");
-
-    //     // Ajouter la date de publication
-    //     var currentDate = new Date();
-    //     var dateString = currentDate.toLocaleDateString(); // juste la date pas l'heure
-
-    //     // Ajouter la date au comm
-    //     li.innerHTML = `(${dateString}): <br> <br> ${commentText}`;
-    //     commentList.appendChild(li);
-
-    //     // Sauvegarder le comm dans le localStorage
-    //     storedComments.push({ date: dateString, commentText });
-    //     localStorage.setItem("comments", JSON.stringify(storedComments));
-
-    //     commentCount++;
-    //     updateCommentCount();
-
-    //     // Effacer le champ du formulaire après l'envoi
-    //     document.getElementById("comment").value = "";
-
-    //     return false;
-    // }
-
-    // function updateLikeCount() {
-    //     document.getElementById("like-count").textContent = likeCount + " Likes";
-    //     document.getElementById("like-count2").textContent = likeCount + " Likes";
-    // }
-
-    // function updateCommentCount() {
-    //     document.getElementById("comment-count").textContent = commentCount + " Commentaires";// en haut
-    // }
+    // });
 </script>
-</body>
-</html>
 
 <?php 
 require_once '../../../footer.php'; 
