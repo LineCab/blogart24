@@ -29,7 +29,6 @@ require_once 'config.php';
 $articleAct = sql_select("ARTICLE", "*",null,"dtCreaArt DESC", 2);
 $titreAct = sql_select("ARTICLE", "*", null,"libTitrArt", 2);
 $libChapoArt = sql_select("ARTICLE", "*", null,"libChapoArt", 2);
-// $articleAct = sql_select("ARTICLE", "*", null, "likeA DESC", 10);
 
 ?> 
 
@@ -78,6 +77,7 @@ $libChapoArt = sql_select("ARTICLE", "*", null,"libChapoArt", 2);
                     <h3 class="card-title">Card title</h3>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
+    
                 </div>
             </div>
         </div>
