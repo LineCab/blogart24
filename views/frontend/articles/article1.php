@@ -23,6 +23,7 @@ $nbCom = sql_select("COMMENT", "COUNT(*) as nbCom", "numArt = $numArt");
 
 if ($_SESSION['logged']) {
     $numMemb = $_SESSION['numMemb'];
+    $pseudo = $_SESSION['username'];
 }
 
 $comments = sql_select("COMMENT", "*", "numArt = $numArt");
@@ -112,9 +113,12 @@ $comments = sql_select("COMMENT", "*", "numArt = $numArt");
                 <div class="container-comment">
                     <br>
                     <h2><i class='bx bx-message-rounded-dots'></i> COMMENTAIRES</h2>
-                    <form id="comment-form" class="comment-form">
+                    <br>
+                    <form id="comment-form" class="comment-form" action="<?php echo ROOT_URL . '/../../api/comments/create.php?numArt='.$numArt ?>" method="post">
+                        <label><?php echo $pseudo; ?></label>
+                        <label><?php echo date('d/m/Y'). '<br>'; ?></label>
                         <div class="comment-field">
-                            <textarea id="comment" name="comment" rows="4" cols="50" required placeholder="Ecrivez votre commentaire ici ..."></textarea>
+                            <textarea id="commentaire" name="commentaire" rows="4" cols="50" required placeholder="Ecrivez votre commentaire ici ..."></textarea>
                             <button type="submit" class="comment-btn">Envoyer</button>
                         </div>
                     </form>

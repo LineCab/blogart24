@@ -20,4 +20,4 @@ if(isset($libCom)){
     die("Veuillez entrer un commentaire");
 }
 
-header('Location: ../../views/backend/comments/list.php');
+header("Location: ../../views/frontend/articles/article1.php?numArt=$numArt");
