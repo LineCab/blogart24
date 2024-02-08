@@ -1,6 +1,6 @@
 <?php
 // select 1 or all instances
-function sql_select($table, $attributs = '*', $where = null, $order = null, $limit = null){
+function sql_select($table, $attributs = '*', $where = null, $group = null, $order = null, $limit = null){
     global $DB;
 
     //connect to database
@@ -12,6 +12,9 @@ function sql_select($table, $attributs = '*', $where = null, $order = null, $lim
     $query = "SELECT " . $attributs . " FROM $table";
     if($where){
         $query .= " WHERE $where";
+    }
+    if($group){
+        $query .= " GROUP BY $group";
     }
     if($order){
         $query .= " ORDER BY $order";
