@@ -48,6 +48,7 @@ $topHuit = sql_select("LIKEART", "COUNT(numArt) as nbLike, numArt", null,"numArt
             $nbLike = sql_select("LIKEART", "COUNT(*) as nbLike", "numArt = $numArt AND likeA = 1");
             $nbCom = sql_select("COMMENT", "COUNT(*) as nbLike", "numArt = $numArt");
         ?>
+        <a href="<?php echo "/views/frontend/articles/article1.php?numArt=".$numArt ?>">
             <div class="col">
                 <div class="card">
                     <img src="<?php echo "/src/uploads/".$urlImg ?>" height="400" class="card-img-top object-fit-cover">
@@ -66,6 +67,7 @@ $topHuit = sql_select("LIKEART", "COUNT(numArt) as nbLike, numArt", null,"numArt
                     </div>
                 </div>
             </div>
+        </a>
         <?php
         }
         ?>
@@ -87,24 +89,26 @@ $topHuit = sql_select("LIKEART", "COUNT(numArt) as nbLike, numArt", null,"numArt
                 $libTitrArt = $article["libTitrArt"];
                 $libChapoArt = $article["libChapoArt"];
             ?>
-                <div class="col">
-                    <div class="card">
-                        <img src="<?php echo "/src/uploads/".$urlImg ?>" height="400" class="card-img-top object-fit-cover">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between">
-                                <p class="card-text card-date"><?php echo $dtCreaArtFormat ?></p>
-                                <div class="d-flex align-items-center like-com-articles">
-                                    <img src="/src/images/coeur.png" height="18" class="card-img-top object-fit-cover mx-2" alt="Photo bière">
-                                    <?php echo $nblike; ?>
-                                    <img src="/src/images/comment.png" height="18" class="card-img-top object-fit-cover mx-2" alt="Photo bière">
-                                    <?php echo $nbCom[0]["nbCom"]; ?>
+                <a href="<?php echo "/views/frontend/articles/article1.php?numArt=".$numArt ?>">
+                    <div class="col">
+                        <div class="card">
+                            <img src="<?php echo "/src/uploads/".$urlImg ?>" height="400" class="card-img-top object-fit-cover">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <p class="card-text card-date"><?php echo $dtCreaArtFormat ?></p>
+                                    <div class="d-flex align-items-center like-com-articles">
+                                        <img src="/src/images/coeur.png" height="18" class="card-img-top object-fit-cover mx-2" alt="Photo bière">
+                                        <?php echo $nblike; ?>
+                                        <img src="/src/images/comment.png" height="18" class="card-img-top object-fit-cover mx-2" alt="Photo bière">
+                                        <?php echo $nbCom[0]["nbCom"]; ?>
+                                    </div>
                                 </div>
+                                <h3 class="card-title"><?php echo $libTitrArt ?></h3>
+                                <p class="card-text"><?php echo $libChapoArt ?></p>
                             </div>
-                            <h3 class="card-title"><?php echo $libTitrArt ?></h3>
-                            <p class="card-text"><?php echo $libChapoArt ?></p>
                         </div>
                     </div>
-                </div>
+                </a>
         <?php
             }
         }
@@ -120,15 +124,17 @@ $topHuit = sql_select("LIKEART", "COUNT(numArt) as nbLike, numArt", null,"numArt
                 $libTitrArt = $article["libTitrArt"];
                 $libChapoArt = $article["libChapoArt"];
             ?>
-            <div class="col">
-                <div class="card">
-                    <img src="<?php echo "/src/uploads/".$urlImg ?>" height="250" class="card-img-top object-fit-cover" alt="Photo bière">
-                    <div class="card-body">
-                        <h3 class="card-title"><?php echo $libTitrArt ?></h3>
-                        <p class="card-text"><?php echo $libChapoArt ?></p>
+            <a href="<?php echo "/views/frontend/articles/article1.php?numArt=".$numArt ?>">
+                <div class="col">
+                    <div class="card">
+                        <img src="<?php echo "/src/uploads/".$urlImg ?>" height="250" class="card-img-top object-fit-cover" alt="Photo bière">
+                        <div class="card-body">
+                            <h3 class="card-title"><?php echo $libTitrArt ?></h3>
+                            <p class="card-text"><?php echo $libChapoArt ?></p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </a>
         <?php
             }
         }

@@ -54,7 +54,8 @@ require_once 'config.php';
             $nbLike = sql_select("LIKEART", "COUNT(*) as nbLike", "numArt = $numArt AND likeA = 1");
             $nbCom = sql_select("COMMENT", "COUNT(*) as nbLike", "numArt = $numArt");
         ?>
-            <div class="col-6">
+        <div class="col-6">
+            <a href="<?php echo "/views/frontend/articles/article1.php?numArt=".$numArt ?>">
                 <div class="card">
                     <img src="<?php echo "/src/uploads/".$urlImg ?>" height="400" class="card-img-top object-fit-cover">
                     <div class="card-body">
@@ -71,7 +72,8 @@ require_once 'config.php';
                         <p class="card-text"><?php echo $libChapoArt ?></p>
                     </div>
                 </div>
-            </div>
+            </a>
+        </div>
         <?php
         }
         ?>

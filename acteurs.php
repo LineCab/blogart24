@@ -53,6 +53,7 @@ require_once 'config.php';
             $nbLike = sql_select("LIKEART", "COUNT(*) as nbLike", "numArt = $numArt AND likeA = 1");
             $nbCom = sql_select("COMMENT", "COUNT(*) as nbLike", "numArt = $numArt");
         ?>
+        <a href="<?php echo "/views/frontend/articles/article1.php?numArt=".$numArt ?>">
             <div class="col">
                 <div class="card">
                     <img src="<?php echo "/src/uploads/".$urlImg ?>" height="400" class="card-img-top object-fit-cover">
@@ -71,6 +72,7 @@ require_once 'config.php';
                     </div>
                 </div>
             </div>
+        </a>
         <?php
         }
         ?>
