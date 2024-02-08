@@ -39,12 +39,11 @@
       padding-left: 7rem;
   }
 
-  button .return {
-    align-items: right;
-    padding-left: 1rem;
-    margin-right: 10px;
-    cursor: pointer;
-
+.button-return {
+  align-items: right;
+  padding-left: 1rem;
+  margin-right: 10px;
+  cursor: pointer;
 }
 
 button{
