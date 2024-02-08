@@ -15,6 +15,13 @@
 //load config
 require_once 'config.php';
 session_start();
+
+if(isset($_COOKIE['pseudo'])) {
+    $_SESSION['login'] = true;
+    $_SESSION['pseudoMemb'] = $_COOKIE['pseudo'];
+    $pseudoMemb = $_COOKIE['pseudo'];
+}
+
 ?>
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary justify-content-between">
