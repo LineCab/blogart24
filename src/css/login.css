@@ -36,9 +36,23 @@
 
     img{
         align-items: center;
-        padding-left: 5rem;
+        padding-left: 7rem;
     }
 
+    button .return {
+      align-items: right;
+      padding-left: 1rem;
+      margin-right: 10px;
+      cursor: pointer;
+
+  }
+
+  button{
+    color: #5A3A31;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+  }
     /* STRUCTURE */
 
     .login {
@@ -49,6 +63,7 @@
       max-width: 450px;
       box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
       text-align: left;
+      
     }
 
     /* FORM TYPOGRAPHY*/
@@ -110,7 +125,6 @@
         font-size: 14px;
         text-align: center;
         padding-bottom: 30px;
-        
     }
 
     .envoie {
@@ -124,4 +138,8 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    }
+
+    label{
+      cursor: pointer;
     }
