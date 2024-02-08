@@ -55,7 +55,7 @@ $topHuit = sql_select("LIKEART", "COUNT(numArt) as nbLike, numArt", null,"numArt
             $dtCreaArtFormat = date('d/m/Y', strtotime($dtCreaArt));
             $urlImg = $article["urlPhotArt"];
             $libTitrArt = $article["libTitrArt"];
-            $libChapoArt = $article["libChapoArt"];
+            $libAccrochArt = $article["libAccrochArt"];
             $nbLike = sql_select("LIKEART", "COUNT(*) as nbLike", "numArt = $numArt AND likeA = 1");
             $nbCom = sql_select("COMMENT", "COUNT(*) as nbLike", "numArt = $numArt");
         ?>
@@ -74,7 +74,7 @@ $topHuit = sql_select("LIKEART", "COUNT(numArt) as nbLike, numArt", null,"numArt
                             </div>
                         </div>
                         <h3 class="card-title"><?php echo $libTitrArt ?></h3>
-                        <p class="card-text"><?php echo $libChapoArt ?></p>
+                        <p class="card-text"><?php echo $libAccrochArt ?></p>
                     </div>
                 </div>
             </div>
@@ -97,7 +97,7 @@ $topHuit = sql_select("LIKEART", "COUNT(numArt) as nbLike, numArt", null,"numArt
                 $dtCreaArtFormat = date('d/m/Y', strtotime($dtCreaArt));
                 $urlImg = $article["urlPhotArt"];
                 $libTitrArt = $article["libTitrArt"];
-                $libChapoArt = $article["libChapoArt"];
+                $libAccrochArt = $article["libAccrochArt"];
             ?>
                 <a href="<?php echo "/views/frontend/articles/article1.php?numArt=".$numArt ?>">
                     <div class="col">
@@ -114,7 +114,7 @@ $topHuit = sql_select("LIKEART", "COUNT(numArt) as nbLike, numArt", null,"numArt
                                     </div>
                                 </div>
                                 <h3 class="card-title"><?php echo $libTitrArt ?></h3>
-                                <p class="card-text"><?php echo $libChapoArt ?></p>
+                                <p class="card-text"><?php echo $libAccrochArt ?></p>
                             </div>
                         </div>
                     </div>
@@ -132,7 +132,7 @@ $topHuit = sql_select("LIKEART", "COUNT(numArt) as nbLike, numArt", null,"numArt
             foreach($articleTop as $article){
                 $urlImg = $article["urlPhotArt"];
                 $libTitrArt = $article["libTitrArt"];
-                $libChapoArt = $article["libChapoArt"];
+                $libAccrochArt = $article["libAccrochArt"];
             ?>
             <a href="<?php echo "/views/frontend/articles/article1.php?numArt=".$numArt ?>">
                 <div class="col">
@@ -140,7 +140,7 @@ $topHuit = sql_select("LIKEART", "COUNT(numArt) as nbLike, numArt", null,"numArt
                         <img src="<?php echo "/src/uploads/".$urlImg ?>" height="250" class="card-img-top object-fit-cover" alt="Photo bière">
                         <div class="card-body">
                             <h3 class="card-title"><?php echo $libTitrArt ?></h3>
-                            <p class="card-text"><?php echo $libChapoArt ?></p>
+                            <p class="card-text"><?php echo $libAccrochArt ?></p>
                         </div>
                     </div>
                 </div>
