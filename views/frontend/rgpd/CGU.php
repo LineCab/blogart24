@@ -8,15 +8,15 @@ require_once '../../../header.php';
     <div id="list-example" class="list-group">
       <a class="list-group-item list-group-item-action" href="#list-item-1">Article 1</a>
       <a class="list-group-item list-group-item-action" href="#list-item-2">Article 2</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-3">article 3</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-4">article 4</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-5">article 5</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-6">article 6</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-7">article 7</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-8">article 8</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-9">article 9</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-10">article 10</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-11">article 11</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-3">Article 3</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-4">Article 4</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-5">Article 5</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-6">Article 6</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-7">Article 7</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-8">Article 8</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-9">Article 9</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-10">Article 10</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-11">Article 11</a>
 
     </div>
 
