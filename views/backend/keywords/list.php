@@ -16,14 +16,28 @@ $motcles = sql_select("MOTCLE", "*");
                     <tr>
                         <th>Id</th>
                         <th>Mots clés</th>
+                        <th>Article</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <?php foreach($motcles as $motcle){ ?>
+                    <?php foreach($motcles as $motcle){
+                        $numMotCle = $motcle['numMotCle'];
+                        $libMotCle = $motcle['libMotCle'];
+
+                        $motsCleArticle = sql_select("MOTCLEARTICLE", "*", "numMotCle = $numMotCle");
+                    ?>
                         <tr>
-                            <td><?php echo($motcle['numMotCle']); ?></td>
-                            <td><?php echo($motcle['libMotCle']); ?></td>
+                            <td><?php echo $numMotCle; ?></td>
+                            <td><?php echo $libMotCle; ?></td>
+                            <td>N° : 
+                            <?php
+                            foreach($motsCleArticle as $motCleArticle){
+                                $numArt = $motCleArticle["numArt"];
+                                echo $numArt." / ";
+                            }
+                            ?>
+                            </td>
                             <td>
                                 <a href="edit.php?numMotCle=<?php echo($motcle['numMotCle']); ?>" class="btn btn-primary">Edit</a>
                                 <a href="delete.php?numMotCle=<?php echo($motcle['numMotCle']); ?>" class="btn btn-danger">Delete</a>
