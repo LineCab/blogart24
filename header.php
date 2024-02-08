@@ -28,11 +28,14 @@ session_start();
             <a class="nav-link" href="acteurs.php">Acteurs</a>
             <a class="nav-link" href="events.php">Evènements</a>
             <a class="nav-link" href="#">Où les trouver ?</a>
-            <a class="nav-link" href="/views/backend/dashboard.php">Admin</a>
+            <?php
+              if (!empty($_SESSION['numStat']) && $_SESSION['numStat'] == 1) {
+                echo "<a class=\"nav-link\" href=\"/views/backend/dashboard.php\">Admin</a>" ;
+              }
+            ?>
         </div>
     </div>
     <?php
-
       if(isset($_SESSION['logged']) && $_SESSION['logged'] === true){ 
         echo '<a href="/api/security/deco.php" role="button"><img src="/src/images/déconnection.png" alt="Logo" width="40px" height="40px"></a>';
       } else {
