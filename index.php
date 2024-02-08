@@ -126,7 +126,7 @@ $topHuit = sql_select("LIKEART", "COUNT(numArt) as nbLike, numArt", null,"numArt
     </div>
     <div class="custom-column row row-cols-1 row-cols-md-4 g-4">
     <?php
-        foreach($topDeux as $articles){
+        foreach($topHuit as $articles){
             $numArt = $articles["numArt"];
             $articleTop = sql_select("ARTICLE", "*", "numArt = $numArt");
             foreach($articleTop as $article){

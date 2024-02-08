@@ -27,16 +27,22 @@
 			<p>Conditions générales d'utilisation</p>
 			<ul class="nav justify-content-center">
 				<li class="nav-item">
-					<a class="nav-link nav-footer-color" aria-current="page" href="#">Active</a>
+					<a class="nav-link nav-footer-color" aria-current="page" href="/index.php">Accueil</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link nav-footer-color" href="#">Link</a>
+					<a class="nav-link nav-footer-color" href="/acteurs.php">Acteurs</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link nav-footer-color" href="#">Link</a>
+					<a class="nav-link nav-footer-color" href="/events.php">Evenements</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link nav-footer-color" aria-disabled="true">Disabled</a>
+					<a class="nav-link nav-footer-color" aria-disabled="true">Où les trouver ?</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link nav-footer-color" href="/views/frontend/rgpd/rgpd.php">Rgpd</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link nav-footer-color" href="/views/frontend/rgpd/CGU.php">CGU</a>
 				</li>
 			</ul>
 		</div>
