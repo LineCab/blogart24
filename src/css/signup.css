@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-html {
-    background-color: with;
-}
-
 body {
     font-family: "Poppins", sans-serif;
     height: 100vh;
@@ -12,46 +8,32 @@ body {
     justify-content: center;
 }
 
+.form-control-left{
+    margin-right: 5px;
+}
+
+.form-control-right{
+    margin-left: 5px;
+}
+
 a {
-    color: #92badd;
-    display: inline-block;
-    text-decoration: none;
-    font-weight: 400;
+    color: #000;
 }
-
-h1 {
-    text-align: left;
-    font-size: 24px;
-    font-weight: 600;
-    color: #0d0d0d;
-}
-
-p {
-    text-align: left;
-    font-size: 14px;
-    color: #0d0d0d;
-    margin-bottom: 10px;
-}
-
-img {
-    align-items: center;
-    padding-left: 8rem;
-}
-
-/* STRUCTURE */
 
 .signup {
     border-radius: 10px;
     background: #fff;
     padding: 30px;
-    width: 90%;
-    max-width: 450px;
+    width: 100%;
+    max-width: 550px;
     position: relative;
     box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
     text-align: left;
 }
 
-/* FORM TYPOGRAPHY*/
+.form-check-custom{
+    padding-left: 0;
+}
 
 input[type="text"],
 input[type="email"],
@@ -63,7 +45,6 @@ input[type="password"] {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 5px;
     width: 85%;
     border: 2px solid #f6f6f6;
     border-radius: 5px;
@@ -77,61 +58,6 @@ input[type="password"]:focus {
     border-bottom: 2px solid #5fbae9;
 }
 
-input[type="submit"] {
-    background-color: #fff;
-    border: none;
-    color: black;
-    border: 2px solid #000;
-    padding: 15px 80px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    text-transform: uppercase;
-    font-size: 13px;
-    border-radius: 5px;
-    transition: all 0.3s ease-in-out;
-}
-
-input[type="submit"]:hover {
+.btn-outline-dark:hover{
     background-color: #5A3A31;
-    color: #fff;
-    border: 2px solid #5A3A31;
-}
-
-a {
-    color: #000;
-    display: flex;
-}
-
-a .bx {
-    font-size: 1.5rem;
-}
-
-.login {
-    text-decoration: underline;
-    font-size: 14px;
-    text-align: center;
-    padding-bottom: 30px;
-}
-
-.envoie {
-    align-items: center;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.centered {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.form-group {
-    display: flex;
-    align-items: center;
-}
-
-.checkbox-label {
-    margin-left: 10px;
 }
