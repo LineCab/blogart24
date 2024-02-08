@@ -19,6 +19,7 @@ function bbCodeToHtml($text)
     $text = preg_replace('/\[b\](.*?)\[\/b\]/is', '<strong>$1</strong>', $text);
     $text = preg_replace('/\[i\](.*?)\[\/i\]/is', '<em>$1</em>', $text);
     $text = preg_replace('/\[u\](.*?)\[\/u\]/is', '<u>$1</u>', $text);
+    $text = preg_replace('/\[br\]/i', '<br>', $text);
     $urlPattern = '#\[url=(.+?)\](.+?)\[/url\]#';
     $urlReplacement = '<a href="$1">$2</a>';
     $text = preg_replace($urlPattern, $urlReplacement, $text);

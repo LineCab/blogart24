@@ -5,12 +5,12 @@ require_once '../../functions/ctrlSaisies.php';
 
 $dtCreaArt = date("Y-m-d H:i:s");  
 $libTitrArt = ctrlSaisies($_POST['libTitrArt']);
-$libChapoArt = ctrlSaisies($_POST['libChapoArt']);
-$libAccrochArt = ctrlSaisies($_POST['libAccrochArt']);
+$libChapoArt = bbCodeToHtml(ctrlSaisies($_POST['libChapoArt']));
+$libAccrochArt = bbCodeToHtml(ctrlSaisies($_POST['libAccrochArt']));
 $parag1Art = bbCodeToHtml(ctrlSaisies($_POST['parag1Art']));
-$libSsTitr1Art = ctrlSaisies($_POST['libSsTitr1Art']);
+$libSsTitr1Art = bbCodeToHtml(ctrlSaisies($_POST['libSsTitr1Art']));
 $parag2Art = bbCodeToHtml(ctrlSaisies($_POST['parag2Art']));
-$libSsTitr2Art = ctrlSaisies($_POST['libSsTitr2Art']);
+$libSsTitr2Art = bbCodeToHtml(ctrlSaisies($_POST['libSsTitr2Art']));
 $parag3Art = bbCodeToHtml(ctrlSaisies($_POST['parag3Art']));
 $libConclArt = bbCodeToHtml(ctrlSaisies($_POST['libConclArt']));
 
