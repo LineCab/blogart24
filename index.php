@@ -32,6 +32,7 @@ require_once 'config.php';
     <h2 class="uppercase"> L'actualité </h2>
     <hr class="my-3">
     <div class="column-gap-1 d-flex justify-content-center">
+        
         <div class="col-6 custom-column">
             <div class="card">
                 <img src="/src/images/bieres.png" height="400" class="card-img-top object-fit-cover" alt="Photo bière">
