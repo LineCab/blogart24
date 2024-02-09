@@ -144,6 +144,16 @@ hr {
     
 }
 
+.navbar-custom{
+    margin: 0 -60px;
+    padding: 0 100px 0 60px;
+}
+
+.navbar-nav a:hover{
+    background-color: rgba(90, 58, 49, 0.1);
+    border-radius: 5px;
+}
+
 .footer-custom {
     margin: 80px -60px 0 -60px;
     padding: 0 70px;

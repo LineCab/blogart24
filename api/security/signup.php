@@ -127,7 +127,7 @@ if (!$error){
     sql_insert('MEMBRE', 'nomMemb, prenomMemb, pseudoMemb, passMemb, eMailMemb, accordMemb, numStat', " '$nom', '$prenom', '$pseudo', '$mdpHash', '$email1', 1, '$numStat'");
 
     session_start();
-    $_SESSION['logged_in'] = true;
+    $_SESSION['logged'] = true;
     $_SESSION['username'] = $pseudo;
     ?>
 

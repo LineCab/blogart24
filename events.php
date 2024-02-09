@@ -2,7 +2,7 @@
     require_once 'header.php';
     sql_connect();
 
-    $articles = sql_select("ARTICLE", "*", "numThem = 3");
+    $articles = sql_select("ARTICLE", "*", "numThem = 1");
 
 ?>
 <?php
@@ -30,7 +30,7 @@ require_once 'config.php';
             $dtCreaArtFormat = date('d/m/Y', strtotime($dtCreaArt));
             $urlImg = $article["urlPhotArt"];
             $libTitrArt = $article["libTitrArt"];
-            $libChapoArt = $article["libChapoArt"];
+            $libAccrochArt = $article["libAccrochArt"];
             $nbLike = sql_select("LIKEART", "COUNT(*) as nbLike", "numArt = $numArt AND likeA = 1");
             $nbCom = sql_select("COMMENT", "COUNT(*) as nbLike", "numArt = $numArt");
         ?>
@@ -49,7 +49,7 @@ require_once 'config.php';
                             </div>
                         </div>
                         <h3 class="card-title"><?php echo $libTitrArt ?></h3>
-                        <p class="card-text"><?php echo $libChapoArt ?></p>
+                        <p class="card-text"><?php echo $libAccrochArt ?></p>
                     </div>
                 </div>
             </a>
