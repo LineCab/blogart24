@@ -24,7 +24,7 @@ foreach($coms as $com){
 foreach($likes as $like){
     $likeArt = $like["numArt"];
     if($likeArt == $numArt){
-        sql_delete('LIKEA', "numArt = $numArt");
+        sql_delete('LIKEART', "numArt = $numArt");
     }
 }
 foreach($motCles as $motCle){
