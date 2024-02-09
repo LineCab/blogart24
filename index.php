@@ -47,7 +47,7 @@ $topHuit = sql_select("LIKEART", "COUNT(numArt) as nbLike, numArt", null,"numArt
             $libTitrArt = $article["libTitrArt"];
             $libAccrochArt = $article["libAccrochArt"];
             $nbLike = sql_select("LIKEART", "COUNT(*) as nbLike", "numArt = $numArt AND likeA = 1");
-            $nbCom = sql_select("COMMENT", "COUNT(*) as nbLike", "numArt = $numArt");
+            $nbCom = sql_select("COMMENT", "COUNT(*) as nbLike", "numArt = $numArt AND attModOK = 1 AND delLogiq = 0");
         ?>
         <a href="<?php echo "/views/frontend/articles/article1.php?numArt=".$numArt ?>">
             <div class="col">
@@ -81,7 +81,7 @@ $topHuit = sql_select("LIKEART", "COUNT(numArt) as nbLike, numArt", null,"numArt
             $numArt = $articles["numArt"];
             $nblike = $articles["nbLike"];
             $articleTop = sql_select("ARTICLE", "*", "numArt = $numArt");
-            $nbCom = sql_select("COMMENT", "COUNT(*) as nbCom", "numArt = $numArt");
+            $nbCom = sql_select("COMMENT", "COUNT(*) as nbCom", "numArt = $numArt AND attModOK = 1 AND delLogiq = 0");
             foreach($articleTop as $article){
                 $dtCreaArt = $article["dtCreaArt"];
                 $dtCreaArtFormat = date('d/m/Y', strtotime($dtCreaArt));

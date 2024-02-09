@@ -19,7 +19,7 @@ $urlPhotArt = $article[0]["urlPhotArt"];
 
 
 $nbLike = sql_select("LIKEART", "COUNT(*) as nbLike", "numArt = $numArt AND likeA = 1");
-$nbCom = sql_select("COMMENT", "COUNT(*) as nbCom", "numArt = $numArt");
+$nbCom = sql_select("COMMENT", "COUNT(*) as nbCom", "numArt = $numArt AND attModOK = 1 AND delLogiq = 0");
 
 if (isset($_SESSION['logged']) && $_SESSION['logged']==true) {
     $numMemb = $_SESSION['numMemb'];
