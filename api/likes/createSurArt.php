@@ -14,5 +14,7 @@ if ($existing_like) {
     sql_insert('LIKEART', "numMemb, numArt, likeA", "'$numMemb', '$numArt', '$likeA'");
 }
 
+$_SESSION['likeArt'][$numArt] = $likeA;
+
 header('Location: ../../views/frontend/articles/article1.php?numArt='.$numArt);
 ?>

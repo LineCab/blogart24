@@ -24,6 +24,7 @@ if (get_ExistPseudo($pseudo)){
         $numStat = $numStat[0]["numStat"];
 
         $_SESSION['numStat'] = $numStat;
+        $_SESSION['likeArt'] = array();
         
         header('Location: ../../index.php');
 

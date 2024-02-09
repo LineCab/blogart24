@@ -21,7 +21,7 @@ $urlPhotArt = $article[0]["urlPhotArt"];
 $nbLike = sql_select("LIKEART", "COUNT(*) as nbLike", "numArt = $numArt AND likeA = 1");
 $nbCom = sql_select("COMMENT", "COUNT(*) as nbCom", "numArt = $numArt");
 
-if ($_SESSION['logged']) {
+if (isset($_SESSION['logged']) && $_SESSION['logged']==true) {
     $numMemb = $_SESSION['numMemb'];
     $pseudo = $_SESSION['username'];
 }
@@ -36,7 +36,6 @@ $comments = sql_select("COMMENT", "*", "numArt = $numArt");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Article 1</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="src/css/reset.css" />
     <link rel="stylesheet" href="src/css/style.css" />
     <link rel="stylesheet" href="src/css/article.css" />
@@ -90,13 +89,14 @@ $comments = sql_select("COMMENT", "*", "numArt = $numArt");
             </div>
             <br>
             <?php
-              if ($_SESSION['logged']) {
+              if (isset($_SESSION['logged']) && $_SESSION['logged']==true) {
+                $checked = isset($_SESSION['likeArt'][$numArt]) && $_SESSION['likeArt'][$numArt] == 1 ? 'checked' : '';
             ?>
                 <div class="like">
                     <p>Vous avez aimé cet article ? N’hésitez pas à liker !</p>
                 </div>
                 <div class="article-info">
-                    <input type="checkbox" id="likeCom" name="likeCom" value="valeur">
+                    <input type="checkbox" id="likeCom" name="likeCom" value="valeur" <?php echo $checked; ?>>
                     <label for="likeCom" id="coeurLikeCom">Like</label>
                 </div>  
             <?php
@@ -108,7 +108,7 @@ $comments = sql_select("COMMENT", "*", "numArt = $numArt");
             <?php
             }
             
-            if ($_SESSION['logged']) {
+            if (isset($_SESSION['logged']) && $_SESSION['logged']==true) {
             ?>
                 <div class="container-comment">
                     <br>
@@ -158,6 +158,7 @@ $comments = sql_select("COMMENT", "*", "numArt = $numArt");
         </div>
     </section>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
     
@@ -167,7 +168,7 @@ $(document).ready(function(){
         var choixLike = this.checked ? 1 : 0;
 
         $.ajax({
-            url: '/api/likes/createSurArt.php',
+            url: '../../../api/likes/createSurArt.php',
             method: 'POST',
             data: { numArt: numArt, numMemb: numMemb, choixLike: choixLike },
             success: function(response){
