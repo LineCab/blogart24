@@ -1,3 +1,6 @@
+<?php
+require_once '../../../header.php';
+?>
 
 
 <!DOCTYPE html>
@@ -146,3 +149,6 @@ L'hébergeur du site GARDENA est la société Netlify, dont le siège social est
 </html>
 
 
+<?php
+require_once '../../../footer.php';
+?>
