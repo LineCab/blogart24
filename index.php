@@ -140,9 +140,6 @@ $topHuit = sql_select("LIKEART", "COUNT(numArt) as nbLike, numArt", null,"numArt
         }
         ?>
     </div>
-    <head>
-
-</head>
 </body>
 
 <?php
