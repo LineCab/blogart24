@@ -23,8 +23,8 @@
 			<img class="img-footer" src="/src/images/Logo-blanc.svg" height="80" width="100" alt="Photo bière">
 			<p>1 rue Jacques Ellul, 33800 Bordeaux</p>
 			<p>lebloggardena@gmail.com</p>
-			<p>Mentions légales</p>
-			<p>Conditions générales d'utilisation</p>
+			<a class="nav-link nav-footer-color" href="/views/frontend/rgpd/rgpd.php">Mentions légales</a>
+			<a class="nav-link nav-footer-color" href="/views/frontend/rgpd/CGU.php">Conditions générales d'utilisation</a>
 			<ul class="nav justify-content-center">
 				<li class="nav-item">
 					<a class="nav-link nav-footer-color" aria-current="page" href="/index.php">Accueil</a>
@@ -37,12 +37,6 @@
 				</li>
 				<li class="nav-item">
 					<a class="nav-link nav-footer-color" aria-disabled="true">Où les trouver ?</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link nav-footer-color" href="/views/frontend/rgpd/rgpd.php">Rgpd</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link nav-footer-color" href="/views/frontend/rgpd/CGU.php">CGU</a>
 				</li>
 			</ul>
 		</div>
