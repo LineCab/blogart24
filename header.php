@@ -34,7 +34,7 @@ if(isset($_COOKIE['pseudo'])) {
             <a class="nav-link" aria-current="page" href="/index.php">Accueil</a>
             <a class="nav-link" href="/acteurs.php">Acteurs</a>
             <a class="nav-link" href="/events.php">Evènements</a>
-            <a class="nav-link" href="#">Où les trouver ?</a>
+            <a class="nav-link" href="/views/frontend/shearch.php">Où les trouver ?</a>
             <?php
               if (!empty($_SESSION['numStat']) && $_SESSION['numStat'] == 1) {
                 echo "<a class=\"nav-link\" href=\"/views/backend/dashboard.php\">Admin</a>" ;

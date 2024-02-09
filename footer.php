@@ -36,7 +36,7 @@
 					<a class="nav-link nav-footer-color" href="/events.php">Evenements</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link nav-footer-color" aria-disabled="true">Où les trouver ?</a>
+					<a class="nav-link nav-footer-color" href="/views/frontend/shearch.php">Où les trouver ?</a>
 				</li>
 			</ul>
 		</div>
