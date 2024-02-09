@@ -1,6 +1,11 @@
 <?php
 include '../../../header.php'; 
 
+if ($_SESSION['logged'] === false || $_SESSION['numStat'] == 3) {
+    $_SESSION['admin'] = true;
+    header('Location: ./security/login.php');
+}
+
 $commentsAtt = sql_select("COMMENT", "*", "attModOK = 0 AND notifComKOAff = ''");
 $commentsContr = sql_select("COMMENT", "*", "(attModOK = 1 OR notifComKOAff NOT LIKE '') AND delLogiq = 0");
 $commentsSupprLog = sql_select("COMMENT", "*", "delLogiq = 1");

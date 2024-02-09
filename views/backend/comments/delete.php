@@ -1,5 +1,11 @@
 <?php
 include '../../../header.php';
+
+
+if ($_SESSION['logged'] === false || $_SESSION['numStat'] == 3) {
+    $_SESSION['admin'] = true;
+    header('Location: ./security/login.php');
+}
 ?>
 <?php
 
