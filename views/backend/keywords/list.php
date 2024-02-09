@@ -39,6 +39,7 @@ $motcles = sql_select("MOTCLE", "*");
                             ?>
                             </td>
                             <td>
+                                <a href="associer.php?numMotCle=<?php echo($motcle['numMotCle']); ?>" class="btn btn-primary">Associer Art</a>
                                 <a href="edit.php?numMotCle=<?php echo($motcle['numMotCle']); ?>" class="btn btn-primary">Edit</a>
                                 <a href="delete.php?numMotCle=<?php echo($motcle['numMotCle']); ?>" class="btn btn-danger">Delete</a>
                             </td>
