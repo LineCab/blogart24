@@ -90,13 +90,12 @@ $comments = sql_select("COMMENT", "*", "numArt = $numArt");
             <br>
             <?php
               if (isset($_SESSION['logged']) && $_SESSION['logged']==true) {
-                $checked = isset($_SESSION['likeArt'][$numArt]) && $_SESSION['likeArt'][$numArt] == 1 ? 'checked' : '';
             ?>
                 <div class="like">
                     <p>Vous avez aimé cet article ? N’hésitez pas à liker !</p>
                 </div>
                 <div class="article-info">
-                    <input type="checkbox" id="likeCom" name="likeCom" value="valeur" <?php echo $checked; ?>>
+                    <input type="checkbox" id="likeCom" name="likeCom" value="valeur">
                     <label for="likeCom" id="coeurLikeCom">Like</label>
                 </div>  
             <?php
@@ -159,30 +158,6 @@ $comments = sql_select("COMMENT", "*", "numArt = $numArt");
     </section>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-    
-    $('#likeCom').change(function(){
-        var numArt = <?php echo json_encode($numArt); ?>; 
-        var numMemb = <?php echo json_encode($_SESSION["numMemb"]); ?>; 
-        var choixLike = this.checked ? 1 : 0;
-
-        $.ajax({
-            url: '../../../api/likes/createSurArt.php',
-            method: 'POST',
-            data: { numArt: numArt, numMemb: numMemb, choixLike: choixLike },
-            success: function(response){
-                // Gérer la réponse si nécessaire
-                console.log(response);
-            },
-            error: function(xhr, status, error){
-                // Gérer les erreurs si nécessaire
-                console.error(xhr.responseText);
-            }
-        });
-    });
-});
-</script>
 
 <style>
     .card-body{
