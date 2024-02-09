@@ -6,7 +6,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/header.php';
 <h1>Où retrouver nos artisans ?</h1>
 
 <div class="buttons">
-    <button type="button" class="btn btn-primary" > Ajouter un filtre +</button>
+    <button type="button" class="btn btn-primary"> Ajouter un filtre +</button>
     <button type="button" class="btn btn-outline-second" disabled>Boucherie x</button>
     <button type="button" class="btn btn-outline-second" disabled>Patissier x</button>
 </div>
@@ -70,22 +70,23 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/header.php';
     }
 
     .maps iframe {
-        width: 200%;
-        height: 500px;
-        margin-left: 4rem;
+        width: 170%;
+        height: 480px;
+        margin-left: 3rem;
         align-items: center;
     }
 
     .flex-container{
-    padding-right: 13rem;
-    padding-left: 3rem;
-    display: flex;
+        padding-right: 10rem;
+        display: flex;
     }
 
     .card-body{
         text-align: left;
         color: #000;
         background-color: #fff;
+        border: 1px solid;
+        border-radius: 5px;
     }
 
 
@@ -95,23 +96,18 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/header.php';
        margin-left: 3rem;
     }
 
-
     .buttons{
-        padding: 1rem;
-        padding-left: 3rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
     .btn-primary{
-        background-color: #FFEDDD;
-        color: #000;
-        border: none;
+        background-color: #FFEDDD !important;
+        color: #000 !important;
+        border: none !important;
+        margin-right: 15px;
     }
 
-    .btn-primary:hover{
-        background-color: #FFEDDD;
-        color: #000;
-        border: none;
-    }
 
 </style>
 
