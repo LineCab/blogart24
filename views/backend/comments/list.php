@@ -1,10 +1,9 @@
 <?php
 include '../../../header.php'; 
 
-$numArt = 1;
-$commentsAtt = sql_select("COMMENT", "*", "numArt = $numArt AND attModOK = 0 AND notifComKOAff IS NULL");
-$commentsVal = sql_select("COMMENT", "*", "numArt = $numArt AND (attModOK = 1 OR notifComKOAff IS NOT NULL) AND delLogiq = 0");
-$commentsSupprLog = sql_select("COMMENT", "*", "numArt = $numArt AND delLogiq = 1");
+$commentsAtt = sql_select("COMMENT", "*", "attModOK = 0 AND notifComKOAff = ''");
+$commentsContr = sql_select("COMMENT", "*", "(attModOK = 1 OR notifComKOAff NOT LIKE '') AND delLogiq = 0");
+$commentsSupprLog = sql_select("COMMENT", "*", "delLogiq = 1");
 
 ?>
 
@@ -38,7 +37,13 @@ $commentsSupprLog = sql_select("COMMENT", "*", "numArt = $numArt AND delLogiq = 
                         foreach($pseudo as $pseudos){ 
                     ?>
                             <td><?php echo($pseudos['pseudoMemb']); }?></td>
-                            <td><?php echo($comment['dtCreaCom']); ?></td>
+                            <td><?php 
+                                if ($comment['dtCreaCom'] > $comment['dtModCom']){
+                                    echo($comment['dtCreaCom']);
+                                }else{
+                                    echo($comment['dtModCom']);
+                                }
+                            ?></td>
                             <td><?php echo($comment['libCom']); ?></td>
                             <td>
                                 <a href="control.php?numCom=<?php echo $comment['numCom']; ?>" class="btn btn-primary">Contrôler</a>
@@ -62,13 +67,19 @@ $commentsSupprLog = sql_select("COMMENT", "*", "numArt = $numArt AND delLogiq = 
                     </tr>
                 </thead>
                 <tbody>
-                <?php foreach($commentsVal as $comment){
+                <?php foreach($commentsContr as $comment){
                         $numMemb = $comment["numMemb"];
                         $pseudo = sql_select("MEMBRE", "*", "numMemb = $numMemb");
                         foreach($pseudo as $pseudos){ 
                     ?>
                             <td><?php echo($pseudos['pseudoMemb']); }?></td>
-                            <td><?php echo($comment['dtModCom']); ?></td>
+                            <td><?php
+                                if ($comment['dtCreaCom'] > $comment['dtModCom']){
+                                    echo($comment['dtCreaCom']);
+                                }else{
+                                    echo($comment['dtModCom']);
+                                }
+                            ?></td>
                             <td><?php echo($comment['libCom']); ?></td>
                             <?php 
                                 if ($comment["attModOK"] == 1){
