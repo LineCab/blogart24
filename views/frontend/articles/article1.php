@@ -26,7 +26,7 @@ if (isset($_SESSION['logged']) && $_SESSION['logged']==true) {
     $pseudo = $_SESSION['username'];
 }
 
-$comments = sql_select("COMMENT", "*", "numArt = $numArt");
+$comments = sql_select("COMMENT", "*", "numArt = $numArt AND attModOK = 1 AND delLogiq = 0");
 
 ?>
 
