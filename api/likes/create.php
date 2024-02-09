@@ -9,3 +9,4 @@ $likeA = ctrlSaisies($_POST['choixLike']);
 sql_insert('LIKEART', "numMemb, numArt, likeA", "'$numMemb', '$numArt', '$likeA'");
 
 header('Location: ../../views/backend/likes/list.php');
+?>

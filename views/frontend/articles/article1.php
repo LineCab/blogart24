@@ -159,34 +159,28 @@ $comments = sql_select("COMMENT", "*", "numArt = $numArt");
     </section>
 
 <script>
-
-    // const numMemb = <?php echo json_encode($numMemb); ?>;
-    // const numArt = <?php echo json_encode($numArt); ?>;
+$(document).ready(function(){
     
-    // document.addEventListener('DOMContentLoaded', function() {
-    //     const likeCheckbox = document.getElementById('likeCom');
-        
-    //     likeCheckbox.addEventListener('change', function() {
-    //         if (this.checked) {
-    //             fetch('api/like/create.php', {
-    //                 method: 'POST',
-    //                 headers: {
-    //                     'Content-Type': 'application/json'
-    //                 },
-    //                 body: JSON.stringify({ numMemb: numMemb, numArt: numArt, likeA: 1 })
-    //             })
-    //             .then(response => {
-    //                 if (!response.ok) {
-    //                     throw new Error('Erreur lors de la requête.');
-    //                 }
-    //                 console.log('Like ajouté avec succès');
-    //             })
-    //             .catch(error => {
-    //                 console.error('Erreur lors de l\'ajout du like :', error.message);
-    //             });
-    //         }
-    //     });
-    // });
+    $('#likeCom').change(function(){
+        var numArt = <?php echo json_encode($numArt); ?>; 
+        var numMemb = <?php echo json_encode($_SESSION["numMemb"]); ?>; 
+        var choixLike = this.checked ? 1 : 0;
+
+        $.ajax({
+            url: '/api/likes/createSurArt.php',
+            method: 'POST',
+            data: { numArt: numArt, numMemb: numMemb, choixLike: choixLike },
+            success: function(response){
+                // Gérer la réponse si nécessaire
+                console.log(response);
+            },
+            error: function(xhr, status, error){
+                // Gérer les erreurs si nécessaire
+                console.error(xhr.responseText);
+            }
+        });
+    });
+});
 </script>
 
 <style>

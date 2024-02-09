@@ -126,9 +126,17 @@ if (!$error){
     $mdpHash = password_hash($mdp1, PASSWORD_DEFAULT);
     sql_insert('MEMBRE', 'nomMemb, prenomMemb, pseudoMemb, passMemb, eMailMemb, accordMemb, numStat', " '$nom', '$prenom', '$pseudo', '$mdpHash', '$email1', 1, '$numStat'");
 
+    setcookie('pseudo', $pseudoMemb, time() + (86400 * 30), "/");
+
     session_start();
     $_SESSION['logged'] = true;
     $_SESSION['username'] = $pseudo;
+    $_SESSION['numMemb'] = $numMemb;
+
+    $numStat = sql_select("membre", "numStat", "pseudoMemb = '$pseudo'");
+    $numStat = $numStat[0]["numStat"];
+
+    $_SESSION['numStat'] = $numStat;
     ?>
 
     <?php
