@@ -123,6 +123,7 @@ $comments = sql_select("COMMENT", "*", "numArt = $numArt");
                         </div>
                     </form>
                 </div>
+
                 <div class="container-comment">
                     <?php
                     foreach ($comments as $comment){
@@ -187,6 +188,35 @@ $comments = sql_select("COMMENT", "*", "numArt = $numArt");
     //     });
     // });
 </script>
+
+<style>
+    .card-body{
+        width: 160%; 
+        height: 100%; 
+        background: #CEC4C2; 
+        border-radius: 5px;
+        padding: 3rem;
+    }
+
+    .card-title{
+        padding-left: 1rem;
+        padding-top: 30px;
+    }
+    
+    .card-subtitle{
+        padding-left: 1rem;
+    }
+
+    .card-subtitle{
+        padding-left: 1rem;
+    }
+
+    .card-text{
+        padding-left: 1rem;
+        padding-bottom: 30px;
+    }
+
+</style>
 
 <?php 
 require_once '../../../footer.php'; 
