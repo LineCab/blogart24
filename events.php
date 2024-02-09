@@ -11,15 +11,6 @@ require_once 'config.php';
 ?>
 
 <body>
-    <div class="titre">
-        
-        <h2>BORDEAUX’ <span class="color">COEUR</span></h2>
-
-        <hr></hr>
-        
-        <h2 class="titre">DE L’ARTISANAT</h2>
-    
-    </div>
 
     <!-- ligne article 1 -->
     <div class="custom-column row row-cols-1 row-cols-md-2 g-4 margin-tb-80">

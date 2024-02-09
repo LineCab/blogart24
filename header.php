@@ -50,4 +50,13 @@ if(isset($_COOKIE['pseudo'])) {
       }
       ?>
   </nav>
+  <div class="titre">
+        
+        <h2>BORDEAUX’ <span class="color">COEUR</span></h2>
+
+        <hr></hr>
+        
+        <h2 class="titre">DE L’ARTISANAT</h2>
+    
+</div>
 </body>
