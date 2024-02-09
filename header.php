@@ -24,7 +24,7 @@ if(isset($_COOKIE['pseudo'])) {
 
 ?>
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary justify-content-between">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary justify-content-between navbar-custom">
     <img src="/src/images/logo-marron.svg" alt="Logo" width="158.465px" height="128.826px">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

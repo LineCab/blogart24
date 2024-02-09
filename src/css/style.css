@@ -144,6 +144,11 @@ hr {
     
 }
 
+.navbar-custom{
+    margin: 0 -60px;
+    padding: 0 100px 0 60px;
+}
+
 .footer-custom {
     margin: 80px -60px 0 -60px;
     padding: 0 70px;
