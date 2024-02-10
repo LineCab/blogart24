@@ -113,7 +113,7 @@ $comments = sql_select("COMMENT", "*", "numArt = $numArt AND attModOK = 1 AND de
                     <br>
                     <h2><i class='bx bx-message-rounded-dots'></i> COMMENTAIRES</h2>
                     <br>
-                    <form id="comment-form" class="comment-form" action="<?php echo ROOT_URL . '/../../api/comments/create.php?numArt='.$numArt ?>" method="post">
+                    <form id="comment-form" class="comment-form" action="<?php echo ROOT_URL . '/../../api/comments/createSurArt.php?numArt='.$numArt ?>" method="post">
                         <label><?php echo $pseudo; ?></label>
                         <label><?php echo date('d/m/Y'). '<br>'; ?></label>
                         <div class="comment-field">

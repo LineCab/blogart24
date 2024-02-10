@@ -137,6 +137,8 @@ if (!$error){
     $numStat = $numStat[0]["numStat"];
 
     $_SESSION['numStat'] = $numStat;
+    
+    header('Location: ../../index.php');
     ?>
 
     <?php
@@ -144,5 +146,4 @@ if (!$error){
     die("erreur");
 }
 
-header('Location: ../../index.php');
 ?>

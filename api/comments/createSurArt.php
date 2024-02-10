@@ -4,8 +4,8 @@ require_once '../../functions/ctrlSaisies.php';
 
 session_start();
 
-$numArt = ctrlSaisies($_POST["numArt"]);
-$numMemb = ctrlSaisies($_POST["numMemb"]);
+$numArt = ctrlSaisies($_GET["numArt"]);
+$numMemb = ctrlSaisies($_SESSION["numMemb"]);
 $libCom = ctrlSaisies($_POST["commentaire"]);
 $dtCreaCom = date('Y-m-d H:i:s');
 $dtModCom = null;
@@ -20,4 +20,4 @@ if(isset($libCom)){
     die("Veuillez entrer un commentaire");
 }
 
-header("Location: ../../views/backend/comments/list.php");
+header("Location: ../../views/frontend/articles/article1.php?numArt=$numArt");

@@ -38,6 +38,8 @@ if(isset($_COOKIE['pseudo'])) {
             <?php
               if (!empty($_SESSION['numStat']) && $_SESSION['numStat'] == 1) {
                 echo "<a class=\"nav-link\" href=\"/views/backend/dashboard.php\">Admin</a>" ;
+              }elseif(!empty($_SESSION['numStat']) && $_SESSION['numStat'] == 2){
+                echo "<a class=\"nav-link\" href=\"/views/backend/comments/list.php\">Commentaires</a>" ;
               }
             ?>
         </div>

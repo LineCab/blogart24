@@ -9,7 +9,9 @@ if ($_SESSION['logged'] === false || $_SESSION['numStat'] == 3) {
 <?php
 
 $numArt = 1;
-$comments = sql_select("COMMENT", "*", "numArt = $numArt");
+$comments = sql_select("COMMENT", "*");
+$articles = sql_select("ARTICLE", "*");
+$membres = sql_select("MEMBRE", "*");
 
 $pseudo = $_SESSION['username'];
 
@@ -22,12 +24,32 @@ $pseudo = $_SESSION['username'];
         </div>
         <br>
         <div class="col-md-12">
-            <form action="<?php echo ROOT_URL . '/api/comments/create.php?numArt='.$numArt ?>" method="post">
+            <form action="<?php echo ROOT_URL . '/api/comments/create.php' ?>" method="post">
                 <div class="form-group">
-                    <label><?php echo $pseudo; ?></label>
+                    <label>Pseudo</label>
                     <br>
-                    <label><?php echo date('d/m/Y'). '<br>'; ?></label>
+                    <select class="form-select" name="numMemb">
+                        <?php foreach ($membres as $membre) : ?>
+                            <option value="<?php echo $membre['numMemb']; ?>">
+                                <?php echo $membre['pseudoMemb']; ?>
+                            </option>
+                        <?php endforeach; ?>
+                    </select>
                 </div>
+                <br>
+                <div class="form-group">
+                    <label>Article</label>
+                    <br>
+                    <select class="form-select" name="numArt">
+                        <?php foreach ($articles as $article) : ?>
+                            <option value="<?php echo $article['numArt']; ?>">
+                                <?php echo $article['libTitrArt']; ?>
+                            </option>
+                        <?php endforeach; ?>
+                    </select>
+                </div>
+                <br>
+                <label><?php echo date('d/m/Y'). '<br>'; ?></label>
                 <br/>
                 <div class="form-group">
                     <label for="commentaire">Votre commentaire : </label>

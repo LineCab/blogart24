@@ -18,6 +18,8 @@ $commentsSupprLog = sql_select("COMMENT", "*", "delLogiq = 1");
         <div class="col">
             <h1>Commentaires</h1>
             <br>
+            <a href="create.php" class="btn btn-success">Create</a>
+            <br><br>
             <h2>Commentaires en attente</h2>
             <table class="table table-striped">
                 <thead>
@@ -139,8 +141,6 @@ $commentsSupprLog = sql_select("COMMENT", "*", "delLogiq = 1");
                     <?php }?>
                 </tbody>
             </table>
-            <br>
-            <a href="create.php" class="btn btn-success">Create</a>
         </div>
     </div>
 </div>
