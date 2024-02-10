@@ -25,40 +25,40 @@ require_once '../../../header.php';
 <div class="row">
   <div class="col-4">
     <div id="list-example" class="list-group">
-      <a class="list-group-item list-group-item-action" href="#list-item-1">Article 1</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-2">Article 2</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-3">article 3</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-4">article 4</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-5">article 5</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-6">article 6</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-7">article 7</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-8">article 8</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-9">article 9</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-10">article 10</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-11">article 11</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-1">ARTICLE 1 : Les mentions légales </a>
+      <a class="list-group-item list-group-item-action" href="#list-item-2">ARTICLE 2 : Accès au site</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-3">ARTICLE 3 : Collecte des données</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-4">ARTICLE 4 : Modification des CGU</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-5">ARTICLE 5 : Propriété intellectuelle</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-6">ARTICLE 6 : Responsabilité</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-7">ARTICLE 7 : Liens hypertextes</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-8">ARTICLE 8 : Cookies</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-9">ARTICLE 9 : Publication par l’Utilisateur</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-10">ARTICLE 10 : Droit applicable et juridiction compétente</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-11">ARTICLE 11 : Proctection des données</a>
 
     </div>
 
   </div>
   <div class="col-8">
-  <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
 
-    <p>
-    En vigueur au 1 Février 2024.
-    Les présentes conditions générales d'utilisation (dites « CGU ») ont pour objet l'encadrement juridique des modalités de mise à disposition du site et des services par GARDENA et de définir les conditions d’accès et d’utilisation des services par « l'Utilisateur ».
-    <br>Les présentes CGU sont accessibles sur le site GARDENA à la rubrique «CGU».
-    <br>Toute inscription ou utilisation du site implique l'acceptation sans aucune réserve ni restriction des présentes CGU par l’utilisateur. Lors de l'inscription sur le site via le Formulaire d’inscription, chaque utilisateur accepte expressément les présentes CGU en cochant la case précédant le texte suivant : « Je reconnais avoir lu et compris les CGU et je les accepte ».
-    <br>En cas de non-acceptation des CGU stipulées dans le présent contrat, l'Utilisateur se doit de renoncer à l'accès des services proposés par le site.
-    <br>GARDENA se réserve le droit de modifier unilatéralement et à tout moment le contenu des présentes CGU.
-    </p>
-    <h4 id="list-item-1">ARTICLE 1 : Les mentions légales </h4>
       <p>
-<br>L'édition du site GARDENA est assurée par la l’IUT Bordeaux Montaigne dont le siège social est situé au 1 Rue Jacques Ellul 33800 Bordeaux.
-Numéro de téléphone : 05 57 12 20 44
-<br>Adresse e-mail : accueil@u-bordeaux-montaigne.fr.
-<br>Les Directeurs de la publication sont : Madame CABARET Line, Madame GARBUIO-BINAUD Eva, Madame MAZIERE—HADAJI Tya, Monsieur BREART Brice, Monsieur BISSON-BARRET Gabriel.
-<br><br>
-L'hébergeur du site GARDENA est la société Netlify, dont le siège social est situé à San Francisco, Californie, Etats-Unis . Opérant dans le domaine du cloud computing, de l'informatique sans serveur et de la plate-forme en tant que service, Netlify compte parmi ses produits phares Netlify CMS et Jamstack.</p>
+      En vigueur au 1 Février 2024.
+      Les présentes conditions générales d'utilisation (dites « CGU ») ont pour objet l'encadrement juridique des modalités de mise à disposition du site et des services par GARDENA et de définir les conditions d’accès et d’utilisation des services par « l'Utilisateur ».
+      <br>Les présentes CGU sont accessibles sur le site GARDENA à la rubrique «CGU».
+      <br>Toute inscription ou utilisation du site implique l'acceptation sans aucune réserve ni restriction des présentes CGU par l’utilisateur. Lors de l'inscription sur le site via le Formulaire d’inscription, chaque utilisateur accepte expressément les présentes CGU en cochant la case précédant le texte suivant : « Je reconnais avoir lu et compris les CGU et je les accepte ».
+      <br>En cas de non-acceptation des CGU stipulées dans le présent contrat, l'Utilisateur se doit de renoncer à l'accès des services proposés par le site.
+      <br>GARDENA se réserve le droit de modifier unilatéralement et à tout moment le contenu des présentes CGU.
+      </p>
+      <h4 id="list-item-1">ARTICLE 1 : Les mentions légales </h4>
+        <p>
+      <br>L'édition du site GARDENA est assurée par la l’IUT Bordeaux Montaigne dont le siège social est situé au 1 Rue Jacques Ellul 33800 Bordeaux.
+      Numéro de téléphone : 05 57 12 20 44
+      <br>Adresse e-mail : accueil@u-bordeaux-montaigne.fr.
+      <br>Les Directeurs de la publication sont : Madame CABARET Line, Madame GARBUIO-BINAUD Eva, Madame MAZIERE—HADAJI Tya, Monsieur BREART Brice, Monsieur BISSON-BARRET Gabriel.
+      <br><br>
+      L'hébergeur du site GARDENA est la société Netlify, dont le siège social est situé à San Francisco, Californie, Etats-Unis . Opérant dans le domaine du cloud computing, de l'informatique sans serveur et de la plate-forme en tant que service, Netlify compte parmi ses produits phares Netlify CMS et Jamstack.</p>
      
       <h4 id="list-item-2">ARTICLE 2 : Accès au site</h4>
       <p>Le site GARDENA  permet à l'Utilisateur un accès gratuit aux services suivants :

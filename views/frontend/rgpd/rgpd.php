@@ -6,16 +6,16 @@ require_once '../../../header.php';
 <div class="row mt-5">
   <div class="col-4">
     <div id="list-example" class="list-group">
-      <a class="list-group-item list-group-item-action" href="#list-item-1">Article 1</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-2">Article 2</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-3">Article 3</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-4">Article 4</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-5">Article 5</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-6">Article 6</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-7">Article 7</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-8">Article 8</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-9">Article 9</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-10">Article 10</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-1">ARTICLE 1. Collecte des données personnelles :</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-2">ARTICLE 2. Finalités du traitement :</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-3">ARTICLE 3. Base légale du traitement :</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-4">ARTICLE 4. Sécurité des données :</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-5">ARTICLE 5. Durée de conservation des données :</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-6">ARTICLE 6. Partage des données :</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-7">ARTICLE 7. Droits des utilisateurs :</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-8">ARTICLE 8. Cookies et technologies similaires :</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-9">ARTICLE 9. Modifications de la politique de confidentialité :</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-10">ARTICLE 10. Contact :</a>
     </div>
   </div>
   <div class="col-8">
@@ -44,7 +44,7 @@ require_once '../../../header.php';
       <h2 id="list-item-7">ARTICLE 7. Droits des utilisateurs : </h2>
       <p class="mb-5">Les utilisateurs ont le droit d'accéder à leurs données personnelles, de les rectifier, de les supprimer, de limiter leur traitement, de s'opposer au traitement, et de demander la portabilité de leurs données conformément aux dispositions du RGPD.</p>
 
-      <h2 id="list-item-8">aARTICLE 8. Cookies et technologies similaires : </h2>
+      <h2 id="list-item-8">ARTICLE 8. Cookies et technologies similaires : </h2>
       <p class="mb-5">Le blog utilise des cookies et des technologies similaires pour améliorer l'expérience de navigation des utilisateurs. Les utilisateurs peuvent gérer leurs préférences relatives aux cookies via les paramètres de leur navigateur.</p>
 
       <h2 id="list-item-9">ARTICLE 9. Modifications de la politique de confidentialité : </h2>
