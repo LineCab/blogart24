@@ -103,15 +103,9 @@ if(isset($_POST['g-recaptcha-response'])){
     $context = stream_context_create($options);
     $result = file_get_contents($url, false, $context);
     $response = json_decode($result);
-    /*
-    - google response score is between 0.0 to 1.0
-    - if score is 0.5, it's a human
-    - if score is 0.0, it's a bot
-    - google recommend to use score 0.5 for verify human
-    */
+    
     if ($response->success && $response->score >= 0.5) {
    
-    //Le test est réussi, on peut inscrire la personne si le pseudo et le mot de passe sont bons
     var_dump(array('success' => true, "msg"=>"You are not a robot!",
     "response"=>$response));
     }else{
@@ -136,5 +130,5 @@ if (!$error){
     die("erreur");
 }
 
-header('Location: ../..//index.php');
+header('Location: ../../views/backend/members/list.php');
 ?>
