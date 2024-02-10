@@ -135,9 +135,9 @@ $comments = sql_select("COMMENT", "*", "numArt = $numArt AND attModOK = 1 AND de
 
                     ?>
                     <div class="card-custom" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title"><?php echo $pseudoMembCom ?></h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary"><?php echo $dtCreaCom ?></h6>
+                        <div class="card-body mb-3 pt-2">
+                            <p class="card-subtitle"><?php echo $pseudoMembCom ?></p>
+                            <p class="card-subtitle mb-2 text-body-secondary"><?php echo $dtCreaCom ?></p>
                             <p class="card-text"><?php echo $libCom ?></p>
                         </div>
                     </div>
